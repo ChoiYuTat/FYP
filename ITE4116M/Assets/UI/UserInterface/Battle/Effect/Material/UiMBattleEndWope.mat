@@ -1,0 +1,6 @@
+Diffuse=DefaultDiffuse
+Normal=DefaultNormal
+Other[0]=LowResBlurredNoise
+Other[1]=T_Swirlmap
+Other[2]=UiTX_Common_Cloud
+Other[3]=UiTX_Common_Wave

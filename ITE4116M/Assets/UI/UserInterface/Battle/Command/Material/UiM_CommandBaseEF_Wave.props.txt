@@ -1,0 +1,63 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_MapLv0.UiTX_Battle_BoostLvColor_MapLv0'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[7] =
+                {
+                    ParameterInfos[0] = { Name=C }
+                    ParameterInfos[1] = { Name=A }
+                    ParameterInfos[2] = { Name=3 }
+                    ParameterInfos[3] = { Name=Mask }
+                    ParameterInfos[4] = { Name=2 }
+                    ParameterInfos[5] = { Name=1 }
+                    ParameterInfos[6] = { Name=B }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] = { ParameterInfos[0]={} }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[7] = { 10, -0.15, 10, 0, 1, 0.15, 1 }
+        VectorValues[0] = {}
+        TextureValues[0] = {}
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_MapLv0.UiTX_Battle_BoostLvColor_MapLv0'
+    }
+}
+BlendMode = BLEND_AlphaComposite (5)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[7] =
+{
+    CollectedScalarParameters[0] = { Value=10, Name=C, Group=None }
+    CollectedScalarParameters[1] = { Value=-0.15, Name=A, Group=None }
+    CollectedScalarParameters[2] = { Value=10, Name=3, Group=None }
+    CollectedScalarParameters[3] = { Value=0, Name=Mask, Group=None }
+    CollectedScalarParameters[4] = { Value=1, Name=2, Group=None }
+    CollectedScalarParameters[5] = { Value=0.15, Name=1, Group=None }
+    CollectedScalarParameters[6] = { Value=1, Name=B, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -1,0 +1,73 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[12] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_ColorLv0.UiTX_Battle_BoostLvColor_ColorLv0'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_ColorLv1.UiTX_Battle_BoostLvColor_ColorLv1'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_ColorLv2.UiTX_Battle_BoostLvColor_ColorLv2'
+    ReferencedTextures[3] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_ColorLv3.UiTX_Battle_BoostLvColor_ColorLv3'
+    ReferencedTextures[4] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_MapLv0.UiTX_Battle_BoostLvColor_MapLv0'
+    ReferencedTextures[5] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_MapLv1.UiTX_Battle_BoostLvColor_MapLv1'
+    ReferencedTextures[6] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_MapLv2.UiTX_Battle_BoostLvColor_MapLv2'
+    ReferencedTextures[7] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_MapLv3.UiTX_Battle_BoostLvColor_MapLv3'
+    ReferencedTextures[8] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_Command_BoostHelp_Base_BaseEFMask.UiTX_Battle_Command_BoostHelp_Base_BaseEFMask'
+    ReferencedTextures[9] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_CommandBoostEF_BaseLightLv1.UiTX_Battle_CommandBoostEF_BaseLightLv1'
+    ReferencedTextures[10] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_CommandBoostEF_BaseLightLv2.UiTX_Battle_CommandBoostEF_BaseLightLv2'
+    ReferencedTextures[11] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_CommandBoostEF_BaseLightMax.UiTX_Battle_CommandBoostEF_BaseLightMax'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Param }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] = { ParameterInfos[0]={} }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[1] = { 3 }
+        VectorValues[0] = {}
+        TextureValues[0] = {}
+    }
+    ReferencedTextures[13] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_ColorLv3.UiTX_Battle_BoostLvColor_ColorLv3'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_ColorLv0.UiTX_Battle_BoostLvColor_ColorLv0'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_ColorLv1.UiTX_Battle_BoostLvColor_ColorLv1'
+        ReferencedTextures[3] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_ColorLv2.UiTX_Battle_BoostLvColor_ColorLv2'
+        ReferencedTextures[5] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_Command_BoostHelp_Base_BaseEFMask.UiTX_Battle_Command_BoostHelp_Base_BaseEFMask'
+        ReferencedTextures[6] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_MapLv1.UiTX_Battle_BoostLvColor_MapLv1'
+        ReferencedTextures[7] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_MapLv2.UiTX_Battle_BoostLvColor_MapLv2'
+        ReferencedTextures[8] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_MapLv3.UiTX_Battle_BoostLvColor_MapLv3'
+        ReferencedTextures[9] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_BoostLvColor_MapLv0.UiTX_Battle_BoostLvColor_MapLv0'
+        ReferencedTextures[10] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_CommandBoostEF_BaseLightLv1.UiTX_Battle_CommandBoostEF_BaseLightLv1'
+        ReferencedTextures[11] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_CommandBoostEF_BaseLightLv2.UiTX_Battle_CommandBoostEF_BaseLightLv2'
+        ReferencedTextures[12] = Texture2D'/Game/UserInterface/Battle/Command/Texture/UiTX_Battle_CommandBoostEF_BaseLightMax.UiTX_Battle_CommandBoostEF_BaseLightMax'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=3, Name=Param, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

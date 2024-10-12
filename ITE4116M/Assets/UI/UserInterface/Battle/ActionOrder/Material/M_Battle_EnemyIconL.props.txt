@@ -1,0 +1,106 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[4] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Character/Resource/NPC/2100_DstYm001_Mle/Textures/ChrNpcTX_DstYm001_Mle_AXE_add0.ChrNpcTX_DstYm001_Mle_AXE_add0'
+    ReferencedTextures[1] = Texture2D'/Game/Character/Resource/NPC/2100_DstYm001_Mle/Textures/ChrNpcTX_DstYm001_Mle_AXE_adds.ChrNpcTX_DstYm001_Mle_AXE_adds'
+    ReferencedTextures[2] = Texture2D'/Game/Character/Resource/Weapon/8200_AXE_Default/Textures/ChrWpnTX_AXE_Default_Fml.ChrWpnTX_AXE_Default_Fml'
+    ReferencedTextures[3] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Mask.UiTX_Battle_Oder_Select_Mask'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[9] =
+                {
+                    ParameterInfos[0] = { Name=SpriteSizeX }
+                    ParameterInfos[1] = { Name=UVOffsetX }
+                    ParameterInfos[2] = { Name=CharaScale }
+                    ParameterInfos[3] = { Name=CharaOffsetY }
+                    ParameterInfos[4] = { Name=GraySwitch }
+                    ParameterInfos[5] = { Name=SpriteSizeY }
+                    ParameterInfos[6] = { Name=UVOffsetY }
+                    ParameterInfos[7] = { Name=CharaOffsetX }
+                    ParameterInfos[8] = { Name=InvertX }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=CharacterIcon }
+                    ParameterInfos[1] = { Name=FrontCharaIcon }
+                    ParameterInfos[2] = { Name=WeaponIcon }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[9] = { 128, 128, 1, 16, 1, 128, 640, 0, 1 }
+        VectorValues[0] = {}
+        TextureValues[3] =
+        {
+            TextureValues[0] = Texture2D'/Game/Character/Resource/NPC/2100_DstYm001_Mle/Textures/ChrNpcTX_DstYm001_Mle_AXE_adds.ChrNpcTX_DstYm001_Mle_AXE_adds'
+            TextureValues[1] = Texture2D'/Game/Character/Resource/NPC/2100_DstYm001_Mle/Textures/ChrNpcTX_DstYm001_Mle_AXE_add0.ChrNpcTX_DstYm001_Mle_AXE_add0'
+            TextureValues[2] = Texture2D'/Game/Character/Resource/Weapon/8200_AXE_Default/Textures/ChrWpnTX_AXE_Default_Fml.ChrWpnTX_AXE_Default_Fml'
+        }
+    }
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Mask.UiTX_Battle_Oder_Select_Mask'
+        ReferencedTextures[1] = Texture2D'/Game/Character/Resource/Weapon/8200_AXE_Default/Textures/ChrWpnTX_AXE_Default_Fml.ChrWpnTX_AXE_Default_Fml'
+        ReferencedTextures[2] = Texture2D'/Game/Character/Resource/NPC/2100_DstYm001_Mle/Textures/ChrNpcTX_DstYm001_Mle_AXE_add0.ChrNpcTX_DstYm001_Mle_AXE_add0'
+        ReferencedTextures[3] = Texture2D'/Game/Character/Resource/NPC/2100_DstYm001_Mle/Textures/ChrNpcTX_DstYm001_Mle_AXE_adds.ChrNpcTX_DstYm001_Mle_AXE_adds'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[3] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Character/Resource/NPC/2100_DstYm001_Mle/Textures/ChrNpcTX_DstYm001_Mle_AXE_adds.ChrNpcTX_DstYm001_Mle_AXE_adds'
+        Name = CharacterIcon
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Character/Resource/NPC/2100_DstYm001_Mle/Textures/ChrNpcTX_DstYm001_Mle_AXE_add0.ChrNpcTX_DstYm001_Mle_AXE_add0'
+        Name = FrontCharaIcon
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/Character/Resource/Weapon/8200_AXE_Default/Textures/ChrWpnTX_AXE_Default_Fml.ChrWpnTX_AXE_Default_Fml'
+        Name = WeaponIcon
+        Group = None
+    }
+}
+CollectedScalarParameters[9] =
+{
+    CollectedScalarParameters[0] = { Value=128, Name=SpriteSizeX, Group=None }
+    CollectedScalarParameters[1] = { Value=128, Name=UVOffsetX, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=CharaScale, Group=None }
+    CollectedScalarParameters[3] = { Value=16, Name=CharaOffsetY, Group=None }
+    CollectedScalarParameters[4] = { Value=1, Name=GraySwitch, Group=None }
+    CollectedScalarParameters[5] = { Value=128, Name=SpriteSizeY, Group=None }
+    CollectedScalarParameters[6] = { Value=640, Name=UVOffsetY, Group=None }
+    CollectedScalarParameters[7] = { Value=0, Name=CharaOffsetX, Group=None }
+    CollectedScalarParameters[8] = { Value=1, Name=InvertX, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

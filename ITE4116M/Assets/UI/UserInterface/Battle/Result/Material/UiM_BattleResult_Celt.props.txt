@@ -1,0 +1,78 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/Result/Texture/UiTX_Battle_Result_Celt_Mask.UiTX_Battle_Result_Celt_Mask'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Cloud.UiTX_Common_Cloud'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/MainMenu/Other/Texture/UiTX_MainMenu_AreaEmblem_Gr.UiTX_MainMenu_AreaEmblem_Gr'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[4] =
+                {
+                    ParameterInfos[0] = { Name=ScreenSize_X }
+                    ParameterInfos[1] = { Name=PanningSpeed_1 }
+                    ParameterInfos[2] = { Name=ScreenSize_Y }
+                    ParameterInfos[3] = { Name=TextureOpacitey }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Tex_RCM }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[4] = { 1280, 0.03, 720, 1 }
+        VectorValues[0] = {}
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Battle/Result/Texture/UiTX_Battle_Result_Celt_Mask.UiTX_Battle_Result_Celt_Mask'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/MainMenu/Other/Texture/UiTX_MainMenu_AreaEmblem_Gr.UiTX_MainMenu_AreaEmblem_Gr'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Cloud.UiTX_Common_Cloud'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/Battle/Result/Texture/UiTX_Battle_Result_Celt_Mask.UiTX_Battle_Result_Celt_Mask'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/Result/Texture/UiTX_Battle_Result_Celt_Mask.UiTX_Battle_Result_Celt_Mask'
+        Name = Tex_RCM
+        Group = None
+    }
+}
+CollectedScalarParameters[4] =
+{
+    CollectedScalarParameters[0] = { Value=1280, Name=ScreenSize_X, Group=None }
+    CollectedScalarParameters[1] = { Value=0.03, Name=PanningSpeed_1, Group=None }
+    CollectedScalarParameters[2] = { Value=720, Name=ScreenSize_Y, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=TextureOpacitey, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

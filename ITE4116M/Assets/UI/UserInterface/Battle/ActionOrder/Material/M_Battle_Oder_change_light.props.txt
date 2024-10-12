@@ -1,0 +1,103 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_change_light.UiTX_Battle_Oder_change_light'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_change_lightmask.UiTX_Battle_Oder_change_lightmask'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Mask.UiTX_Battle_Oder_Mask'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[4] =
+                {
+                    ParameterInfos[0] = { Name=PixelScaleX_1 }
+                    ParameterInfos[1] = { Name=UVOffsetX_1 }
+                    ParameterInfos[2] = { Name=PixelScaleY_1 }
+                    ParameterInfos[3] = { Name=UVOffsetY_1 }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=color }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Tex_OderMask }
+                    ParameterInfos[1] = { Name=Tex_OderChangeLight }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[4] = { 1, 1, 1, 0.13 }
+        VectorValues[1] =
+        {
+            VectorValues[0] = { R=0.4, G=0.03, B=0.06, A=0 }
+        }
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Mask.UiTX_Battle_Oder_Mask'
+            TextureValues[1] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_change_light.UiTX_Battle_Oder_change_light'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_change_lightmask.UiTX_Battle_Oder_change_lightmask'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Mask.UiTX_Battle_Oder_Mask'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_change_light.UiTX_Battle_Oder_change_light'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Mask.UiTX_Battle_Oder_Mask'
+        Name = Tex_OderMask
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_change_light.UiTX_Battle_Oder_change_light'
+        Name = Tex_OderChangeLight
+        Group = None
+    }
+}
+CollectedScalarParameters[4] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=PixelScaleX_1, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=UVOffsetX_1, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=PixelScaleY_1, Group=None }
+    CollectedScalarParameters[3] = { Value=0.13, Name=UVOffsetY_1, Group=None }
+}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0.4, G=0.03, B=0.06, A=0 }
+        Name = color
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

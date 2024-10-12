@@ -1,0 +1,65 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Gr_Color03.UiTX_Common_Gr_Color03'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[8] =
+                {
+                    ParameterInfos[0] = { Name=Size_X }
+                    ParameterInfos[1] = { Name=Density }
+                    ParameterInfos[2] = { Name=Radius }
+                    ParameterInfos[3] = { Name=Anim }
+                    ParameterInfos[4] = { Name=SIze_Y }
+                    ParameterInfos[5] = { Name=Coordinate_Rotate }
+                    ParameterInfos[6] = { Name=U }
+                    ParameterInfos[7] = { Name=V }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] = { ParameterInfos[0]={} }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[8] = { 0.18, 0.2, 1.5, 0, 0.22, 33, 0.15, -0.1 }
+        VectorValues[0] = {}
+        TextureValues[0] = {}
+    }
+    ReferencedTextures[1] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Gr_Color03.UiTX_Common_Gr_Color03'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[8] =
+{
+    CollectedScalarParameters[0] = { Value=0.18, Name=Size_X, Group=None }
+    CollectedScalarParameters[1] = { Value=0.2, Name=Density, Group=None }
+    CollectedScalarParameters[2] = { Value=1.5, Name=Radius, Group=None }
+    CollectedScalarParameters[3] = { Value=0, Name=Anim, Group=None }
+    CollectedScalarParameters[4] = { Value=0.22, Name=SIze_Y, Group=None }
+    CollectedScalarParameters[5] = { Value=33, Name=Coordinate_Rotate, Group=None }
+    CollectedScalarParameters[6] = { Value=0.15, Name=U, Group=None }
+    CollectedScalarParameters[7] = { Value=-0.1, Name=V, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

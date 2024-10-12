@@ -1,0 +1,70 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/Effect/Texture/UiTX_Battle_windoweffect_image.UiTX_Battle_windoweffect_image'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Cloud.UiTX_Common_Cloud'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=TextureOpacitey }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Color_1 }
+                }
+            }
+            Entries[2] = { ParameterInfos[0]={} }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[1] = { 3 }
+        VectorValues[1] =
+        {
+            VectorValues[0] = { R=0.00279405, G=0.00365849, B=0.00520833, A=1 }
+        }
+        TextureValues[0] = {}
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/Effect/Texture/UiTX_Battle_windoweffect_image.UiTX_Battle_windoweffect_image'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Cloud.UiTX_Common_Cloud'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=3, Name=TextureOpacitey, Group=None }
+}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0.00279405, G=0.00365849, B=0.00520833, A=1 }
+        Name = Color_1
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

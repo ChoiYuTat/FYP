@@ -1,0 +1,164 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[9] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+    ReferencedTextures[1] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.DebugNumberStrip'
+    ReferencedTextures[2] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.DebugNumberPeriod'
+    ReferencedTextures[3] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook.flipbook'
+    ReferencedTextures[4] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EF2_01.UiTX_Battle_StyleSystem_EF2_01'
+    ReferencedTextures[5] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EF_01.UiTX_Battle_StyleSystem_EF_01'
+    ReferencedTextures[6] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EF_02.UiTX_Battle_StyleSystem_EF_02'
+    ReferencedTextures[7] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EFGr_Sho.UiTX_Battle_StyleSystem_EFGr_Sho'
+    ReferencedTextures[8] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Kus.UiTX_Battle_StyleSystem_Kus'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[24] =
+                {
+                    ParameterInfos[0] = { Name=Flip_02_Size }
+                    ParameterInfos[1] = { Name=Cycle2_Alpha }
+                    ParameterInfos[2] = { Name=FadeOn }
+                    ParameterInfos[3] = { Name=Flip_02 }
+                    ParameterInfos[4] = { Name=Glow_Alpha }
+                    ParameterInfos[5] = { Name=Hibana_Alpha }
+                    ParameterInfos[6] = { Name=Flip_03_Size }
+                    ParameterInfos[7] = { Name=Shock_Size }
+                    ParameterInfos[8] = { Name=Anim }
+                    ParameterInfos[9] = { Name=Base_Alpha }
+                    ParameterInfos[10] = { Name=Lay_Alpha }
+                    ParameterInfos[11] = { Name=GageValue }
+                    ParameterInfos[12] = { Name=Sine }
+                    ParameterInfos[13] = { Name=Cycle_Alpha }
+                    ParameterInfos[14] = { Name=Flip_03 }
+                    ParameterInfos[15] = { Name=Shock_Alpha }
+                    ParameterInfos[16] = { Name=Glow_Size }
+                    ParameterInfos[17] = { Name=Flip_01 }
+                    ParameterInfos[18] = { Name=Lay_Size }
+                    ParameterInfos[19] = { Name=Cycle2_Size }
+                    ParameterInfos[20] = { Name=Hibana_Size }
+                    ParameterInfos[21] = { Name=Base_Size }
+                    ParameterInfos[22] = { Name=Cycle_Size }
+                    ParameterInfos[23] = { Name=Flip_01_Size }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Gradation }
+                    ParameterInfos[1] = { Name=Texture }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[24] =
+        {
+            ScalarValues[0] = 0
+            ScalarValues[1] = 0
+            ScalarValues[2] = 1
+            ScalarValues[3] = 0.5
+            ScalarValues[4] = 0
+            ScalarValues[5] = 0
+            ScalarValues[6] = 1
+            ScalarValues[7] = 1
+            ScalarValues[8] = 0
+            ScalarValues[9] = 0
+            ScalarValues[10] = 0
+            ScalarValues[11] = 1
+            ScalarValues[12] = 0
+            ScalarValues[13] = 0
+            ScalarValues[14] = 0
+            ScalarValues[15] = 0
+            ScalarValues[16] = 0.5
+            ScalarValues[17] = 0.5
+            ScalarValues[18] = 1
+            ScalarValues[19] = 1
+            ScalarValues[20] = 1
+            ScalarValues[21] = 0.312
+            ScalarValues[22] = 1
+            ScalarValues[23] = 0
+        }
+        VectorValues[0] = {}
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EFGr_Sho.UiTX_Battle_StyleSystem_EFGr_Sho'
+            TextureValues[1] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Kus.UiTX_Battle_StyleSystem_Kus'
+        }
+    }
+    ReferencedTextures[10] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EFGr_Sho.UiTX_Battle_StyleSystem_EFGr_Sho'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Kus.UiTX_Battle_StyleSystem_Kus'
+        ReferencedTextures[3] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EF_01.UiTX_Battle_StyleSystem_EF_01'
+        ReferencedTextures[4] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EF_02.UiTX_Battle_StyleSystem_EF_02'
+        ReferencedTextures[5] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+        ReferencedTextures[6] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.DebugNumberStrip'
+        ReferencedTextures[7] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.DebugNumberPeriod'
+        ReferencedTextures[8] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook.flipbook'
+        ReferencedTextures[9] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EF2_01.UiTX_Battle_StyleSystem_EF2_01'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EFGr_Sho.UiTX_Battle_StyleSystem_EFGr_Sho'
+        Name = Gradation
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Kus.UiTX_Battle_StyleSystem_Kus'
+        Name = Texture
+        Group = None
+    }
+}
+CollectedScalarParameters[24] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Flip_02_Size, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=Cycle2_Alpha, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=FadeOn, Group=None }
+    CollectedScalarParameters[3] = { Value=0.5, Name=Flip_02, Group=None }
+    CollectedScalarParameters[4] = { Value=0, Name=Glow_Alpha, Group=None }
+    CollectedScalarParameters[5] = { Value=0, Name=Hibana_Alpha, Group=None }
+    CollectedScalarParameters[6] = { Value=1, Name=Flip_03_Size, Group=None }
+    CollectedScalarParameters[7] = { Value=1, Name=Shock_Size, Group=None }
+    CollectedScalarParameters[8] = { Value=0, Name=Anim, Group=None }
+    CollectedScalarParameters[9] = { Value=0, Name=Base_Alpha, Group=None }
+    CollectedScalarParameters[10] = { Value=0, Name=Lay_Alpha, Group=None }
+    CollectedScalarParameters[11] = { Value=1, Name=GageValue, Group=None }
+    CollectedScalarParameters[12] = { Value=0, Name=Sine, Group=None }
+    CollectedScalarParameters[13] = { Value=0, Name=Cycle_Alpha, Group=None }
+    CollectedScalarParameters[14] = { Value=0, Name=Flip_03, Group=None }
+    CollectedScalarParameters[15] = { Value=0, Name=Shock_Alpha, Group=None }
+    CollectedScalarParameters[16] = { Value=0.5, Name=Glow_Size, Group=None }
+    CollectedScalarParameters[17] = { Value=0.5, Name=Flip_01, Group=None }
+    CollectedScalarParameters[18] = { Value=1, Name=Lay_Size, Group=None }
+    CollectedScalarParameters[19] = { Value=1, Name=Cycle2_Size, Group=None }
+    CollectedScalarParameters[20] = { Value=1, Name=Hibana_Size, Group=None }
+    CollectedScalarParameters[21] = { Value=0.312, Name=Base_Size, Group=None }
+    CollectedScalarParameters[22] = { Value=1, Name=Cycle_Size, Group=None }
+    CollectedScalarParameters[23] = { Value=0, Name=Flip_01_Size, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

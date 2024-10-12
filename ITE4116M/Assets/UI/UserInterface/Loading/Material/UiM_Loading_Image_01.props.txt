@@ -1,0 +1,110 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[9] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBase.BlendFunc_DefBase'
+    ReferencedTextures[1] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBlend.BlendFunc_DefBlend'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas01.UiTX_Loading_Icon_02_Atlas01'
+    ReferencedTextures[3] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas02.UiTX_Loading_Icon_02_Atlas02'
+    ReferencedTextures[4] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas03.UiTX_Loading_Icon_02_Atlas03'
+    ReferencedTextures[5] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_Gra_01.UiTX_Loading_Icon_Gra_01'
+    ReferencedTextures[6] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_Gra_02.UiTX_Loading_Icon_Gra_02'
+    ReferencedTextures[7] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_Gra_03.UiTX_Loading_Icon_Gra_03'
+    ReferencedTextures[8] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_Gra_04.UiTX_Loading_Icon_Gra_04'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[6] =
+                {
+                    ParameterInfos[0] = { Name=Boss }
+                    ParameterInfos[1] = { Name=3 }
+                    ParameterInfos[2] = { Name=4 }
+                    ParameterInfos[3] = { Name=2 }
+                    ParameterInfos[4] = { Name=Param }
+                    ParameterInfos[5] = { Name=1 }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=TextureAtlas1 }
+                    ParameterInfos[1] = { Name=TextureAtlas3 }
+                    ParameterInfos[2] = { Name=TextureAtlas2 }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[6] = { 0, 1, 1, 1, 0, 1 }
+        VectorValues[0] = {}
+        TextureValues[3] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas01.UiTX_Loading_Icon_02_Atlas01'
+            TextureValues[1] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas03.UiTX_Loading_Icon_02_Atlas03'
+            TextureValues[2] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas02.UiTX_Loading_Icon_02_Atlas02'
+        }
+    }
+    ReferencedTextures[10] =
+    {
+        ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBase.BlendFunc_DefBase'
+        ReferencedTextures[1] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBlend.BlendFunc_DefBlend'
+        ReferencedTextures[3] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_Gra_01.UiTX_Loading_Icon_Gra_01'
+        ReferencedTextures[4] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_Gra_02.UiTX_Loading_Icon_Gra_02'
+        ReferencedTextures[5] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_Gra_04.UiTX_Loading_Icon_Gra_04'
+        ReferencedTextures[6] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_Gra_03.UiTX_Loading_Icon_Gra_03'
+        ReferencedTextures[7] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas01.UiTX_Loading_Icon_02_Atlas01'
+        ReferencedTextures[8] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas02.UiTX_Loading_Icon_02_Atlas02'
+        ReferencedTextures[9] = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas03.UiTX_Loading_Icon_02_Atlas03'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[3] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas01.UiTX_Loading_Icon_02_Atlas01'
+        Name = TextureAtlas1
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas03.UiTX_Loading_Icon_02_Atlas03'
+        Name = TextureAtlas3
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Loading/Texture/UiTX_Loading_Icon_02_Atlas02.UiTX_Loading_Icon_02_Atlas02'
+        Name = TextureAtlas2
+        Group = None
+    }
+}
+CollectedScalarParameters[6] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Boss, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=3, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=4, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=2, Group=None }
+    CollectedScalarParameters[4] = { Value=0, Name=Param, Group=None }
+    CollectedScalarParameters[5] = { Value=1, Name=1, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

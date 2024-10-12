@@ -1,0 +1,98 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[5] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_change_light.UiTX_Battle_Oder_change_light'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Boostlight.UiTX_Battle_StyleSystem_Boostlight'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EFGr_Sho.UiTX_Battle_StyleSystem_EFGr_Sho'
+    ReferencedTextures[3] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Kus.UiTX_Battle_StyleSystem_Kus'
+    ReferencedTextures[4] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Odo.UiTX_Battle_StyleSystem_Odo'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[4] =
+                {
+                    ParameterInfos[0] = { Name=Anim }
+                    ParameterInfos[1] = { Name=GageValue }
+                    ParameterInfos[2] = { Name=Wave }
+                    ParameterInfos[3] = { Name=UV }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=Gradation }
+                    ParameterInfos[1] = { Name=Texture }
+                    ParameterInfos[2] = { Name=Tex_OderChangeLight }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[4] = { 0, 1, 0, 0 }
+        VectorValues[0] = {}
+        TextureValues[3] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EFGr_Sho.UiTX_Battle_StyleSystem_EFGr_Sho'
+            TextureValues[1] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Odo.UiTX_Battle_StyleSystem_Odo'
+            TextureValues[2] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_change_light.UiTX_Battle_Oder_change_light'
+        }
+    }
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Boostlight.UiTX_Battle_StyleSystem_Boostlight'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Odo.UiTX_Battle_StyleSystem_Odo'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EFGr_Sho.UiTX_Battle_StyleSystem_EFGr_Sho'
+        ReferencedTextures[4] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Kus.UiTX_Battle_StyleSystem_Kus'
+        ReferencedTextures[5] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_change_light.UiTX_Battle_Oder_change_light'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[3] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_EFGr_Sho.UiTX_Battle_StyleSystem_EFGr_Sho'
+        Name = Gradation
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_StyleSystem_Odo.UiTX_Battle_StyleSystem_Odo'
+        Name = Texture
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_change_light.UiTX_Battle_Oder_change_light'
+        Name = Tex_OderChangeLight
+        Group = None
+    }
+}
+CollectedScalarParameters[4] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Anim, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=GageValue, Group=None }
+    CollectedScalarParameters[2] = { Value=0, Name=Wave, Group=None }
+    CollectedScalarParameters[3] = { Value=0, Name=UV, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

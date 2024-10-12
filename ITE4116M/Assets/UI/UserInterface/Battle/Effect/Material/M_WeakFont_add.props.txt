@@ -1,0 +1,69 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/Effect/Texture/UiTX_Battle_Damage_Weak.UiTX_Battle_Damage_Weak'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/Effect/Texture/UiTX_Battle_Damage_WeakBlur.UiTX_Battle_Damage_WeakBlur'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] = { ParameterInfos[0]={} }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=BreakFont }
+                    ParameterInfos[1] = { Name=BreakFontBlur }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[0] = {}
+        VectorValues[0] = {}
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Battle/Effect/Texture/UiTX_Battle_Damage_Weak.UiTX_Battle_Damage_Weak'
+            TextureValues[1] = Texture2D'/Game/UserInterface/Battle/Effect/Texture/UiTX_Battle_Damage_WeakBlur.UiTX_Battle_Damage_WeakBlur'
+        }
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/Effect/Texture/UiTX_Battle_Damage_Weak.UiTX_Battle_Damage_Weak'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/Effect/Texture/UiTX_Battle_Damage_WeakBlur.UiTX_Battle_Damage_WeakBlur'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/Effect/Texture/UiTX_Battle_Damage_Weak.UiTX_Battle_Damage_Weak'
+        Name = BreakFont
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/Effect/Texture/UiTX_Battle_Damage_WeakBlur.UiTX_Battle_Damage_WeakBlur'
+        Name = BreakFontBlur
+        Group = None
+    }
+}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -1,0 +1,82 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_DialogLine_CeltSide.UiTX_Common_DialogLine_CeltSide'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_DialogLine_CeltSideBLU.UiTX_Common_DialogLine_CeltSideBLU'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_DialogLine_GrSideBLU.UiTX_Common_DialogLine_GrSideBLU'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Switch }
+                    ParameterInfos[1] = { Name=Gr }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Tex_DiaLineCS }
+                    ParameterInfos[1] = { Name=Tex_DiaLineCSBLU }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[2] = { 0, 0 }
+        VectorValues[0] = {}
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_DialogLine_CeltSide.UiTX_Common_DialogLine_CeltSide'
+            TextureValues[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_DialogLine_CeltSideBLU.UiTX_Common_DialogLine_CeltSideBLU'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_DialogLine_GrSideBLU.UiTX_Common_DialogLine_GrSideBLU'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_DialogLine_CeltSideBLU.UiTX_Common_DialogLine_CeltSideBLU'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_DialogLine_CeltSide.UiTX_Common_DialogLine_CeltSide'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_DialogLine_CeltSide.UiTX_Common_DialogLine_CeltSide'
+        Name = Tex_DiaLineCS
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_DialogLine_CeltSideBLU.UiTX_Common_DialogLine_CeltSideBLU'
+        Name = Tex_DiaLineCSBLU
+        Group = None
+    }
+}
+CollectedScalarParameters[2] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Switch, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=Gr, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

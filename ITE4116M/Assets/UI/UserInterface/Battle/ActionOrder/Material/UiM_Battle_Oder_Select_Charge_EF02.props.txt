@@ -1,0 +1,88 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge01.UiTX_Battle_Oder_Select_Charge01'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge02.UiTX_Battle_Oder_Select_Charge02'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge03.UiTX_Battle_Oder_Select_Charge03'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Num }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=Tex_SelectCharge01 }
+                    ParameterInfos[1] = { Name=Tex_SelectCharge02 }
+                    ParameterInfos[2] = { Name=Tex_SelectCharge03 }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[1] = { 0 }
+        VectorValues[0] = {}
+        TextureValues[3] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge01.UiTX_Battle_Oder_Select_Charge01'
+            TextureValues[1] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge02.UiTX_Battle_Oder_Select_Charge02'
+            TextureValues[2] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge03.UiTX_Battle_Oder_Select_Charge03'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge01.UiTX_Battle_Oder_Select_Charge01'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge02.UiTX_Battle_Oder_Select_Charge02'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge03.UiTX_Battle_Oder_Select_Charge03'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[3] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge01.UiTX_Battle_Oder_Select_Charge01'
+        Name = Tex_SelectCharge01
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge02.UiTX_Battle_Oder_Select_Charge02'
+        Name = Tex_SelectCharge02
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Battle/ActionOrder/Texture/UiTX_Battle_Oder_Select_Charge03.UiTX_Battle_Oder_Select_Charge03'
+        Name = Tex_SelectCharge03
+        Group = None
+    }
+}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Num, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}
