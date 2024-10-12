@@ -1,0 +1,102 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[10] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UltimateRiverTool/Textures/Generic/T_Smoke_Tiled_D.T_Smoke_Tiled_D'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Cloud.UiTX_Common_Cloud'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/GameOver/Texture/UiTX_GameOver_EF_Dust01.UiTX_GameOver_EF_Dust01'
+    ReferencedTextures[3] = Texture2D'/Game/UserInterface/GameOver/Texture/UiTX_GameOver_EF_Dust02.UiTX_GameOver_EF_Dust02'
+    ReferencedTextures[4] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlass_Island.UiTX_MainMenu_Record_StainedGlass_Island'
+    ReferencedTextures[5] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlassLight_01.UiTX_MainMenu_Record_StainedGlassLight_01'
+    ReferencedTextures[6] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlassLight_02.UiTX_MainMenu_Record_StainedGlassLight_02'
+    ReferencedTextures[7] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlassLight_04.UiTX_MainMenu_Record_StainedGlassLight_04'
+    ReferencedTextures[8] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlassLight_05.UiTX_MainMenu_Record_StainedGlassLight_05'
+    ReferencedTextures[9] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlassLight_06.UiTX_MainMenu_Record_StainedGlassLight_06'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[5] =
+                {
+                    ParameterInfos[0] = { Name=Num }
+                    ParameterInfos[1] = { Name=Switch }
+                    ParameterInfos[2] = { Name=Param }
+                    ParameterInfos[3] = { Name=Fine }
+                    ParameterInfos[4] = { Name=Gege }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Texture }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[5] = { 1, 0, 2, -0.35, 1 }
+        VectorValues[0] = {}
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlass_Island.UiTX_MainMenu_Record_StainedGlass_Island'
+        }
+    }
+    ReferencedTextures[11] =
+    {
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlass_Island.UiTX_MainMenu_Record_StainedGlass_Island'
+        ReferencedTextures[2] = Texture2D'/Game/UltimateRiverTool/Textures/Generic/T_Smoke_Tiled_D.T_Smoke_Tiled_D'
+        ReferencedTextures[3] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlassLight_04.UiTX_MainMenu_Record_StainedGlassLight_04'
+        ReferencedTextures[4] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlassLight_05.UiTX_MainMenu_Record_StainedGlassLight_05'
+        ReferencedTextures[5] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlassLight_02.UiTX_MainMenu_Record_StainedGlassLight_02'
+        ReferencedTextures[6] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlassLight_06.UiTX_MainMenu_Record_StainedGlassLight_06'
+        ReferencedTextures[7] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlassLight_01.UiTX_MainMenu_Record_StainedGlassLight_01'
+        ReferencedTextures[8] = Texture2D'/Game/UserInterface/GameOver/Texture/UiTX_GameOver_EF_Dust01.UiTX_GameOver_EF_Dust01'
+        ReferencedTextures[9] = Texture2D'/Game/UserInterface/GameOver/Texture/UiTX_GameOver_EF_Dust02.UiTX_GameOver_EF_Dust02'
+        ReferencedTextures[10] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Cloud.UiTX_Common_Cloud'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlass_Island.UiTX_MainMenu_Record_StainedGlass_Island'
+        Name = Texture
+        Group = None
+    }
+}
+CollectedScalarParameters[5] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=Num, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=Switch, Group=None }
+    CollectedScalarParameters[2] = { Value=2, Name=Param, Group=None }
+    CollectedScalarParameters[3] = { Value=-0.35, Name=Fine, Group=None }
+    CollectedScalarParameters[4] = { Value=1, Name=Gege, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[1] =
+{
+    TextureStreamingData[0] =
+    {
+        SamplingScale = 1.21875
+        UVChannelIndex = 0
+        TextureName = T_Smoke_Tiled_D
+    }
+}

@@ -1,0 +1,77 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[8] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_Target_musk2.UiTX_Battle_Target_musk2'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Cloud.UiTX_Common_Cloud'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Gr_Color01.UiTX_Common_Gr_Color01'
+    ReferencedTextures[3] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Gr_Color03.UiTX_Common_Gr_Color03'
+    ReferencedTextures[4] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Wave.UiTX_Common_Wave'
+    ReferencedTextures[5] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_Frame_Image.UiTX_MainMenu_WorldMap_Frame_Image'
+    ReferencedTextures[6] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_NightAdd.UiTX_MainMenu_WorldMap_FrameImage23_NightAdd'
+    ReferencedTextures[7] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_NoonAdd.UiTX_MainMenu_WorldMap_FrameImage23_NoonAdd'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[7] =
+                {
+                    ParameterInfos[0] = { Name=G }
+                    ParameterInfos[1] = { Name=NightGradMask2 }
+                    ParameterInfos[2] = { Name=Amount }
+                    ParameterInfos[3] = { Name=R }
+                    ParameterInfos[4] = { Name=NightGradMask }
+                    ParameterInfos[5] = { Name=GodLay }
+                    ParameterInfos[6] = { Name=B }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] = { ParameterInfos[0]={} }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[7] = { 1, 0.5, 0.3, 1, 0.35, 0, 1 }
+        VectorValues[0] = {}
+        TextureValues[0] = {}
+    }
+    ReferencedTextures[9] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_NoonAdd.UiTX_MainMenu_WorldMap_FrameImage23_NoonAdd'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Cloud.UiTX_Common_Cloud'
+        ReferencedTextures[3] = Texture2D'/Game/UserInterface/Battle/CharacterStatus/Texture/UiTX_Battle_Target_musk2.UiTX_Battle_Target_musk2'
+        ReferencedTextures[4] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Wave.UiTX_Common_Wave'
+        ReferencedTextures[5] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_NightAdd.UiTX_MainMenu_WorldMap_FrameImage23_NightAdd'
+        ReferencedTextures[6] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Gr_Color01.UiTX_Common_Gr_Color01'
+        ReferencedTextures[7] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_Frame_Image.UiTX_MainMenu_WorldMap_Frame_Image'
+        ReferencedTextures[8] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Gr_Color03.UiTX_Common_Gr_Color03'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[7] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=G, Group=None }
+    CollectedScalarParameters[1] = { Value=0.5, Name=NightGradMask2, Group=None }
+    CollectedScalarParameters[2] = { Value=0.3, Name=Amount, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=R, Group=None }
+    CollectedScalarParameters[4] = { Value=0.35, Name=NightGradMask, Group=None }
+    CollectedScalarParameters[5] = { Value=0, Name=GodLay, Group=None }
+    CollectedScalarParameters[6] = { Value=1, Name=B, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

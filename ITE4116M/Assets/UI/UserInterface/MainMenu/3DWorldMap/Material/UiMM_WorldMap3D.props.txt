@@ -1,0 +1,618 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[26] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Environment/Resource/Sky/Texture/EnvSkyTX_CloudShadow_A_cl.EnvSkyTX_CloudShadow_A_cl'
+    ReferencedTextures[1] = Texture2D'/Game/Environment/Resource/Sky/Texture/T_Sky54a2048LDR.T_Sky54a2048LDR'
+    ReferencedTextures[2] = Texture2D'/Game/Environment/Resource/Sky/Texture/T_Swirlmap.T_Swirlmap'
+    ReferencedTextures[3] = Texture2D'/Game/Environment/Resource/Water/Texture/T_NoisesBig_BC.T_NoisesBig_BC'
+    ReferencedTextures[4] = Texture2D'/Game/Environment/Resource/Water/Texture/T_SpecularHighlights.T_SpecularHighlights'
+    ReferencedTextures[5] = Texture2D'/Game/Environment/Resource/Water/Texture/T_Water_Ripple_Directional_Noise.T_Water_Ripple_Directional_Noise'
+    ReferencedTextures[6] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask01_cl.UiTX_WorldMap3D_AreaMask01_cl'
+    ReferencedTextures[7] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Cty01_mk.UiTX_WorldMap3D_AreaMask_Cty01_mk'
+    ReferencedTextures[8] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Dst01_mk.UiTX_WorldMap3D_AreaMask_Dst01_mk'
+    ReferencedTextures[9] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Fst01_mk.UiTX_WorldMap3D_AreaMask_Fst01_mk'
+    ReferencedTextures[10] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Isd01_mk.UiTX_WorldMap3D_AreaMask_Isd01_mk'
+    ReferencedTextures[11] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Mnt01_mk.UiTX_WorldMap3D_AreaMask_Mnt01_mk'
+    ReferencedTextures[12] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Sea01_mk.UiTX_WorldMap3D_AreaMask_Sea01_mk'
+    ReferencedTextures[13] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Snw01_mk.UiTX_WorldMap3D_AreaMask_Snw01_mk'
+    ReferencedTextures[14] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Wld01_mk.UiTX_WorldMap3D_AreaMask_Wld01_mk'
+    ReferencedTextures[15] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_cl.UiTX_WorldMap3D_cl'
+    ReferencedTextures[16] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_mk.UiTX_WorldMap3D_mk'
+    ReferencedTextures[17] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn01_cl.UiTX_WorldMap3D_Ocn01_cl'
+    ReferencedTextures[18] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn02_cl.UiTX_WorldMap3D_Ocn02_cl'
+    ReferencedTextures[19] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn03_cl.UiTX_WorldMap3D_Ocn03_cl'
+    ReferencedTextures[20] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn04_cl.UiTX_WorldMap3D_Ocn04_cl'
+    ReferencedTextures[21] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn05_cl.UiTX_WorldMap3D_Ocn05_cl'
+    ReferencedTextures[22] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn06_cl.UiTX_WorldMap3D_Ocn06_cl'
+    ReferencedTextures[23] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn07_cl.UiTX_WorldMap3D_Ocn07_cl'
+    ReferencedTextures[24] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn08_cl.UiTX_WorldMap3D_Ocn08_cl'
+    ReferencedTextures[25] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn09_cl.UiTX_WorldMap3D_Ocn09_cl'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[67] =
+                {
+                    ParameterInfos[0] = { Name=AreaMask_Ocn_8 }
+                    ParameterInfos[1] = { Name=AreaMask_Fst_3_2 }
+                    ParameterInfos[2] = { Name=SpeedX }
+                    ParameterInfos[3] = { Name=FakeSpec_UVScale }
+                    ParameterInfos[4] = { Name=AreaMask_Snw_1 }
+                    ParameterInfos[5] = { Name=FakeSpec_Speed }
+                    ParameterInfos[6] = { Name=AreaMask_Dst_3 }
+                    ParameterInfos[7] = { Name=AspectAjustZ }
+                    ParameterInfos[8] = { Name=Density }
+                    ParameterInfos[9] = { Name=AreaMask_Ocn_6 }
+                    ParameterInfos[10] = { Name=AspectAjustY }
+                    ParameterInfos[11] = { Name=AutoWave_NormalDepth }
+                    ParameterInfos[12] = { Name=DistanceField_ZOffset }
+                    ParameterInfos[13] = { Name=AreaMask_Cty_2_2 }
+                    ParameterInfos[14] = { Name=Radius }
+                    ParameterInfos[15] = { Name=AreaMask_Ocn_5 }
+                    ParameterInfos[16] = { Name=NoiseSpeed }
+                    ParameterInfos[17] = { Name=AreaMask_Ocn_3 }
+                    ParameterInfos[18] = { Name=NormalScaler }
+                    ParameterInfos[19] = { Name=AreaMask_Sea_3 }
+                    ParameterInfos[20] = { Name=AreaMask_Dst_1 }
+                    ParameterInfos[21] = { Name=FakeSpec_Intensity }
+                    ParameterInfos[22] = { Name=AreaMask_Wld_2 }
+                    ParameterInfos[23] = { Name=AreaMask_Ocn_9 }
+                    ParameterInfos[24] = { Name=UVDistortion_Turbulent }
+                    ParameterInfos[25] = { Name=AreaMask_Fst_3_1 }
+                    ParameterInfos[26] = { Name=Offset }
+                    ParameterInfos[27] = { Name=AreaMask_Cty_3 }
+                    ParameterInfos[28] = { Name=AreaMask_Ocn_2 }
+                    ParameterInfos[29] = { Name=AreaMask_Sea_2 }
+                    ParameterInfos[30] = { Name=AreaMask_Ocn_1 }
+                    ParameterInfos[31] = { Name=CloudMaskExponent }
+                    ParameterInfos[32] = { Name=SphereMaskExponent }
+                    ParameterInfos[33] = { Name=AreaMask_Fst_2 }
+                    ParameterInfos[34] = { Name=ReflectionDiffusivity }
+                    ParameterInfos[35] = { Name=AreaMask_Isd_3_1 }
+                    ParameterInfos[36] = { Name=Flowmap_Radius }
+                    ParameterInfos[37] = { Name=AreaMask_Cty_2_1 }
+                    ParameterInfos[38] = { Name=AreaMask_Snw_2 }
+                    ParameterInfos[39] = { Name=AreaMask_Wld_1 }
+                    ParameterInfos[40] = { Name=AreaMask_Dst_2 }
+                    ParameterInfos[41] = { Name=ReflectionScaleX }
+                    ParameterInfos[42] = { Name=AreaMask_Isd_3_2 }
+                    ParameterInfos[43] = { Name=AreaMask_Dst_0 }
+                    ParameterInfos[44] = { Name=AreaMask_Mnt_3 }
+                    ParameterInfos[45] = { Name=AreaMask_Isd_2 }
+                    ParameterInfos[46] = { Name=Flowmap_Intensity }
+                    ParameterInfos[47] = { Name=AreaMask_Cty_1 }
+                    ParameterInfos[48] = { Name=ReflectionScaleY }
+                    ParameterInfos[49] = { Name=AreaMask_Mnt_1 }
+                    ParameterInfos[50] = { Name=AreaMask_Ocn_7 }
+                    ParameterInfos[51] = { Name=AreaMask_Mnt_2 }
+                    ParameterInfos[52] = { Name=AreaMask_Wld_3 }
+                    ParameterInfos[53] = { Name=AreaMask_Ocn_4 }
+                    ParameterInfos[54] = { Name=AreaMask_Fst_1 }
+                    ParameterInfos[55] = { Name=AreaMask_Snw_0 }
+                    ParameterInfos[56] = { Name=Speed }
+                    ParameterInfos[57] = { Name=AutoWaveScale }
+                    ParameterInfos[58] = { Name=CloudShadowOpacity }
+                    ParameterInfos[59] = { Name=AreaMask_Snw_3 }
+                    ParameterInfos[60] = { Name=AreaMask_Isd_1 }
+                    ParameterInfos[61] = { Name=AreaMask_Sea_1 }
+                    ParameterInfos[62] = { Name=Fresnel_Distortion }
+                    ParameterInfos[63] = { Name=SpeedY }
+                    ParameterInfos[64] = { Name=Distortion_Strength }
+                    ParameterInfos[65] = { Name=ReflectionUVScale }
+                    ParameterInfos[66] = { Name=KirakiraMaskExponent }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[5] =
+                {
+                    ParameterInfos[0] = { Name=WorldSphereMaskColor }
+                    ParameterInfos[1] = { Name=ShadowColor }
+                    ParameterInfos[2] = { Name=Normal_Power }
+                    ParameterInfos[3] = { Name=OceanDiffuse }
+                    ParameterInfos[4] = { Name=LandColorStained }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[24] =
+                {
+                    ParameterInfos[0] = { Name=Noises }
+                    ParameterInfos[1] = { Name=AreaMaskTex_Sea01 }
+                    ParameterInfos[2] = { Name=AreaMaskTex_Cty01 }
+                    ParameterInfos[3] = { Name=MidDiffuse }
+                    ParameterInfos[4] = { Name=LinearNormal }
+                    ParameterInfos[5] = { Name=MidMask }
+                    ParameterInfos[6] = { Name=AreaMaskTex_Snw01 }
+                    ParameterInfos[7] = { Name=BackDiffuse }
+                    ParameterInfos[8] = { Name=AreaMaskTex_Mnt01 }
+                    ParameterInfos[9] = { Name=Tex_Ocn03 }
+                    ParameterInfos[10] = { Name=AreaMaskTex_Wld01 }
+                    ParameterInfos[11] = { Name=AreaMaskTex_Isd01 }
+                    ParameterInfos[12] = { Name=Tex_Ocn07 }
+                    ParameterInfos[13] = { Name=AreaMaskTex_Dst01 }
+                    ParameterInfos[14] = { Name=AreaMaskTex }
+                    ParameterInfos[15] = { Name=AreaMaskTex_Fst01 }
+                    ParameterInfos[16] = { Name=Tex_Ocn05 }
+                    ParameterInfos[17] = { Name=Tex_Ocn09 }
+                    ParameterInfos[18] = { Name=Tex_Ocn01 }
+                    ParameterInfos[19] = { Name=Tex_Ocn08 }
+                    ParameterInfos[20] = { Name=Tex_Ocn04 }
+                    ParameterInfos[21] = { Name=EnvTexture }
+                    ParameterInfos[22] = { Name=Tex_Ocn06 }
+                    ParameterInfos[23] = { Name=Tex_Ocn02 }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[67] =
+        {
+            ScalarValues[0] = 0
+            ScalarValues[1] = 0
+            ScalarValues[2] = 0.01
+            ScalarValues[3] = 0.08
+            ScalarValues[4] = 0
+            ScalarValues[5] = 0.3
+            ScalarValues[6] = 0
+            ScalarValues[7] = 3.3
+            ScalarValues[8] = 1
+            ScalarValues[9] = 0
+            ScalarValues[10] = 1.9
+            ScalarValues[11] = 17.6127
+            ScalarValues[12] = 133
+            ScalarValues[13] = 0
+            ScalarValues[14] = 0.4
+            ScalarValues[15] = 0
+            ScalarValues[16] = 1
+            ScalarValues[17] = 0
+            ScalarValues[18] = 7
+            ScalarValues[19] = 0
+            ScalarValues[20] = 0
+            ScalarValues[21] = 47.5335
+            ScalarValues[22] = 0
+            ScalarValues[23] = 0
+            ScalarValues[24] = 1
+            ScalarValues[25] = 0
+            ScalarValues[26] = 0.1
+            ScalarValues[27] = 0
+            ScalarValues[28] = 0
+            ScalarValues[29] = 0
+            ScalarValues[30] = 0
+            ScalarValues[31] = 0.507675
+            ScalarValues[32] = 0.507675
+            ScalarValues[33] = 0
+            ScalarValues[34] = 0.3
+            ScalarValues[35] = 0
+            ScalarValues[36] = 68.2375
+            ScalarValues[37] = 0
+            ScalarValues[38] = 0
+            ScalarValues[39] = 0
+            ScalarValues[40] = 0
+            ScalarValues[41] = 1
+            ScalarValues[42] = 0
+            ScalarValues[43] = 0
+            ScalarValues[44] = 0
+            ScalarValues[45] = 0
+            ScalarValues[46] = 6.38018
+            ScalarValues[47] = 0
+            ScalarValues[48] = 0.5
+            ScalarValues[49] = 0
+            ScalarValues[50] = 0
+            ScalarValues[51] = 0
+            ScalarValues[52] = 0
+            ScalarValues[53] = 0
+            ScalarValues[54] = 0
+            ScalarValues[55] = 0
+            ScalarValues[56] = 0.6
+            ScalarValues[57] = 0.377893
+            ScalarValues[58] = 3
+            ScalarValues[59] = 0
+            ScalarValues[60] = 0
+            ScalarValues[61] = 0
+            ScalarValues[62] = 6.96245
+            ScalarValues[63] = 0.02
+            ScalarValues[64] = 0.6
+            ScalarValues[65] = 0.07
+            ScalarValues[66] = 2
+        }
+        VectorValues[5] =
+        {
+            VectorValues[0] = { R=0.25, G=0.1, B=0, A=1 }
+            VectorValues[1] = { R=0.2, G=0.1, B=0, A=1 }
+            VectorValues[2] = { R=0.161134, G=0.43187, B=2.47898, A=1 }
+            VectorValues[3] = { R=0.15, G=0.18, B=0.2, A=1 }
+            VectorValues[4] = { R=1, G=1, B=1, A=1 }
+        }
+        TextureValues[24] =
+        {
+            TextureValues[0] = Texture2D'/Game/Environment/Resource/Water/Texture/T_NoisesBig_BC.T_NoisesBig_BC'
+            TextureValues[1] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Sea01_mk.UiTX_WorldMap3D_AreaMask_Sea01_mk'
+            TextureValues[2] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Cty01_mk.UiTX_WorldMap3D_AreaMask_Cty01_mk'
+            TextureValues[3] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_cl.UiTX_WorldMap3D_cl'
+            TextureValues[4] = Texture2D'/Game/Environment/Resource/Water/Texture/T_Water_Ripple_Directional_Noise.T_Water_Ripple_Directional_Noise'
+            TextureValues[5] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_mk.UiTX_WorldMap3D_mk'
+            TextureValues[6] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Snw01_mk.UiTX_WorldMap3D_AreaMask_Snw01_mk'
+            TextureValues[7] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_cl.UiTX_WorldMap3D_cl'
+            TextureValues[8] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Mnt01_mk.UiTX_WorldMap3D_AreaMask_Mnt01_mk'
+            TextureValues[9] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn03_cl.UiTX_WorldMap3D_Ocn03_cl'
+            TextureValues[10] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Wld01_mk.UiTX_WorldMap3D_AreaMask_Wld01_mk'
+            TextureValues[11] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Isd01_mk.UiTX_WorldMap3D_AreaMask_Isd01_mk'
+            TextureValues[12] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn07_cl.UiTX_WorldMap3D_Ocn07_cl'
+            TextureValues[13] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Dst01_mk.UiTX_WorldMap3D_AreaMask_Dst01_mk'
+            TextureValues[14] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask01_cl.UiTX_WorldMap3D_AreaMask01_cl'
+            TextureValues[15] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Fst01_mk.UiTX_WorldMap3D_AreaMask_Fst01_mk'
+            TextureValues[16] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn05_cl.UiTX_WorldMap3D_Ocn05_cl'
+            TextureValues[17] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn09_cl.UiTX_WorldMap3D_Ocn09_cl'
+            TextureValues[18] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn01_cl.UiTX_WorldMap3D_Ocn01_cl'
+            TextureValues[19] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn08_cl.UiTX_WorldMap3D_Ocn08_cl'
+            TextureValues[20] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn04_cl.UiTX_WorldMap3D_Ocn04_cl'
+            TextureValues[21] = Texture2D'/Game/Environment/Resource/Sky/Texture/T_Sky54a2048LDR.T_Sky54a2048LDR'
+            TextureValues[22] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn06_cl.UiTX_WorldMap3D_Ocn06_cl'
+            TextureValues[23] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn02_cl.UiTX_WorldMap3D_Ocn02_cl'
+        }
+    }
+    ReferencedTextures[26] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_cl.UiTX_WorldMap3D_cl'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_mk.UiTX_WorldMap3D_mk'
+        ReferencedTextures[2] = Texture2D'/Game/Environment/Resource/Water/Texture/T_SpecularHighlights.T_SpecularHighlights'
+        ReferencedTextures[3] = Texture2D'/Game/Environment/Resource/Water/Texture/T_NoisesBig_BC.T_NoisesBig_BC'
+        ReferencedTextures[4] = Texture2D'/Game/Environment/Resource/Water/Texture/T_Water_Ripple_Directional_Noise.T_Water_Ripple_Directional_Noise'
+        ReferencedTextures[5] = Texture2D'/Game/Environment/Resource/Sky/Texture/T_Sky54a2048LDR.T_Sky54a2048LDR'
+        ReferencedTextures[6] = Texture2D'/Game/Environment/Resource/Sky/Texture/EnvSkyTX_CloudShadow_A_cl.EnvSkyTX_CloudShadow_A_cl'
+        ReferencedTextures[7] = Texture2D'/Game/Environment/Resource/Sky/Texture/T_Swirlmap.T_Swirlmap'
+        ReferencedTextures[8] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn01_cl.UiTX_WorldMap3D_Ocn01_cl'
+        ReferencedTextures[9] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn02_cl.UiTX_WorldMap3D_Ocn02_cl'
+        ReferencedTextures[10] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn03_cl.UiTX_WorldMap3D_Ocn03_cl'
+        ReferencedTextures[11] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn04_cl.UiTX_WorldMap3D_Ocn04_cl'
+        ReferencedTextures[12] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn05_cl.UiTX_WorldMap3D_Ocn05_cl'
+        ReferencedTextures[13] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn06_cl.UiTX_WorldMap3D_Ocn06_cl'
+        ReferencedTextures[14] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn07_cl.UiTX_WorldMap3D_Ocn07_cl'
+        ReferencedTextures[15] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn08_cl.UiTX_WorldMap3D_Ocn08_cl'
+        ReferencedTextures[16] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn09_cl.UiTX_WorldMap3D_Ocn09_cl'
+        ReferencedTextures[17] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Mnt01_mk.UiTX_WorldMap3D_AreaMask_Mnt01_mk'
+        ReferencedTextures[18] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Dst01_mk.UiTX_WorldMap3D_AreaMask_Dst01_mk'
+        ReferencedTextures[19] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Cty01_mk.UiTX_WorldMap3D_AreaMask_Cty01_mk'
+        ReferencedTextures[20] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Isd01_mk.UiTX_WorldMap3D_AreaMask_Isd01_mk'
+        ReferencedTextures[21] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Wld01_mk.UiTX_WorldMap3D_AreaMask_Wld01_mk'
+        ReferencedTextures[22] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Sea01_mk.UiTX_WorldMap3D_AreaMask_Sea01_mk'
+        ReferencedTextures[23] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Fst01_mk.UiTX_WorldMap3D_AreaMask_Fst01_mk'
+        ReferencedTextures[24] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Snw01_mk.UiTX_WorldMap3D_AreaMask_Snw01_mk'
+        ReferencedTextures[25] = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask01_cl.UiTX_WorldMap3D_AreaMask01_cl'
+    }
+}
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[24] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Environment/Resource/Water/Texture/T_NoisesBig_BC.T_NoisesBig_BC'
+        Name = Noises
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Sea01_mk.UiTX_WorldMap3D_AreaMask_Sea01_mk'
+        Name = AreaMaskTex_Sea01
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Cty01_mk.UiTX_WorldMap3D_AreaMask_Cty01_mk'
+        Name = AreaMaskTex_Cty01
+        Group = None
+    }
+    CollectedTextureParameters[3] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_cl.UiTX_WorldMap3D_cl'
+        Name = MidDiffuse
+        Group = None
+    }
+    CollectedTextureParameters[4] =
+    {
+        Texture = Texture2D'/Game/Environment/Resource/Water/Texture/T_Water_Ripple_Directional_Noise.T_Water_Ripple_Directional_Noise'
+        Name = LinearNormal
+        Group = None
+    }
+    CollectedTextureParameters[5] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_mk.UiTX_WorldMap3D_mk'
+        Name = MidMask
+        Group = None
+    }
+    CollectedTextureParameters[6] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Snw01_mk.UiTX_WorldMap3D_AreaMask_Snw01_mk'
+        Name = AreaMaskTex_Snw01
+        Group = None
+    }
+    CollectedTextureParameters[7] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_cl.UiTX_WorldMap3D_cl'
+        Name = BackDiffuse
+        Group = None
+    }
+    CollectedTextureParameters[8] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Mnt01_mk.UiTX_WorldMap3D_AreaMask_Mnt01_mk'
+        Name = AreaMaskTex_Mnt01
+        Group = None
+    }
+    CollectedTextureParameters[9] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn03_cl.UiTX_WorldMap3D_Ocn03_cl'
+        Name = Tex_Ocn03
+        Group = None
+    }
+    CollectedTextureParameters[10] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Wld01_mk.UiTX_WorldMap3D_AreaMask_Wld01_mk'
+        Name = AreaMaskTex_Wld01
+        Group = None
+    }
+    CollectedTextureParameters[11] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Isd01_mk.UiTX_WorldMap3D_AreaMask_Isd01_mk'
+        Name = AreaMaskTex_Isd01
+        Group = None
+    }
+    CollectedTextureParameters[12] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn07_cl.UiTX_WorldMap3D_Ocn07_cl'
+        Name = Tex_Ocn07
+        Group = None
+    }
+    CollectedTextureParameters[13] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Dst01_mk.UiTX_WorldMap3D_AreaMask_Dst01_mk'
+        Name = AreaMaskTex_Dst01
+        Group = None
+    }
+    CollectedTextureParameters[14] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask01_cl.UiTX_WorldMap3D_AreaMask01_cl'
+        Name = AreaMaskTex
+        Group = None
+    }
+    CollectedTextureParameters[15] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_AreaMask_Fst01_mk.UiTX_WorldMap3D_AreaMask_Fst01_mk'
+        Name = AreaMaskTex_Fst01
+        Group = None
+    }
+    CollectedTextureParameters[16] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn05_cl.UiTX_WorldMap3D_Ocn05_cl'
+        Name = Tex_Ocn05
+        Group = None
+    }
+    CollectedTextureParameters[17] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn09_cl.UiTX_WorldMap3D_Ocn09_cl'
+        Name = Tex_Ocn09
+        Group = None
+    }
+    CollectedTextureParameters[18] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn01_cl.UiTX_WorldMap3D_Ocn01_cl'
+        Name = Tex_Ocn01
+        Group = None
+    }
+    CollectedTextureParameters[19] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn08_cl.UiTX_WorldMap3D_Ocn08_cl'
+        Name = Tex_Ocn08
+        Group = None
+    }
+    CollectedTextureParameters[20] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn04_cl.UiTX_WorldMap3D_Ocn04_cl'
+        Name = Tex_Ocn04
+        Group = None
+    }
+    CollectedTextureParameters[21] =
+    {
+        Texture = Texture2D'/Game/Environment/Resource/Sky/Texture/T_Sky54a2048LDR.T_Sky54a2048LDR'
+        Name = EnvTexture
+        Group = None
+    }
+    CollectedTextureParameters[22] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn06_cl.UiTX_WorldMap3D_Ocn06_cl'
+        Name = Tex_Ocn06
+        Group = None
+    }
+    CollectedTextureParameters[23] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/3DWorldMap/Texture/UiTX_WorldMap3D_Ocn02_cl.UiTX_WorldMap3D_Ocn02_cl'
+        Name = Tex_Ocn02
+        Group = None
+    }
+}
+CollectedScalarParameters[67] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=AreaMask_Ocn_8, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=AreaMask_Fst_3_2, Group=None }
+    CollectedScalarParameters[2] = { Value=0.01, Name=SpeedX, Group=None }
+    CollectedScalarParameters[3] = { Value=0.08, Name=FakeSpec_UVScale, Group=None }
+    CollectedScalarParameters[4] = { Value=0, Name=AreaMask_Snw_1, Group=None }
+    CollectedScalarParameters[5] = { Value=0.3, Name=FakeSpec_Speed, Group=None }
+    CollectedScalarParameters[6] = { Value=0, Name=AreaMask_Dst_3, Group=None }
+    CollectedScalarParameters[7] = { Value=3.3, Name=AspectAjustZ, Group=None }
+    CollectedScalarParameters[8] = { Value=1, Name=Density, Group=None }
+    CollectedScalarParameters[9] = { Value=0, Name=AreaMask_Ocn_6, Group=None }
+    CollectedScalarParameters[10] = { Value=1.9, Name=AspectAjustY, Group=None }
+    CollectedScalarParameters[11] =
+    {
+        Value = 17.6127
+        Name = AutoWave_NormalDepth
+        Group = None
+    }
+    CollectedScalarParameters[12] =
+    {
+        Value = 133
+        Name = DistanceField_ZOffset
+        Group = None
+    }
+    CollectedScalarParameters[13] = { Value=0, Name=AreaMask_Cty_2_2, Group=None }
+    CollectedScalarParameters[14] = { Value=0.4, Name=Radius, Group=None }
+    CollectedScalarParameters[15] = { Value=0, Name=AreaMask_Ocn_5, Group=None }
+    CollectedScalarParameters[16] = { Value=1, Name=NoiseSpeed, Group=None }
+    CollectedScalarParameters[17] = { Value=0, Name=AreaMask_Ocn_3, Group=None }
+    CollectedScalarParameters[18] = { Value=7, Name=NormalScaler, Group=None }
+    CollectedScalarParameters[19] = { Value=0, Name=AreaMask_Sea_3, Group=None }
+    CollectedScalarParameters[20] = { Value=0, Name=AreaMask_Dst_1, Group=None }
+    CollectedScalarParameters[21] =
+    {
+        Value = 47.5335
+        Name = FakeSpec_Intensity
+        Group = None
+    }
+    CollectedScalarParameters[22] = { Value=0, Name=AreaMask_Wld_2, Group=None }
+    CollectedScalarParameters[23] = { Value=0, Name=AreaMask_Ocn_9, Group=None }
+    CollectedScalarParameters[24] = { Value=1, Name=UVDistortion_Turbulent, Group=None }
+    CollectedScalarParameters[25] = { Value=0, Name=AreaMask_Fst_3_1, Group=None }
+    CollectedScalarParameters[26] = { Value=0.1, Name=Offset, Group=None }
+    CollectedScalarParameters[27] = { Value=0, Name=AreaMask_Cty_3, Group=None }
+    CollectedScalarParameters[28] = { Value=0, Name=AreaMask_Ocn_2, Group=None }
+    CollectedScalarParameters[29] = { Value=0, Name=AreaMask_Sea_2, Group=None }
+    CollectedScalarParameters[30] = { Value=0, Name=AreaMask_Ocn_1, Group=None }
+    CollectedScalarParameters[31] =
+    {
+        Value = 0.507675
+        Name = CloudMaskExponent
+        Group = None
+    }
+    CollectedScalarParameters[32] =
+    {
+        Value = 0.507675
+        Name = SphereMaskExponent
+        Group = None
+    }
+    CollectedScalarParameters[33] = { Value=0, Name=AreaMask_Fst_2, Group=None }
+    CollectedScalarParameters[34] =
+    {
+        Value = 0.3
+        Name = ReflectionDiffusivity
+        Group = None
+    }
+    CollectedScalarParameters[35] = { Value=0, Name=AreaMask_Isd_3_1, Group=None }
+    CollectedScalarParameters[36] = { Value=68.2375, Name=Flowmap_Radius, Group=None }
+    CollectedScalarParameters[37] = { Value=0, Name=AreaMask_Cty_2_1, Group=None }
+    CollectedScalarParameters[38] = { Value=0, Name=AreaMask_Snw_2, Group=None }
+    CollectedScalarParameters[39] = { Value=0, Name=AreaMask_Wld_1, Group=None }
+    CollectedScalarParameters[40] = { Value=0, Name=AreaMask_Dst_2, Group=None }
+    CollectedScalarParameters[41] = { Value=1, Name=ReflectionScaleX, Group=None }
+    CollectedScalarParameters[42] = { Value=0, Name=AreaMask_Isd_3_2, Group=None }
+    CollectedScalarParameters[43] = { Value=0, Name=AreaMask_Dst_0, Group=None }
+    CollectedScalarParameters[44] = { Value=0, Name=AreaMask_Mnt_3, Group=None }
+    CollectedScalarParameters[45] = { Value=0, Name=AreaMask_Isd_2, Group=None }
+    CollectedScalarParameters[46] =
+    {
+        Value = 6.38018
+        Name = Flowmap_Intensity
+        Group = None
+    }
+    CollectedScalarParameters[47] = { Value=0, Name=AreaMask_Cty_1, Group=None }
+    CollectedScalarParameters[48] = { Value=0.5, Name=ReflectionScaleY, Group=None }
+    CollectedScalarParameters[49] = { Value=0, Name=AreaMask_Mnt_1, Group=None }
+    CollectedScalarParameters[50] = { Value=0, Name=AreaMask_Ocn_7, Group=None }
+    CollectedScalarParameters[51] = { Value=0, Name=AreaMask_Mnt_2, Group=None }
+    CollectedScalarParameters[52] = { Value=0, Name=AreaMask_Wld_3, Group=None }
+    CollectedScalarParameters[53] = { Value=0, Name=AreaMask_Ocn_4, Group=None }
+    CollectedScalarParameters[54] = { Value=0, Name=AreaMask_Fst_1, Group=None }
+    CollectedScalarParameters[55] = { Value=0, Name=AreaMask_Snw_0, Group=None }
+    CollectedScalarParameters[56] = { Value=0.6, Name=Speed, Group=None }
+    CollectedScalarParameters[57] = { Value=0.377893, Name=AutoWaveScale, Group=None }
+    CollectedScalarParameters[58] = { Value=3, Name=CloudShadowOpacity, Group=None }
+    CollectedScalarParameters[59] = { Value=0, Name=AreaMask_Snw_3, Group=None }
+    CollectedScalarParameters[60] = { Value=0, Name=AreaMask_Isd_1, Group=None }
+    CollectedScalarParameters[61] = { Value=0, Name=AreaMask_Sea_1, Group=None }
+    CollectedScalarParameters[62] =
+    {
+        Value = 6.96245
+        Name = Fresnel_Distortion
+        Group = None
+    }
+    CollectedScalarParameters[63] = { Value=0.02, Name=SpeedY, Group=None }
+    CollectedScalarParameters[64] = { Value=0.6, Name=Distortion_Strength, Group=None }
+    CollectedScalarParameters[65] = { Value=0.07, Name=ReflectionUVScale, Group=None }
+    CollectedScalarParameters[66] = { Value=2, Name=KirakiraMaskExponent, Group=None }
+}
+CollectedVectorParameters[5] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0.25, G=0.1, B=0, A=1 }
+        Name = WorldSphereMaskColor
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0.2, G=0.1, B=0, A=1 }
+        Name = ShadowColor
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=0.161134, G=0.43187, B=2.47898, A=1 }
+        Name = Normal_Power
+        Group = None
+    }
+    CollectedVectorParameters[3] =
+    {
+        Value = { R=0.15, G=0.18, B=0.2, A=1 }
+        Name = OceanDiffuse
+        Group = None
+    }
+    CollectedVectorParameters[4] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = LandColorStained
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[4] =
+{
+    TextureStreamingData[0] =
+    {
+        SamplingScale = 0.234375
+        UVChannelIndex = 1
+        TextureName = T_Sky54a2048LDR
+    }
+    TextureStreamingData[1] =
+    {
+        SamplingScale = 12.5
+        UVChannelIndex = 0
+        TextureName = T_SpecularHighlights
+    }
+    TextureStreamingData[2] =
+    {
+        SamplingScale = 1
+        UVChannelIndex = 0
+        TextureName = T_Swirlmap
+    }
+    TextureStreamingData[3] =
+    {
+        SamplingScale = 13.2188
+        UVChannelIndex = 0
+        TextureName = T_Water_Ripple_Directional_Noise
+    }
+}

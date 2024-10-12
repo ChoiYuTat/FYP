@@ -1,0 +1,12 @@
+Diffuse=UiTX_Common_Gr_Color01
+Normal=UiTX_MainMenu_WorldMap_FrameImage23_NoonImage2
+Other[0]=UiTX_MainMenu_WorldMap_FrameImage23_Cloud
+Other[1]=UiTX_MainMenu_WorldMap_FrameImage23_Moon
+Other[2]=UiTX_MainMenu_WorldMap_FrameImage23_Planet
+Other[3]=UiTX_MainMenu_WorldMap_FrameImage23_Planet2
+Other[4]=UiTX_MainMenu_WorldMap_FrameImage23_Planet3
+Other[5]=UiTX_MainMenu_WorldMap_FrameImage23_Planet4
+Other[6]=UiTX_MainMenu_WorldMap_FrameImage23_Planet5
+Other[7]=UiTX_MainMenu_WorldMap_FrameImage23_Star
+Other[8]=UiTX_MainMenu_WorldMap_FrameImage23_Sun
+Other[9]=UiTX_MainMenu_WorldMap_FrameImage23_SunFace

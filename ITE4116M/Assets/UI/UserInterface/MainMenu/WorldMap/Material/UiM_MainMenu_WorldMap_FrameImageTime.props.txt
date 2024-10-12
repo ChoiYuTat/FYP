@@ -1,0 +1,174 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[12] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Gr_Color01.UiTX_Common_Gr_Color01'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Cloud.UiTX_MainMenu_WorldMap_FrameImage23_Cloud'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Moon.UiTX_MainMenu_WorldMap_FrameImage23_Moon'
+    ReferencedTextures[3] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_NoonImage2.UiTX_MainMenu_WorldMap_FrameImage23_NoonImage2'
+    ReferencedTextures[4] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet.UiTX_MainMenu_WorldMap_FrameImage23_Planet'
+    ReferencedTextures[5] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet2.UiTX_MainMenu_WorldMap_FrameImage23_Planet2'
+    ReferencedTextures[6] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet3.UiTX_MainMenu_WorldMap_FrameImage23_Planet3'
+    ReferencedTextures[7] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet4.UiTX_MainMenu_WorldMap_FrameImage23_Planet4'
+    ReferencedTextures[8] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet5.UiTX_MainMenu_WorldMap_FrameImage23_Planet5'
+    ReferencedTextures[9] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Star.UiTX_MainMenu_WorldMap_FrameImage23_Star'
+    ReferencedTextures[10] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Sun.UiTX_MainMenu_WorldMap_FrameImage23_Sun'
+    ReferencedTextures[11] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_SunFace.UiTX_MainMenu_WorldMap_FrameImage23_SunFace'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=ImageChange }
+                    ParameterInfos[1] = { Name=AnimationChange }
+                    ParameterInfos[2] = { Name=Param }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[11] =
+                {
+                    ParameterInfos[0] = { Name=Tex_Cloud }
+                    ParameterInfos[1] = { Name=Tex_Noon }
+                    ParameterInfos[2] = { Name=Param_Planet5 }
+                    ParameterInfos[3] = { Name=Tex_SunFace }
+                    ParameterInfos[4] = { Name=Param_Planet3 }
+                    ParameterInfos[5] = { Name=Tex_Sun }
+                    ParameterInfos[6] = { Name=Tex_Moon }
+                    ParameterInfos[7] = { Name=Param_Planet4 }
+                    ParameterInfos[8] = { Name=Tex_Star }
+                    ParameterInfos[9] = { Name=Param_Planet }
+                    ParameterInfos[10] = { Name=Param_Planet2 }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[3] = { 0, 0, 0 }
+        VectorValues[0] = {}
+        TextureValues[11] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Cloud.UiTX_MainMenu_WorldMap_FrameImage23_Cloud'
+            TextureValues[1] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_NoonImage2.UiTX_MainMenu_WorldMap_FrameImage23_NoonImage2'
+            TextureValues[2] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet5.UiTX_MainMenu_WorldMap_FrameImage23_Planet5'
+            TextureValues[3] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_SunFace.UiTX_MainMenu_WorldMap_FrameImage23_SunFace'
+            TextureValues[4] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet3.UiTX_MainMenu_WorldMap_FrameImage23_Planet3'
+            TextureValues[5] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Sun.UiTX_MainMenu_WorldMap_FrameImage23_Sun'
+            TextureValues[6] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Moon.UiTX_MainMenu_WorldMap_FrameImage23_Moon'
+            TextureValues[7] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet4.UiTX_MainMenu_WorldMap_FrameImage23_Planet4'
+            TextureValues[8] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Star.UiTX_MainMenu_WorldMap_FrameImage23_Star'
+            TextureValues[9] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet.UiTX_MainMenu_WorldMap_FrameImage23_Planet'
+            TextureValues[10] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet2.UiTX_MainMenu_WorldMap_FrameImage23_Planet2'
+        }
+    }
+    ReferencedTextures[13] =
+    {
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Gr_Color01.UiTX_Common_Gr_Color01'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_NoonImage2.UiTX_MainMenu_WorldMap_FrameImage23_NoonImage2'
+        ReferencedTextures[3] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_SunFace.UiTX_MainMenu_WorldMap_FrameImage23_SunFace'
+        ReferencedTextures[4] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Sun.UiTX_MainMenu_WorldMap_FrameImage23_Sun'
+        ReferencedTextures[5] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Cloud.UiTX_MainMenu_WorldMap_FrameImage23_Cloud'
+        ReferencedTextures[6] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Moon.UiTX_MainMenu_WorldMap_FrameImage23_Moon'
+        ReferencedTextures[7] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Star.UiTX_MainMenu_WorldMap_FrameImage23_Star'
+        ReferencedTextures[8] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet2.UiTX_MainMenu_WorldMap_FrameImage23_Planet2'
+        ReferencedTextures[9] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet3.UiTX_MainMenu_WorldMap_FrameImage23_Planet3'
+        ReferencedTextures[10] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet4.UiTX_MainMenu_WorldMap_FrameImage23_Planet4'
+        ReferencedTextures[11] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet5.UiTX_MainMenu_WorldMap_FrameImage23_Planet5'
+        ReferencedTextures[12] = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet.UiTX_MainMenu_WorldMap_FrameImage23_Planet'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[11] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Cloud.UiTX_MainMenu_WorldMap_FrameImage23_Cloud'
+        Name = Tex_Cloud
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_NoonImage2.UiTX_MainMenu_WorldMap_FrameImage23_NoonImage2'
+        Name = Tex_Noon
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet5.UiTX_MainMenu_WorldMap_FrameImage23_Planet5'
+        Name = Param_Planet5
+        Group = None
+    }
+    CollectedTextureParameters[3] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_SunFace.UiTX_MainMenu_WorldMap_FrameImage23_SunFace'
+        Name = Tex_SunFace
+        Group = None
+    }
+    CollectedTextureParameters[4] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet3.UiTX_MainMenu_WorldMap_FrameImage23_Planet3'
+        Name = Param_Planet3
+        Group = None
+    }
+    CollectedTextureParameters[5] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Sun.UiTX_MainMenu_WorldMap_FrameImage23_Sun'
+        Name = Tex_Sun
+        Group = None
+    }
+    CollectedTextureParameters[6] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Moon.UiTX_MainMenu_WorldMap_FrameImage23_Moon'
+        Name = Tex_Moon
+        Group = None
+    }
+    CollectedTextureParameters[7] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet4.UiTX_MainMenu_WorldMap_FrameImage23_Planet4'
+        Name = Param_Planet4
+        Group = None
+    }
+    CollectedTextureParameters[8] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Star.UiTX_MainMenu_WorldMap_FrameImage23_Star'
+        Name = Tex_Star
+        Group = None
+    }
+    CollectedTextureParameters[9] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet.UiTX_MainMenu_WorldMap_FrameImage23_Planet'
+        Name = Param_Planet
+        Group = None
+    }
+    CollectedTextureParameters[10] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/WorldMap/Texture/UiTX_MainMenu_WorldMap_FrameImage23_Planet2.UiTX_MainMenu_WorldMap_FrameImage23_Planet2'
+        Name = Param_Planet2
+        Group = None
+    }
+}
+CollectedScalarParameters[3] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=ImageChange, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=AnimationChange, Group=None }
+    CollectedScalarParameters[2] = { Value=0, Name=Param, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

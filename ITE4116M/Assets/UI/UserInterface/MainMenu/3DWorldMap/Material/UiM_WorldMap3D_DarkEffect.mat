@@ -1,0 +1,6 @@
+Diffuse=FxTX_Btl_Ref_A
+Opacity=FxTX_Btl_Ref_A
+Other[0]=FxTX_Env_smokerep_A
+Other[1]=FxTX_Ui_WorldmapDarkAura_A
+Other[2]=FxTX_Ui_WorldmapDarkAura_B
+Other[3]=FxTX_Ui_WorldmapDarkAuraFlow_A

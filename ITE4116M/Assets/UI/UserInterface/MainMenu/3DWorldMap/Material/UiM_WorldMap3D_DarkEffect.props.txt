@@ -1,0 +1,280 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[5] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Btl_Ref_A.FxTX_Btl_Ref_A'
+    ReferencedTextures[1] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Env_smokerep_A.FxTX_Env_smokerep_A'
+    ReferencedTextures[2] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAura_A.FxTX_Ui_WorldmapDarkAura_A'
+    ReferencedTextures[3] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAura_B.FxTX_Ui_WorldmapDarkAura_B'
+    ReferencedTextures[4] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAuraFlow_A.FxTX_Ui_WorldmapDarkAuraFlow_A'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[41] =
+                {
+                    ParameterInfos[0] = { Name=BaseTexTill_V }
+                    ParameterInfos[1] = { Name=BaseTex2Spd_X }
+                    ParameterInfos[2] = { Name=BasetexPower }
+                    ParameterInfos[3] = { Name=FlowPower2 }
+                    ParameterInfos[4] = { Name=OpacityTexSpd_X }
+                    ParameterInfos[5] = { Name=FlowTex2RotAngle }
+                    ParameterInfos[6] = { Name=FlowTexTill_V }
+                    ParameterInfos[7] = { Name=FlowTex2Spd_X }
+                    ParameterInfos[8] = { Name=TimeSpeed }
+                    ParameterInfos[9] = { Name=BaseTex2Spd_Y }
+                    ParameterInfos[10] = { Name=FlowTexSpd_Y }
+                    ParameterInfos[11] = { Name=MaskOffsetV }
+                    ParameterInfos[12] = { Name=TimeSpeed2 }
+                    ParameterInfos[13] = { Name=FlowTexRotAngle }
+                    ParameterInfos[14] = { Name=OpacityTexTile_U }
+                    ParameterInfos[15] = { Name=BaseTex2Till_U }
+                    ParameterInfos[16] = { Name=FlowTexTill_U }
+                    ParameterInfos[17] = { Name=OpacityTexRotAngle }
+                    ParameterInfos[18] = { Name=FlowTexSpd_X }
+                    ParameterInfos[19] = { Name=OpacityIntencity }
+                    ParameterInfos[20] = { Name=FlowTex2Spd_Y }
+                    ParameterInfos[21] = { Name=Time Control }
+                    ParameterInfos[22] = { Name=OpacityTex2Spd_Y }
+                    ParameterInfos[23] = { Name=BasetexEmissive }
+                    ParameterInfos[24] = { Name=ColorContrast }
+                    ParameterInfos[25] = { Name=BaseTex2Till_V }
+                    ParameterInfos[26] = { Name=OpacityPower }
+                    ParameterInfos[27] = { Name=OpacityTexIntencity }
+                    ParameterInfos[28] = { Name=FlowPower }
+                    ParameterInfos[29] = { Name=BaseTexSpd_X }
+                    ParameterInfos[30] = { Name=BaseTexRotAngle }
+                    ParameterInfos[31] = { Name=BaseTexTill_U }
+                    ParameterInfos[32] = { Name=FlowTex2Till_U }
+                    ParameterInfos[33] = { Name=OpacityTex2Spd_X }
+                    ParameterInfos[34] = { Name=OpacityTexSpd_Y }
+                    ParameterInfos[35] = { Name=BaseTex2RotAngle }
+                    ParameterInfos[36] = { Name=OpacityTexTile_V }
+                    ParameterInfos[37] = { Name=MaskOffsetU }
+                    ParameterInfos[38] = { Name=BaseTexSpd_Y }
+                    ParameterInfos[39] = { Name=OpacityTexPower }
+                    ParameterInfos[40] = { Name=FlowTex2Till_V }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=Color0 }
+                    ParameterInfos[1] = { Name=Color2 }
+                    ParameterInfos[2] = { Name=Color1 }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[6] =
+                {
+                    ParameterInfos[0] = { Name=Opacity2 }
+                    ParameterInfos[1] = { Name=FlowTex }
+                    ParameterInfos[2] = { Name=BaseTexture1 }
+                    ParameterInfos[3] = { Name=FlowTex2 }
+                    ParameterInfos[4] = { Name=BaseTexture2 }
+                    ParameterInfos[5] = { Name=Opacity }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[41] =
+        {
+            ScalarValues[0] = 0.3
+            ScalarValues[1] = 0.002
+            ScalarValues[2] = 0.9
+            ScalarValues[3] = 0.01
+            ScalarValues[4] = 0.05
+            ScalarValues[5] = 1
+            ScalarValues[6] = 0.3
+            ScalarValues[7] = 0.01
+            ScalarValues[8] = 0.1
+            ScalarValues[9] = 0.003
+            ScalarValues[10] = 0.005
+            ScalarValues[11] = 0
+            ScalarValues[12] = 0.15
+            ScalarValues[13] = 0
+            ScalarValues[14] = 0.1
+            ScalarValues[15] = 0.5
+            ScalarValues[16] = 0.3
+            ScalarValues[17] = 0
+            ScalarValues[18] = 0.01
+            ScalarValues[19] = 0.7
+            ScalarValues[20] = 0.005
+            ScalarValues[21] = 0.1
+            ScalarValues[22] = 0.02
+            ScalarValues[23] = 3
+            ScalarValues[24] = 1
+            ScalarValues[25] = 0.5
+            ScalarValues[26] = 0.3
+            ScalarValues[27] = 1
+            ScalarValues[28] = 0.01
+            ScalarValues[29] = 0.02
+            ScalarValues[30] = 0
+            ScalarValues[31] = 0.3
+            ScalarValues[32] = 0.5
+            ScalarValues[33] = 0.03
+            ScalarValues[34] = 0.04
+            ScalarValues[35] = 0
+            ScalarValues[36] = 0.2
+            ScalarValues[37] = 0
+            ScalarValues[38] = 0.02
+            ScalarValues[39] = 0.25
+            ScalarValues[40] = 0.5
+        }
+        VectorValues[3] =
+        {
+            VectorValues[0] = { R=0.017133, G=0.0008, B=0.04, A=1 }
+            VectorValues[1] = { R=0.018125, G=0.0075, B=0.05, A=1 }
+            VectorValues[2] = { R=0.058333, G=0.03, B=0.2, A=1 }
+        }
+        TextureValues[6] =
+        {
+            TextureValues[0] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Btl_Ref_A.FxTX_Btl_Ref_A'
+            TextureValues[1] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAuraFlow_A.FxTX_Ui_WorldmapDarkAuraFlow_A'
+            TextureValues[2] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAura_B.FxTX_Ui_WorldmapDarkAura_B'
+            TextureValues[3] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAuraFlow_A.FxTX_Ui_WorldmapDarkAuraFlow_A'
+            TextureValues[4] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAura_A.FxTX_Ui_WorldmapDarkAura_A'
+            TextureValues[5] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Env_smokerep_A.FxTX_Env_smokerep_A'
+        }
+    }
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Env_smokerep_A.FxTX_Env_smokerep_A'
+        ReferencedTextures[1] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAura_B.FxTX_Ui_WorldmapDarkAura_B'
+        ReferencedTextures[2] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAuraFlow_A.FxTX_Ui_WorldmapDarkAuraFlow_A'
+        ReferencedTextures[3] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAura_A.FxTX_Ui_WorldmapDarkAura_A'
+        ReferencedTextures[4] = Texture2D'/Game/Effect/Resource/Textures/FxTX_Btl_Ref_A.FxTX_Btl_Ref_A'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[6] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Effect/Resource/Textures/FxTX_Btl_Ref_A.FxTX_Btl_Ref_A'
+        Name = Opacity2
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAuraFlow_A.FxTX_Ui_WorldmapDarkAuraFlow_A'
+        Name = FlowTex
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAura_B.FxTX_Ui_WorldmapDarkAura_B'
+        Name = BaseTexture1
+        Group = None
+    }
+    CollectedTextureParameters[3] =
+    {
+        Texture = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAuraFlow_A.FxTX_Ui_WorldmapDarkAuraFlow_A'
+        Name = FlowTex2
+        Group = None
+    }
+    CollectedTextureParameters[4] =
+    {
+        Texture = Texture2D'/Game/Effect/Resource/Textures/FxTX_Ui_WorldmapDarkAura_A.FxTX_Ui_WorldmapDarkAura_A'
+        Name = BaseTexture2
+        Group = None
+    }
+    CollectedTextureParameters[5] =
+    {
+        Texture = Texture2D'/Game/Effect/Resource/Textures/FxTX_Env_smokerep_A.FxTX_Env_smokerep_A'
+        Name = Opacity
+        Group = None
+    }
+}
+CollectedScalarParameters[41] =
+{
+    CollectedScalarParameters[0] = { Value=0.3, Name=BaseTexTill_V, Group=None }
+    CollectedScalarParameters[1] = { Value=0.002, Name=BaseTex2Spd_X, Group=None }
+    CollectedScalarParameters[2] = { Value=0.9, Name=BasetexPower, Group=None }
+    CollectedScalarParameters[3] = { Value=0.01, Name=FlowPower2, Group=None }
+    CollectedScalarParameters[4] = { Value=0.05, Name=OpacityTexSpd_X, Group=None }
+    CollectedScalarParameters[5] = { Value=1, Name=FlowTex2RotAngle, Group=None }
+    CollectedScalarParameters[6] = { Value=0.3, Name=FlowTexTill_V, Group=None }
+    CollectedScalarParameters[7] = { Value=0.01, Name=FlowTex2Spd_X, Group=None }
+    CollectedScalarParameters[8] = { Value=0.1, Name=TimeSpeed, Group=None }
+    CollectedScalarParameters[9] = { Value=0.003, Name=BaseTex2Spd_Y, Group=None }
+    CollectedScalarParameters[10] = { Value=0.005, Name=FlowTexSpd_Y, Group=None }
+    CollectedScalarParameters[11] = { Value=0, Name=MaskOffsetV, Group=None }
+    CollectedScalarParameters[12] = { Value=0.15, Name=TimeSpeed2, Group=None }
+    CollectedScalarParameters[13] = { Value=0, Name=FlowTexRotAngle, Group=None }
+    CollectedScalarParameters[14] = { Value=0.1, Name=OpacityTexTile_U, Group=None }
+    CollectedScalarParameters[15] = { Value=0.5, Name=BaseTex2Till_U, Group=None }
+    CollectedScalarParameters[16] = { Value=0.3, Name=FlowTexTill_U, Group=None }
+    CollectedScalarParameters[17] = { Value=0, Name=OpacityTexRotAngle, Group=None }
+    CollectedScalarParameters[18] = { Value=0.01, Name=FlowTexSpd_X, Group=None }
+    CollectedScalarParameters[19] = { Value=0.7, Name=OpacityIntencity, Group=None }
+    CollectedScalarParameters[20] = { Value=0.005, Name=FlowTex2Spd_Y, Group=None }
+    CollectedScalarParameters[21] = { Value=0.1, Name=Time Control, Group=None }
+    CollectedScalarParameters[22] = { Value=0.02, Name=OpacityTex2Spd_Y, Group=None }
+    CollectedScalarParameters[23] = { Value=3, Name=BasetexEmissive, Group=None }
+    CollectedScalarParameters[24] = { Value=1, Name=ColorContrast, Group=None }
+    CollectedScalarParameters[25] = { Value=0.5, Name=BaseTex2Till_V, Group=None }
+    CollectedScalarParameters[26] = { Value=0.3, Name=OpacityPower, Group=None }
+    CollectedScalarParameters[27] = { Value=1, Name=OpacityTexIntencity, Group=None }
+    CollectedScalarParameters[28] = { Value=0.01, Name=FlowPower, Group=None }
+    CollectedScalarParameters[29] = { Value=0.02, Name=BaseTexSpd_X, Group=None }
+    CollectedScalarParameters[30] = { Value=0, Name=BaseTexRotAngle, Group=None }
+    CollectedScalarParameters[31] = { Value=0.3, Name=BaseTexTill_U, Group=None }
+    CollectedScalarParameters[32] = { Value=0.5, Name=FlowTex2Till_U, Group=None }
+    CollectedScalarParameters[33] = { Value=0.03, Name=OpacityTex2Spd_X, Group=None }
+    CollectedScalarParameters[34] = { Value=0.04, Name=OpacityTexSpd_Y, Group=None }
+    CollectedScalarParameters[35] = { Value=0, Name=BaseTex2RotAngle, Group=None }
+    CollectedScalarParameters[36] = { Value=0.2, Name=OpacityTexTile_V, Group=None }
+    CollectedScalarParameters[37] = { Value=0, Name=MaskOffsetU, Group=None }
+    CollectedScalarParameters[38] = { Value=0.02, Name=BaseTexSpd_Y, Group=None }
+    CollectedScalarParameters[39] = { Value=0.25, Name=OpacityTexPower, Group=None }
+    CollectedScalarParameters[40] = { Value=0.5, Name=FlowTex2Till_V, Group=None }
+}
+CollectedVectorParameters[3] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0.017133, G=0.0008, B=0.04, A=1 }
+        Name = Color0
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0.018125, G=0.0075, B=0.05, A=1 }
+        Name = Color2
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=0.058333, G=0.03, B=0.2, A=1 }
+        Name = Color1
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[1] =
+{
+    TextureStreamingData[0] =
+    {
+        SamplingScale = 0.296875
+        UVChannelIndex = 0
+        TextureName = FxTX_Ui_WorldmapDarkAuraFlow_A
+    }
+}

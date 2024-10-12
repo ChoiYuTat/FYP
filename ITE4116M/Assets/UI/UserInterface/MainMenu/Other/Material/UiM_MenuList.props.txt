@@ -1,0 +1,74 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/MainMenu/Other/Texture/UiTX_MainMenu_MenuList_Anim.UiTX_MainMenu_MenuList_Anim'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/MainMenu/Other/Texture/UiTX_MainMenu_MenuList_Base.UiTX_MainMenu_MenuList_Base'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/MainMenu/Other/Texture/UiTX_MainMenu_MenuList_Line.UiTX_MainMenu_MenuList_Line'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Focus }
+                    ParameterInfos[1] = { Name=Diside }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Tex }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[2] = { 0, 0 }
+        VectorValues[0] = {}
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/MainMenu/Other/Texture/UiTX_MainMenu_MenuList_Line.UiTX_MainMenu_MenuList_Line'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/MainMenu/Other/Texture/UiTX_MainMenu_MenuList_Base.UiTX_MainMenu_MenuList_Base'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/MainMenu/Other/Texture/UiTX_MainMenu_MenuList_Anim.UiTX_MainMenu_MenuList_Anim'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/MainMenu/Other/Texture/UiTX_MainMenu_MenuList_Line.UiTX_MainMenu_MenuList_Line'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/Other/Texture/UiTX_MainMenu_MenuList_Line.UiTX_MainMenu_MenuList_Line'
+        Name = Tex
+        Group = None
+    }
+}
+CollectedScalarParameters[2] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Focus, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=Diside, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -1,0 +1,86 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[4] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBase.BlendFunc_DefBase'
+    ReferencedTextures[1] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBlend.BlendFunc_DefBlend'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_Emblem_Forest.UiTX_MainMenu_Record_Emblem_Forest'
+    ReferencedTextures[3] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlass_EF_03.UiTX_MainMenu_Record_StainedGlass_EF_03'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=Enable }
+                    ParameterInfos[1] = { Name=Param }
+                    ParameterInfos[2] = { Name=Gege }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Texture }
+                    ParameterInfos[1] = { Name=Tex_MainMenu_Record_StainedGlass_EF_03 }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[3] = { 0, 0, 1 }
+        VectorValues[0] = {}
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_Emblem_Forest.UiTX_MainMenu_Record_Emblem_Forest'
+            TextureValues[1] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlass_EF_03.UiTX_MainMenu_Record_StainedGlass_EF_03'
+        }
+    }
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_Emblem_Forest.UiTX_MainMenu_Record_Emblem_Forest'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlass_EF_03.UiTX_MainMenu_Record_StainedGlass_EF_03'
+        ReferencedTextures[3] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBlend.BlendFunc_DefBlend'
+        ReferencedTextures[4] = Texture2D'/Engine/EngineMaterials/BlendFunc_DefBase.BlendFunc_DefBase'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_Emblem_Forest.UiTX_MainMenu_Record_Emblem_Forest'
+        Name = Texture
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/MainMenu/Record/Texture/UiTX_MainMenu_Record_StainedGlass_EF_03.UiTX_MainMenu_Record_StainedGlass_EF_03'
+        Name = Tex_MainMenu_Record_StainedGlass_EF_03
+        Group = None
+    }
+}
+CollectedScalarParameters[3] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Enable, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=Param, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=Gege, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}
