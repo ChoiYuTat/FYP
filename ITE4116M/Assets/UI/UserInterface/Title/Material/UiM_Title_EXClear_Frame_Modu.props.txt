@@ -1,0 +1,74 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_EXClear_Frame_Add.UiTX_Title_EXClear_Frame_Add'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[4] =
+                {
+                    ParameterInfos[0] = { Name=UV_AddX }
+                    ParameterInfos[1] = { Name=UV_AddY }
+                    ParameterInfos[2] = { Name=UV_MultiY }
+                    ParameterInfos[3] = { Name=UV_MultiX }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Tex_TitleEXCFM }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[4] = { 0, 0, 1, 1 }
+        VectorValues[0] = {}
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_EXClear_Frame_Add.UiTX_Title_EXClear_Frame_Add'
+        }
+    }
+    ReferencedTextures[1] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_EXClear_Frame_Add.UiTX_Title_EXClear_Frame_Add'
+    }
+}
+BlendMode = BLEND_Modulate (4)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_EXClear_Frame_Add.UiTX_Title_EXClear_Frame_Add'
+        Name = Tex_TitleEXCFM
+        Group = None
+    }
+}
+CollectedScalarParameters[4] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=UV_AddX, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=UV_AddY, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=UV_MultiY, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=UV_MultiX, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

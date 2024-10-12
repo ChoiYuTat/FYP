@@ -1,0 +1,7 @@
+Diffuse=DefaultDiffuse
+Normal=DefaultNormal
+Other[0]=LowResBlurredNoise
+Other[1]=T_Swirlmap
+Other[2]=UiTX_Common_Cloud
+Other[3]=UiTX_Title_CharaSelect_Tou_NightBg
+Other[4]=UiTX_Title_CharaSelect_Tou_NoonBg

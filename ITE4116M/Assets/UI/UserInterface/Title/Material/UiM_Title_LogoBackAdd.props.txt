@@ -1,0 +1,77 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_LogoAdd.UiTX_Title_LogoAdd'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_LogoBackAdd.UiTX_Title_LogoBackAdd'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] = { ParameterInfos[0]={} }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=Texture2 }
+                    ParameterInfos[1] = { Name=Texture }
+                    ParameterInfos[2] = { Name=Tex }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[0] = {}
+        VectorValues[0] = {}
+        TextureValues[3] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_LogoBackAdd.UiTX_Title_LogoBackAdd'
+            TextureValues[1] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_LogoAdd.UiTX_Title_LogoAdd'
+            TextureValues[2] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_LogoBackAdd.UiTX_Title_LogoBackAdd'
+        }
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_LogoBackAdd.UiTX_Title_LogoBackAdd'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_LogoAdd.UiTX_Title_LogoAdd'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[3] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_LogoBackAdd.UiTX_Title_LogoBackAdd'
+        Name = Texture2
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_LogoAdd.UiTX_Title_LogoAdd'
+        Name = Texture
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_LogoBackAdd.UiTX_Title_LogoBackAdd'
+        Name = Tex
+        Group = None
+    }
+}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

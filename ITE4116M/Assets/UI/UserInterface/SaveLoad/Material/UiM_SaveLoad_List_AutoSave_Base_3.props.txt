@@ -1,0 +1,88 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Base.UiTX_SaveLoad_List_Base'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Base02.UiTX_SaveLoad_List_Base02'
+    ReferencedTextures[2] = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Line.UiTX_SaveLoad_List_Line'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Param }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=Tex_SLLL }
+                    ParameterInfos[1] = { Name=Tex_SLLB }
+                    ParameterInfos[2] = { Name=Tex_SLLB02 }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[1] = { 0 }
+        VectorValues[0] = {}
+        TextureValues[3] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Line.UiTX_SaveLoad_List_Line'
+            TextureValues[1] = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Base.UiTX_SaveLoad_List_Base'
+            TextureValues[2] = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Base02.UiTX_SaveLoad_List_Base02'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Line.UiTX_SaveLoad_List_Line'
+        ReferencedTextures[1] = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Base02.UiTX_SaveLoad_List_Base02'
+        ReferencedTextures[2] = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Base.UiTX_SaveLoad_List_Base'
+    }
+}
+BlendMode = BLEND_AlphaComposite (5)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[3] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Line.UiTX_SaveLoad_List_Line'
+        Name = Tex_SLLL
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Base.UiTX_SaveLoad_List_Base'
+        Name = Tex_SLLB
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/UserInterface/SaveLoad/Texture/UiTX_SaveLoad_List_Base02.UiTX_SaveLoad_List_Base02'
+        Name = Tex_SLLB02
+        Group = None
+    }
+}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Param, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

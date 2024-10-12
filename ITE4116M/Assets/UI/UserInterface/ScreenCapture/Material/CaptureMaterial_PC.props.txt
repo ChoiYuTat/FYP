@@ -1,0 +1,161 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/PostProcess/Texture/FxTx_Env_GlitchNoice_B.FxTx_Env_GlitchNoice_B'
+    ReferencedTextures[1] = Texture2D'/Game/UserInterface/SPHere/Texture_x3/PS_SPHere_KUS2A_1_Day_IT.PS_SPHere_KUS2A_1_Day_IT'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[22] =
+                {
+                    ParameterInfos[0] = { Name=GridgeIntensity }
+                    ParameterInfos[1] = { Name=ScaleV_Layer3 }
+                    ParameterInfos[2] = { Name=X }
+                    ParameterInfos[3] = { Name=Layer2_Chroma_B }
+                    ParameterInfos[4] = { Name=Test }
+                    ParameterInfos[5] = { Name=DrawSizeY }
+                    ParameterInfos[6] = { Name=ScaleU_Layer3 }
+                    ParameterInfos[7] = { Name=Layer_2_Pos }
+                    ParameterInfos[8] = { Name=DrawSizeX }
+                    ParameterInfos[9] = { Name=PanningU_Layer3 }
+                    ParameterInfos[10] = { Name=Param }
+                    ParameterInfos[11] = { Name=LetterSizeY }
+                    ParameterInfos[12] = { Name=Layer2_Chroma_R }
+                    ParameterInfos[13] = { Name=U }
+                    ParameterInfos[14] = { Name=PanningV_Layer3 }
+                    ParameterInfos[15] = { Name=time }
+                    ParameterInfos[16] = { Name=V }
+                    ParameterInfos[17] = { Name=LetterSizeX }
+                    ParameterInfos[18] = { Name=Layer2_Chroma_G }
+                    ParameterInfos[19] = { Name=Y }
+                    ParameterInfos[20] = { Name=SineU_Layer3 }
+                    ParameterInfos[21] = { Name=SineV_Layer3 }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Silhouette }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Texture }
+                    ParameterInfos[1] = { Name=GlitchNoise }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[22] =
+        {
+            ScalarValues[0] = 1
+            ScalarValues[1] = 8
+            ScalarValues[2] = 0.5
+            ScalarValues[3] = 0.1
+            ScalarValues[4] = 4
+            ScalarValues[5] = 2160
+            ScalarValues[6] = 1
+            ScalarValues[7] = 0.99
+            ScalarValues[8] = 3840
+            ScalarValues[9] = 9.5
+            ScalarValues[10] = 0
+            ScalarValues[11] = 0
+            ScalarValues[12] = 0.01
+            ScalarValues[13] = 3
+            ScalarValues[14] = 1
+            ScalarValues[15] = 0.03
+            ScalarValues[16] = 10
+            ScalarValues[17] = 0
+            ScalarValues[18] = 0
+            ScalarValues[19] = 0.5
+            ScalarValues[20] = 3
+            ScalarValues[21] = 5
+        }
+        VectorValues[1] =
+        {
+            VectorValues[0] = { R=5, G=1, B=1, A=1 }
+        }
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/SPHere/Texture_x3/PS_SPHere_KUS2A_1_Day_IT.PS_SPHere_KUS2A_1_Day_IT'
+            TextureValues[1] = Texture2D'/Game/PostProcess/Texture/FxTx_Env_GlitchNoice_B.FxTx_Env_GlitchNoice_B'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/SPHere/Texture_x3/PS_SPHere_KUS2A_1_Day_IT.PS_SPHere_KUS2A_1_Day_IT'
+        ReferencedTextures[1] = Texture2D'/Game/PostProcess/Texture/FxTx_Env_GlitchNoice_B.FxTx_Env_GlitchNoice_B'
+    }
+}
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/SPHere/Texture_x3/PS_SPHere_KUS2A_1_Day_IT.PS_SPHere_KUS2A_1_Day_IT'
+        Name = Texture
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/PostProcess/Texture/FxTx_Env_GlitchNoice_B.FxTx_Env_GlitchNoice_B'
+        Name = GlitchNoise
+        Group = None
+    }
+}
+CollectedScalarParameters[22] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=GridgeIntensity, Group=None }
+    CollectedScalarParameters[1] = { Value=8, Name=ScaleV_Layer3, Group=None }
+    CollectedScalarParameters[2] = { Value=0.5, Name=X, Group=None }
+    CollectedScalarParameters[3] = { Value=0.1, Name=Layer2_Chroma_B, Group=None }
+    CollectedScalarParameters[4] = { Value=4, Name=Test, Group=None }
+    CollectedScalarParameters[5] = { Value=2160, Name=DrawSizeY, Group=None }
+    CollectedScalarParameters[6] = { Value=1, Name=ScaleU_Layer3, Group=None }
+    CollectedScalarParameters[7] = { Value=0.99, Name=Layer_2_Pos, Group=None }
+    CollectedScalarParameters[8] = { Value=3840, Name=DrawSizeX, Group=None }
+    CollectedScalarParameters[9] = { Value=9.5, Name=PanningU_Layer3, Group=None }
+    CollectedScalarParameters[10] = { Value=0, Name=Param, Group=None }
+    CollectedScalarParameters[11] = { Value=0, Name=LetterSizeY, Group=None }
+    CollectedScalarParameters[12] = { Value=0.01, Name=Layer2_Chroma_R, Group=None }
+    CollectedScalarParameters[13] = { Value=3, Name=U, Group=None }
+    CollectedScalarParameters[14] = { Value=1, Name=PanningV_Layer3, Group=None }
+    CollectedScalarParameters[15] = { Value=0.03, Name=time, Group=None }
+    CollectedScalarParameters[16] = { Value=10, Name=V, Group=None }
+    CollectedScalarParameters[17] = { Value=0, Name=LetterSizeX, Group=None }
+    CollectedScalarParameters[18] = { Value=0, Name=Layer2_Chroma_G, Group=None }
+    CollectedScalarParameters[19] = { Value=0.5, Name=Y, Group=None }
+    CollectedScalarParameters[20] = { Value=3, Name=SineU_Layer3, Group=None }
+    CollectedScalarParameters[21] = { Value=5, Name=SineV_Layer3, Group=None }
+}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=5, G=1, B=1, A=1 }
+        Name = Silhouette
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

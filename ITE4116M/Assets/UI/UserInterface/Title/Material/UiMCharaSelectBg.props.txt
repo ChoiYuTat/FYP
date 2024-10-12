@@ -1,0 +1,122 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[7] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+    ReferencedTextures[1] = Texture2D'/Engine/EngineMaterials/DefaultNormal.DefaultNormal'
+    ReferencedTextures[2] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/LowResBlurredNoise.LowResBlurredNoise'
+    ReferencedTextures[3] = Texture2D'/Game/Environment/Resource/Sky/Texture/T_Swirlmap.T_Swirlmap'
+    ReferencedTextures[4] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Cloud.UiTX_Common_Cloud'
+    ReferencedTextures[5] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_CharaSelect_Tou_NightBg.UiTX_Title_CharaSelect_Tou_NightBg'
+    ReferencedTextures[6] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_CharaSelect_Tou_NoonBg.UiTX_Title_CharaSelect_Tou_NoonBg'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[11] =
+                {
+                    ParameterInfos[0] = { Name=Density }
+                    ParameterInfos[1] = { Name=MonoFlip }
+                    ParameterInfos[2] = { Name=Param2 }
+                    ParameterInfos[3] = { Name=Mono2 }
+                    ParameterInfos[4] = { Name=Opa }
+                    ParameterInfos[5] = { Name=Mono }
+                    ParameterInfos[6] = { Name=Flip2 }
+                    ParameterInfos[7] = { Name=Param }
+                    ParameterInfos[8] = { Name=Smooth }
+                    ParameterInfos[9] = { Name=Opa2 }
+                    ParameterInfos[10] = { Name=Flip }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Bg2 }
+                    ParameterInfos[1] = { Name=Bg }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[11] = { 2, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0 }
+        VectorValues[0] = {}
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_CharaSelect_Tou_NightBg.UiTX_Title_CharaSelect_Tou_NightBg'
+            TextureValues[1] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_CharaSelect_Tou_NoonBg.UiTX_Title_CharaSelect_Tou_NoonBg'
+        }
+    }
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_CharaSelect_Tou_NoonBg.UiTX_Title_CharaSelect_Tou_NoonBg'
+        ReferencedTextures[2] = Texture2D'/Engine/EngineMaterials/DefaultNormal.DefaultNormal'
+        ReferencedTextures[3] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+        ReferencedTextures[4] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/LowResBlurredNoise.LowResBlurredNoise'
+        ReferencedTextures[5] = Texture2D'/Game/Environment/Resource/Sky/Texture/T_Swirlmap.T_Swirlmap'
+        ReferencedTextures[6] = Texture2D'/Game/UserInterface/Common/Texture/UiTX_Common_Cloud.UiTX_Common_Cloud'
+        ReferencedTextures[7] = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_CharaSelect_Tou_NightBg.UiTX_Title_CharaSelect_Tou_NightBg'
+    }
+}
+BlendMode = BLEND_AlphaComposite (5)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_CharaSelect_Tou_NightBg.UiTX_Title_CharaSelect_Tou_NightBg'
+        Name = Bg2
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/UserInterface/Title/Texture/UiTX_Title_CharaSelect_Tou_NoonBg.UiTX_Title_CharaSelect_Tou_NoonBg'
+        Name = Bg
+        Group = None
+    }
+}
+CollectedScalarParameters[11] =
+{
+    CollectedScalarParameters[0] = { Value=2, Name=Density, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=MonoFlip, Group=None }
+    CollectedScalarParameters[2] = { Value=0, Name=Param2, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=Mono2, Group=None }
+    CollectedScalarParameters[4] = { Value=1, Name=Opa, Group=None }
+    CollectedScalarParameters[5] = { Value=1, Name=Mono, Group=None }
+    CollectedScalarParameters[6] = { Value=0, Name=Flip2, Group=None }
+    CollectedScalarParameters[7] = { Value=0, Name=Param, Group=None }
+    CollectedScalarParameters[8] = { Value=0, Name=Smooth, Group=None }
+    CollectedScalarParameters[9] = { Value=1, Name=Opa2, Group=None }
+    CollectedScalarParameters[10] = { Value=0, Name=Flip, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[2] =
+{
+    TextureStreamingData[0] =
+    {
+        SamplingScale = 1
+        UVChannelIndex = 0
+        TextureName = LowResBlurredNoise
+    }
+    TextureStreamingData[1] =
+    {
+        SamplingScale = 1
+        UVChannelIndex = 0
+        TextureName = T_Swirlmap
+    }
+}
