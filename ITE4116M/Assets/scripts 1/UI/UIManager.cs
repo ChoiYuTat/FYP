@@ -1,118 +1,164 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Test {
-    public class UIManager
+/// <summary>
+/// Control the scene UI object push to stack or pop out from stack
+/// Control the dict info for manager
+/// </summary>
+[System.Serializable]
+public class UIManager
+{
+    /// <summary>
+    /// uiobject的字典中，Key为其对应的UIType中的Name,将其名称和对应的物体绑定上
+    /// </summary>
+    public Dictionary<string,GameObject> dict_uiObject;
+
+    /// <summary>
+    /// Stored all ui object to stack
+    /// </summary>
+    public Stack<BasePanel> stack_ui;
+
+    /// <summary>
+    /// 当前场景下的Canvas物体
+    /// </summary>
+    public GameObject CanvasObj;
+
+
+    private static UIManager instance;
+    /// <summary>
+    /// 获得UIManager的实体
+    /// </summary>
+    /// <returns>UIManager实体</returns>
+    public static UIManager GetInstance() 
     {
-        private static UIManager _instance;
-
-        private Transform _uiRoot;
-
-        public Dictionary<string, string> pathDict;
-
-        private Dictionary<string, GameObject> prefabDict;
-
-        private Dictionary<string, BasePanel> panelDict;
-        public static UIManager instance
+        if (instance == null)
         {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = new UIManager();
-                }
-                return _instance;
-            }
+            Debug.LogError("UIManager 实体不存在！");
+            return instance;
+        }
+        else 
+        {
+            return instance;
+        }
+    }
+
+
+    /// <summary>
+    /// 实例化UI栈以及Panel字典
+    /// </summary>
+    /// <param name="uIManager">UIManager实体</param>
+    public UIManager() 
+    {
+        instance = this;
+        dict_uiObject = new Dictionary<string, GameObject>();
+        stack_ui = new Stack<BasePanel>();
+    }
+    
+    public GameObject GetSingleObject(UIType ui_info) 
+    {
+        if (dict_uiObject.ContainsKey(ui_info.Name)) 
+        {
+            return dict_uiObject[ui_info.Name];
         }
 
-        public Transform UIRoot
+        if (CanvasObj == null)
         {
-            get
-            {
-                if(_uiRoot == null)
-                {
-                    if (GameObject.Find("Canvas"))
-                    {
-                        _uiRoot = GameObject.Find("Canvas").transform;
-                    }
-                    else
-                    {
-                        _uiRoot = new GameObject("Canvas").transform;
-                    }
-                }return _uiRoot;
-            }
+            Debug.Log("加载Canvas");
+            CanvasObj = UIMethods.GetInstance().FindCanvas();
         }
 
-        private UIManager()
+        if (!dict_uiObject.ContainsKey(ui_info.Name)) 
         {
-            IntDicts();
-        }
-
-        private void IntDicts()
-        {
-            panelDict = new Dictionary<string, BasePanel>();
-            prefabDict = new Dictionary<string, GameObject>();
-            pathDict = new Dictionary<string, string>()
+            if (CanvasObj == null)
             {
-                {UIConst.MainMenuPanel,"MainMenuPanel"},
-                {UIConst.UserPanel,"UserPanel"},
-                {UIConst.NewUserPanel,"NewUserPanel"},
-            };
-        }
-
-        public BasePanel OpenPanel(string name)
-        {
-            BasePanel panel = null;
-            if(panelDict.TryGetValue(name, out panel))
-            {
-                Debug.LogError("Open :" + name);
                 return null;
             }
-
-            string path = "";
-            if(!pathDict.TryGetValue(name , out path))
+            else 
             {
-                Debug.LogError("Error name : " + name);
-                return null;
+                //从本地加载一个物体并在场景中实例化
+                GameObject ui_obj = GameObject.Instantiate<GameObject>(Resources.Load<GameObject>(ui_info.Path), CanvasObj.transform);
+                return ui_obj;
             }
-
-            GameObject panelPrefab = null;
-            if(!prefabDict.TryGetValue(name,out panelPrefab))
-            {
-                string realPath = "Prefab/Panel/" + path;
-                panelPrefab = Resources.Load<GameObject>(realPath) as GameObject;
-                prefabDict.Add(name, panelPrefab);
-            }
-
-            GameObject panelObject = GameObject.Instantiate(panelPrefab, UIRoot, false);
-            panel = panelObject.GetComponent<BasePanel>();
-            panelDict.Add(name, panel);
-            return null;
         }
+        return null;
+    }
 
-        public bool ClosePanel(string name)
+    /// <summary>
+    /// ag:当startpanel推出时，其实用其身上的basepanel方法上面的Push方法，然后Base使用UIManager上的Push方法
+    /// ag:startpanel将其UIType传入basepanel,basepanel和UIManager交互的时候将其UIType参数传入到此
+    /// </summary>
+    /// <param name="basePanel_push">使用Push的panel的UIType</param>
+    public void Push(BasePanel basePanel_push) 
+    {
+        Debug.Log("执行Push");
+        if (stack_ui.Count > 0) 
         {
-            BasePanel panel = null;
-            if(!panelDict.TryGetValue(name , out panel))
-            {
-                Debug.LogError("NOT OPEN :" + name);
-                return false;
-            }
-
-            panel.closePanel();
-            return true;
+            //将栈顶的物体禁用
+            stack_ui.Peek().OnDisable();
         }
+
+        GameObject BasePanle_pushObj = GetSingleObject(basePanel_push.uiType);
+        dict_uiObject.Add(basePanel_push.uiType.Name, BasePanle_pushObj);
+
+        //关键步骤：将此Base Panel上的ActiveObj设为我们从本地获得的物体，从而使其可以在被子类继承时进行使用
+        basePanel_push.ActiveObj = BasePanle_pushObj;
+
+        if (stack_ui.Count == 0)
+        {
+            stack_ui.Push(basePanel_push);
+
+        }
+        else 
+        {
+            //入栈
+            if (stack_ui.Peek().uiType.Name != basePanel_push.uiType.Name)
+            {
+                stack_ui.Push(basePanel_push);
+            }
+        }
+        
+        basePanel_push.OnStart();
 
     }
 
 
-    public class UIConst
+    /// <summary>
+    /// 弹出
+    /// </summary>
+    /// <param name="isload">是否为加载场景</param>
+    public void Pop(bool isload)
     {
-        public const string MainMenuPanel = "MainMenuPanel";
-        public const string UserPanel = "UserPanel";
-        public const string NewUserPanel = "NewUserPanel";
+        if (isload == true)  
+        {
+            if (stack_ui.Count > 0)  
+            {
+                stack_ui.Peek().OnDisable();
+                stack_ui.Peek().OnDestory();
+                GameObject.Destroy(dict_uiObject[stack_ui.Peek().uiType.Name]);
+                dict_uiObject.Remove(stack_ui.Peek().uiType.Name);
+                stack_ui.Pop();
+                Pop(true);
+            }
+        }
 
+        if (isload == false)  
+        {
+            if (stack_ui.Count > 0)
+            {
+                stack_ui.Peek().OnDisable();
+                stack_ui.Peek().OnDestory();
+                GameObject.Destroy(dict_uiObject[stack_ui.Peek().uiType.Name]);
+                dict_uiObject.Remove(stack_ui.Peek().uiType.Name);
+                stack_ui.Pop();
+
+                if (stack_ui.Count > 0)
+                {
+                    stack_ui.Peek().OnEnable();
+                }
+
+            }
+        }
+        
     }
 }

@@ -18,9 +18,6 @@ public class luna : MonoBehaviour
     private Animator animator;
     private Vector2 looDirection = new Vector2(1, 0);
     private float moveScacle;
-    float h = Input.GetAxisRaw("Horizontal");
-    float v = Input.GetAxisRaw("Vertical");
-
     void Start()
     {
         RD = GetComponent<Rigidbody>();
