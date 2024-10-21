@@ -53,6 +53,7 @@ public class GameRoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (!UIManager.dict_uiObject.ContainsKey("MainMenuPanel"))
         {
             if (Input.GetKeyDown(KeyCode.Escape))

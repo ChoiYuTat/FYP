@@ -18,8 +18,14 @@ public class MainMenuPanel : BasePanel
     {
         base.OnStart();
         UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Exit").onClick.AddListener(Exit);
+        UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Character").onClick.AddListener(Character);
+
     }
 
+    private void Character()
+    {
+        GameRoot.GetInstance().UIManager_Root.Push(new CharacterPanel());
+    }
     private void Exit()
     {
         GameRoot.GetInstance().UIManager_Root.Pop(false);

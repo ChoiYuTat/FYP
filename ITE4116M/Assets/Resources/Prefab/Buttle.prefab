@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1973936251494433291
+--- !u!1 &4390977409672076088
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5408354713910715525}
-  - component: {fileID: 5447152686025675639}
-  - component: {fileID: 2118997614136493162}
-  - component: {fileID: 4568673702285122786}
-  - component: {fileID: 3491391882180682127}
+  - component: {fileID: 1849605644415691686}
+  - component: {fileID: 8399208894786085785}
+  - component: {fileID: 8059958958334641704}
+  - component: {fileID: 1935098176327351286}
+  - component: {fileID: 5841754134437030517}
   m_Layer: 5
   m_Name: Buttle
   m_TagString: Untagged
@@ -20,41 +20,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &5408354713910715525
+--- !u!224 &1849605644415691686
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973936251494433291}
+  m_GameObject: {fileID: 4390977409672076088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.3, y: 3.3, z: 3.3}
+  m_LocalScale: {x: 2.1945, y: 2.1945, z: 2.1945}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 3470829191137536901}
+  - {fileID: 4717258989601067713}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -670.20996, y: -20}
+  m_AnchoredPosition: {x: -445.68964, y: -13.300003}
   m_SizeDelta: {x: 151, y: 45}
   m_Pivot: {x: 0, y: 0}
---- !u!222 &5447152686025675639
+--- !u!222 &8399208894786085785
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973936251494433291}
+  m_GameObject: {fileID: 4390977409672076088}
   m_CullTransparentMesh: 1
---- !u!114 &2118997614136493162
+--- !u!114 &8059958958334641704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973936251494433291}
+  m_GameObject: {fileID: 4390977409672076088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -78,27 +78,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4568673702285122786
+--- !u!114 &1935098176327351286
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973936251494433291}
+  m_GameObject: {fileID: 4390977409672076088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfcc4334faa525645902000b6553861a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 2118997614136493162}
+  image: {fileID: 8059958958334641704}
   threshold: 0.5
---- !u!114 &3491391882180682127
+--- !u!114 &5841754134437030517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973936251494433291}
+  m_GameObject: {fileID: 4390977409672076088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -133,11 +133,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2118997614136493162}
+  m_TargetGraphic: {fileID: 8059958958334641704}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &8717393490167015188
+--- !u!1 &8849984291971912034
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,9 +145,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3470829191137536901}
-  - component: {fileID: 7905916846298827018}
-  - component: {fileID: 5355191658845213928}
+  - component: {fileID: 4717258989601067713}
+  - component: {fileID: 2592952838618894292}
+  - component: {fileID: 2190112985734752105}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -155,40 +155,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &3470829191137536901
+--- !u!224 &4717258989601067713
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8717393490167015188}
+  m_GameObject: {fileID: 8849984291971912034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5408354713910715525}
+  m_Father: {fileID: 1849605644415691686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.33333334}
   m_AnchorMax: {x: 0.7066667, y: 0.6888889}
   m_AnchoredPosition: {x: 4.2001953, y: -0.5}
   m_SizeDelta: {x: 44, y: 29}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7905916846298827018
+--- !u!222 &2592952838618894292
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8717393490167015188}
+  m_GameObject: {fileID: 8849984291971912034}
   m_CullTransparentMesh: 1
---- !u!114 &5355191658845213928
+--- !u!114 &2190112985734752105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8717393490167015188}
+  m_GameObject: {fileID: 8849984291971912034}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
