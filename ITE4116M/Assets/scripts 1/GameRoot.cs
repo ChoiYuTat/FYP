@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class GameRoot : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class GameRoot : MonoBehaviour
     private UIManager UIManager;
 
     public UIManager UIManager_Root;
+
+    private BatterCaracte BatterCaracte;
 
     private SceneControl SceneControl;
     public SceneControl SceneControl_Root { get => SceneControl; }
@@ -53,7 +57,6 @@ public class GameRoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (!UIManager.dict_uiObject.ContainsKey("MainMenuPanel"))
         {
             if (Input.GetKeyDown(KeyCode.Escape))

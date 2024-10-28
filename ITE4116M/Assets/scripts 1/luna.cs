@@ -1,10 +1,9 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class luna : MonoBehaviour
 {
-    private bool isclimb;
     private Rigidbody RD;
     public float movespeed;
     private Vector2 move;
@@ -88,18 +87,5 @@ public class luna : MonoBehaviour
         return currentHealth;
     }
 
-    public void cisclimb(bool off)
-    {
-        isclimb = off;
-        animator.SetBool("Climb", off);
-        Debug.Log("111");
-    }
-    public void climb(bool start)
-    {
-        Debug.Log("000");
-        isclimb = true;
-        animator.SetBool("Climb", start);
-        RD.useGravity = false;
-    }
 }
 
