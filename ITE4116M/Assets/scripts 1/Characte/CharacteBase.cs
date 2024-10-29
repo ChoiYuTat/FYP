@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CharacteBase : MonoBehaviour
 {
+    public string Name;
     public float MaxHp;
-    public float currentHP;
+    public float currentHp;
     public float MaxMp;
     public float currentMp;
     public float Attack;

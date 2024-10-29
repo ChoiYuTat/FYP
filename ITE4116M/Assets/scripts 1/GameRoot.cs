@@ -2,18 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 
 public class GameRoot : MonoBehaviour
 {
     private static GameRoot instance;
 
+    public BatterCaracte player;
+
     private UIManager UIManager;
 
     public UIManager UIManager_Root;
 
-    private BatterCaracte BatterCaracte;
-
+    public BatterCaracte BatterCaracte;
+    public UIManager PlayerHUD; 
+    public enum BatterState
+    {
+        Start,PlayerTurn,EnemyTurn,Win,Lose
+    }
+    public BatterState State;
+    public TextMeshProUGUI dualogText;
     private SceneControl SceneControl;
     public SceneControl SceneControl_Root { get => SceneControl; }
 
@@ -49,7 +57,7 @@ public class GameRoot : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         UIManager_Root.CanvasObj = UIMethods.GetInstance().FindCanvas();
-
+        batterStar();
 
 
     }
@@ -64,5 +72,17 @@ public class GameRoot : MonoBehaviour
                 UIManager_Root.Push(new MainMenuPanel());
             }
         }
+    }
+
+    public void batterStar()
+    {
+        State =  BatterState.Start;
+        SetupBatter();
+    }
+
+    private IEnumerable SetupBatter()
+    {
+        PlayerHUD.IntitHUD(player);
+        yield return new WaitForSeconds(1.5f);
     }
 }

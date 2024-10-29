@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 /// <summary>
 /// Control the scene UI object push to stack or pop out from stack
 /// Control the dict info for manager
@@ -9,6 +9,13 @@ using UnityEngine;
 [System.Serializable]
 public class UIManager
 {
+    public TextMeshProUGUI playerName;
+    public TextMeshProUGUI HP;
+    public TextMeshProUGUI MP;
+    public TextMeshProUGUI MaxHp;
+    public TextMeshProUGUI MaxMp;
+
+
     /// <summary>
     /// uiobject的字典中，Key为其对应的UIType中的Name,将其名称和对应的物体绑定上
     /// </summary>
@@ -161,4 +168,25 @@ public class UIManager
         }
         
     }
+
+    public void IntitHUD(BatterCaracte Characte)
+    {
+        playerName.text = Characte.Name;
+        HP.text = Characte.currentHp.ToString();
+        MP.text = Characte.currentMp.ToString();
+        Debug.Log(playerName.text);
+        Debug.Log(MP.text);
+        Debug.Log(HP.text);
+    }
+
+    public void UpdateHp(float hp)
+    {
+        HP.text = hp.ToString();
+    }
+
+    public void UpdateMp(float mp)
+    {
+        MP.text = mp.ToString();
+    }
+
 }
