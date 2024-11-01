@@ -14,7 +14,7 @@ public class test : MonoBehaviour
         UIManager.GetInstance().IntitHUD(player);
         TextMeshProUGUI.text = UIManager.GetInstance().playerName.ToString();
         Debug.Log(TextMeshProUGUI.text);
-        TextMeshProUGUI.text = player.Name;
+        TextMeshProUGUI.text = UIManager.GetInstance().playerName;
     }
 
     // Update is called once per frame

@@ -72,6 +72,14 @@ public class GameRoot : MonoBehaviour
                 UIManager_Root.Push(new MainMenuPanel());
             }
         }
+        if (!UIManager.dict_uiObject.ContainsKey("PlayerDatePanel"))
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                UIManager.IntitHUD(player);
+                UIManager_Root.Push(new PlayerDatePanel());
+            }
+        }
     }
 
     public void batterStar()

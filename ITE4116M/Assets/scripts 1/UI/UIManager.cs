@@ -9,11 +9,11 @@ using TMPro;
 [System.Serializable]
 public class UIManager
 {
-    public TextMeshProUGUI playerName;
-    public TextMeshProUGUI HP;
-    public TextMeshProUGUI MP;
-    public TextMeshProUGUI MaxHp;
-    public TextMeshProUGUI MaxMp;
+    public string playerName;
+    public string HP;
+    public string MP;
+    public string MaxHp;
+    public string MaxMp;
 
 
     /// <summary>
@@ -171,22 +171,31 @@ public class UIManager
 
     public void IntitHUD(BatterCaracte Characte)
     {
-        playerName.text = Characte.Name;
-        HP.text = Characte.currentHp.ToString();
-        MP.text = Characte.currentMp.ToString();
-        Debug.Log(playerName.text);
-        Debug.Log(MP.text);
-        Debug.Log(HP.text);
+        playerName = "";
+        playerName = Characte.Name;
+        HP = "";
+        HP = Characte.currentHp.ToString();
+        MaxHp = "";
+        MaxHp = Characte.MaxHp.ToString();
+        MP = "";
+        MP = Characte.currentHp.ToString();
+        MaxMp = "";
+        MaxMp = Characte.MaxMp.ToString();
+
+        Debug.Log(playerName);
+        Debug.Log(MP);
+        Debug.Log(HP);
     }
 
     public void UpdateHp(float hp)
     {
-        HP.text = hp.ToString();
+        HP = hp.ToString();
     }
 
     public void UpdateMp(float mp)
+    public void UpdateMp(float mp)
     {
-        MP.text = mp.ToString();
+        MP = mp.ToString();
     }
 
 }
