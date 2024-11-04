@@ -12,4 +12,23 @@ public class DialogPanel : BasePanel
     {
 
     }
+
+    public override void OnStart()
+    {
+        base.OnStart();
+    }
+    public override void OnEnable()
+    {
+        base.OnEnable();
+    }
+
+    public override void OnDisable()
+    {
+        base.OnDisable();
+    }
+
+    public override void OnDestory()
+    {
+        base.OnDestory();
+    }
 }

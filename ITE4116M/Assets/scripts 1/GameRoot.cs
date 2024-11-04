@@ -98,7 +98,6 @@ public class GameRoot : MonoBehaviour
     {
         BatterCaracte = PlayerPrefab.GetComponent<BatterCaracte>();
         BatterEmeny = EnemyPrefab.GetComponent<BatterEmeny>();
-        dialog = DialogPrefab.GetComponent<Dialog>();
         PlayerHUD.IntitHUD(BatterCaracte);
         Debug.Log("::" + PlayerHUD.playerName);
         if (Playertransform != null && Enemytransform != null)

@@ -6,12 +6,13 @@ using TMPro;
 public class Dialog : MonoBehaviour
 {
     public TextMeshProUGUI dialog;
-    private void Awake()
+    private void Start()
     {
-        dialog.text = "";
+        dialog = transform.GetComponent<TextMeshProUGUI>();
     }
     public void changeText(string str)
     {
+        GameRoot.GetInstance().dialog = transform.GetComponent<Dialog>();
         Debug.Log("str = " + str);
         dialog.text = str;
     }
