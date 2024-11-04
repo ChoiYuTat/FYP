@@ -7,9 +7,8 @@ using TMPro;
 public class GameRoot : MonoBehaviour
 {
     private static GameRoot instance;
-
+    
     private UIManager UIManager;
-
     public UIManager UIManager_Root;
 
     public BatterCaracte BatterCaracte;
@@ -20,6 +19,9 @@ public class GameRoot : MonoBehaviour
 
     public GameObject PlayerPrefab;
     public GameObject EnemyPrefab;
+    public GameObject DialogPrefab;
+
+    public Dialog dialog;
 
     public Transform Playertransform;
     public Transform Enemytransform;
@@ -96,6 +98,7 @@ public class GameRoot : MonoBehaviour
     {
         BatterCaracte = PlayerPrefab.GetComponent<BatterCaracte>();
         BatterEmeny = EnemyPrefab.GetComponent<BatterEmeny>();
+        dialog = DialogPrefab.GetComponent<Dialog>();
         PlayerHUD.IntitHUD(BatterCaracte);
         Debug.Log("::" + PlayerHUD.playerName);
         if (Playertransform != null && Enemytransform != null)
@@ -105,16 +108,21 @@ public class GameRoot : MonoBehaviour
         }
         UIManager_Root.Push(new PlayerDatePanel());
         UIManager_Root.Push(new DialogPanel());
-
+        dialog.changeText("star");
         yield return new WaitForSeconds(1.5f);
+
 
         if(BatterCaracte.speed > BatterEmeny.speed)
         {
             State = BatterState.PlayerTurn;
+            dialog.changeText("Your Turn");
+            Debug.Log(BatterCaracte.speed);
         }
         else
         {
             State = BatterState.EnemyTurn;
+            dialog.changeText("Enemy Turn");
+            Debug.Log(BatterEmeny.speed);
         }
     }
 }

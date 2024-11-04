@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class DialogPanel : BasePanel
 {
     private static string name = "DialogPanel";
@@ -10,25 +11,5 @@ public class DialogPanel : BasePanel
     public DialogPanel() : base(uIType)
     {
 
-    }
-
-    public override void OnStart()
-    {
-        base.OnStart();
-    }
-
-    public override void OnEnable()
-    {
-        base.OnEnable();
-    }
-
-    public override void OnDisable()
-    {
-        base.OnDisable();
-    }
-
-    public override void OnDestory()
-    {
-        base.OnDestory();
     }
 }

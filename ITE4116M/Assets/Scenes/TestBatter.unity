@@ -557,6 +557,9 @@ MonoBehaviour:
     type: 3}
   EnemyPrefab: {fileID: 2950451903409406627, guid: f87fc9f0e58586145808da3fa3df6f41,
     type: 3}
+  DialogPrefab: {fileID: 30624651422593914, guid: 901c8f0a0934e3040aa981bc446289c9,
+    type: 3}
+  dialog: {fileID: 0}
   Playertransform: {fileID: 2008533034937179196}
   Enemytransform: {fileID: 8159411563268840681}
   State: 0

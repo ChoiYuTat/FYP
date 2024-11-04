@@ -128,3 +128,4 @@ MonoBehaviour:
   Level: 1
   MaxExp: 100
   currentExp: 0
+  speed: 15
