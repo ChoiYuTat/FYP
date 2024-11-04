@@ -191,8 +191,6 @@ public class UIManager
     {
         HP = hp.ToString();
     }
-
-    public void UpdateMp(float mp)
     public void UpdateMp(float mp)
     {
         MP = mp.ToString();

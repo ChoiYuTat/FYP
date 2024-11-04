@@ -15,7 +15,10 @@ public class GameRoot : MonoBehaviour
     public UIManager UIManager_Root;
 
     public BatterCaracte BatterCaracte;
-    public UIManager PlayerHUD; 
+    public UIManager PlayerHUD;
+
+    public GameObject PlayerPrefab;
+    public GameObject EnemyPrefab;
     public enum BatterState
     {
         Start,PlayerTurn,EnemyTurn,Win,Lose
@@ -76,7 +79,7 @@ public class GameRoot : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                UIManager.IntitHUD(player);
+                batterStar();
                 UIManager_Root.Push(new PlayerDatePanel());
             }
         }
@@ -91,6 +94,7 @@ public class GameRoot : MonoBehaviour
     private IEnumerable SetupBatter()
     {
         PlayerHUD.IntitHUD(player);
+        
         yield return new WaitForSeconds(1.5f);
     }
 }
