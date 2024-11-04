@@ -17,9 +17,9 @@ public class PlayerDatePanel : BasePanel
     public override void OnStart()
     {
         base.OnStart();
-        UIMethods.GetInstance().GetOrAddSingleComponentInChild<TextMeshProUGUI>(ActiveObj, "PlayerName").text = UIManager.GetInstance().playerName;
-        UIMethods.GetInstance().GetOrAddSingleComponentInChild<TextMeshProUGUI>(ActiveObj, "MPcurrentText").text = UIManager.GetInstance().MP;
-        UIMethods.GetInstance().GetOrAddSingleComponentInChild<TextMeshProUGUI>(ActiveObj, "HPcurrentText").text = UIManager.GetInstance().HP;
+        UIMethods.GetInstance().GetOrAddSingleComponentInChild<TextMeshProUGUI>(ActiveObj, "PlayerName").text = GameRoot.GetInstance().PlayerHUD.playerName;
+        UIMethods.GetInstance().GetOrAddSingleComponentInChild<TextMeshProUGUI>(ActiveObj, "MPcurrentText").text = GameRoot.GetInstance().PlayerHUD.MP; 
+        UIMethods.GetInstance().GetOrAddSingleComponentInChild<TextMeshProUGUI>(ActiveObj, "HPcurrentText").text = GameRoot.GetInstance().PlayerHUD.HP; 
     }
     public override void OnEnable()
     {

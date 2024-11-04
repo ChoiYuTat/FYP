@@ -8,17 +8,22 @@ public class GameRoot : MonoBehaviour
 {
     private static GameRoot instance;
 
-    public BatterCaracte player;
-
     private UIManager UIManager;
 
     public UIManager UIManager_Root;
 
     public BatterCaracte BatterCaracte;
+    public BatterEmeny BatterEmeny;
+
     public UIManager PlayerHUD;
+    public UIManager EnemyHUD;
 
     public GameObject PlayerPrefab;
     public GameObject EnemyPrefab;
+
+    public Transform Playertransform;
+    public Transform Enemytransform;
+
     public enum BatterState
     {
         Start,PlayerTurn,EnemyTurn,Win,Lose
@@ -60,9 +65,6 @@ public class GameRoot : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         UIManager_Root.CanvasObj = UIMethods.GetInstance().FindCanvas();
-        batterStar();
-
-
     }
 
     // Update is called once per frame
@@ -80,7 +82,6 @@ public class GameRoot : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 batterStar();
-                UIManager_Root.Push(new PlayerDatePanel());
             }
         }
     }
@@ -88,13 +89,32 @@ public class GameRoot : MonoBehaviour
     public void batterStar()
     {
         State =  BatterState.Start;
-        SetupBatter();
+        StartCoroutine(SetupBatter());
     }
 
-    private IEnumerable SetupBatter()
+    private IEnumerator SetupBatter()
     {
-        PlayerHUD.IntitHUD(player);
-        
+        BatterCaracte = PlayerPrefab.GetComponent<BatterCaracte>();
+        BatterEmeny = EnemyPrefab.GetComponent<BatterEmeny>();
+        PlayerHUD.IntitHUD(BatterCaracte);
+        Debug.Log("::" + PlayerHUD.playerName);
+        if (Playertransform != null && Enemytransform != null)
+        {
+            Instantiate(PlayerPrefab, Playertransform.position, Quaternion.identity);
+            Instantiate(EnemyPrefab, Enemytransform.position, Quaternion.identity);
+        }
+        UIManager_Root.Push(new PlayerDatePanel());
+        UIManager_Root.Push(new DialogPanel());
+
         yield return new WaitForSeconds(1.5f);
+
+        if(BatterCaracte.speed > BatterEmeny.speed)
+        {
+            State = BatterState.PlayerTurn;
+        }
+        else
+        {
+            State = BatterState.EnemyTurn;
+        }
     }
 }

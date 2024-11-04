@@ -14,13 +14,16 @@ public class CharacteBase : MonoBehaviour
     public float Level;
     public float MaxExp;
     public float currentExp;
-
+    public float speed;
     protected virtual void Awake()
     {
 
     }
     protected virtual void Start()
     {
+        currentHp = MaxHp;
+        currentMp = MaxMp;
+
 
     }
 }
