@@ -172,15 +172,15 @@ public class UIManager
     public void IntitHUD(BatterCaracte Characte)
     {
         playerName = "";
-        playerName = Characte.Name;
+        this.playerName = Characte.Name;
         HP = "";
-        HP = Characte.currentHp.ToString();
+        this.HP = Characte.currentHp.ToString();
         MaxHp = "";
-        MaxHp = Characte.MaxHp.ToString();
+        this.MaxHp = Characte.MaxHp.ToString();
         MP = "";
-        MP = Characte.currentHp.ToString();
+        this.MP = Characte.currentHp.ToString();
         MaxMp = "";
-        MaxMp = Characte.MaxMp.ToString();
+        this.MaxMp = Characte.MaxMp.ToString();
 
         Debug.Log(playerName);
         Debug.Log(MP);
