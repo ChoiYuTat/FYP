@@ -107,7 +107,6 @@ public class GameRoot : MonoBehaviour
         }
         UIManager_Root.Push(new PlayerDatePanel());
         UIManager_Root.Push(new DialogPanel());
-        dialog.changeText("star");
         yield return new WaitForSeconds(1.5f);
 
 
