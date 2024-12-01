@@ -169,7 +169,7 @@ public class UIManager
         
     }
 
-    public void IntitHUD(BatterCaracte Characte)
+    public void IntitHUD(CharacteBase Characte)
     {
         playerName = "";
         this.playerName = Characte.Name;

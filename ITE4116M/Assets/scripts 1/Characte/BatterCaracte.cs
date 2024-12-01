@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BatterCaracte : CharacteBase
 {
+    public UIManager UIManager_Root;
+
     protected override void Awake()
     {
         base.Awake();
@@ -12,5 +14,5 @@ public class BatterCaracte : CharacteBase
     {
         base.Start();
     }
-
 }
+

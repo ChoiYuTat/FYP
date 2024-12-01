@@ -6,7 +6,11 @@ using TMPro;
 
 public class GameRoot : MonoBehaviour
 {
+    int i = 0;
     private static GameRoot instance;
+    
+    public CharacteBase player;
+    public CharacteBase enemy;
     
     private UIManager UIManager;
     public UIManager UIManager_Root;
@@ -26,9 +30,13 @@ public class GameRoot : MonoBehaviour
     public Transform Playertransform;
     public Transform Enemytransform;
 
+    public Transform[] BattleChoosePos;
+    public GameObject chooseAction;
+    public GameObject choosePanel;
+
     public enum BatterState
     {
-        Start,PlayerTurn,EnemyTurn,Win,Lose
+        Start,PlayerTurn,EnemyTurn,Win,Lose,Wait
     }
     public BatterState State;
     public TextMeshProUGUI dualogText;
@@ -67,6 +75,8 @@ public class GameRoot : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         UIManager_Root.CanvasObj = UIMethods.GetInstance().FindCanvas();
+        State = BatterState.Start;
+        StartCoroutine(SetupBatter());
     }
 
     // Update is called once per frame
@@ -79,12 +89,9 @@ public class GameRoot : MonoBehaviour
                 UIManager_Root.Push(new MainMenuPanel());
             }
         }
-        if (!UIManager.dict_uiObject.ContainsKey("PlayerDatePanel"))
+        if (State == BatterState.PlayerTurn)
         {
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                batterStar();
-            }
+            BattleChoose();
         }
     }
 
@@ -96,16 +103,12 @@ public class GameRoot : MonoBehaviour
 
     private IEnumerator SetupBatter()
     {
-        BatterCaracte = PlayerPrefab.GetComponent<BatterCaracte>();
-        BatterEmeny = EnemyPrefab.GetComponent<BatterEmeny>();
-        PlayerHUD.IntitHUD(BatterCaracte);
         Debug.Log("::" + PlayerHUD.playerName);
         if (Playertransform != null && Enemytransform != null)
         {
             Instantiate(PlayerPrefab, Playertransform.position, Quaternion.identity);
             Instantiate(EnemyPrefab, Enemytransform.position, Quaternion.identity);
         }
-        UIManager_Root.Push(new PlayerDatePanel());
         UIManager_Root.Push(new DialogPanel());
         yield return new WaitForSeconds(1.5f);
 
@@ -113,7 +116,7 @@ public class GameRoot : MonoBehaviour
         if(BatterCaracte.speed > BatterEmeny.speed)
         {
             State = BatterState.PlayerTurn;
-            dialog.changeText("Your Turn");
+            PlayerTurn();
             Debug.Log(BatterCaracte.speed);
         }
         else
@@ -122,5 +125,68 @@ public class GameRoot : MonoBehaviour
             dialog.changeText("Enemy Turn");
             Debug.Log(BatterEmeny.speed);
         }
+    }
+
+    private void PlayerTurn()
+    {
+        dialog.changeText("Your Turn");
+        UIManager_Root.Push(new ChoosePanel());
+    }
+
+    private void BattleChoose()
+    {
+        Debug.Log(i);
+        if (i > 0)
+        {
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                i -= 1;
+                chooseAction.transform.position = BattleChoosePos[i].position;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            i += 1;
+            chooseAction.transform.position = BattleChoosePos[i].position;
+        }
+        if (i == BattleChoosePos.Length)
+        {
+            i = 0;
+            chooseAction.transform.position = BattleChoosePos[i].position;
+        }
+        if (Input.GetKey(KeyCode.Z))
+        {
+            switch (i)
+            {
+                case 0:
+                    StartCoroutine(PlayerAttack());
+                    break;
+                case 1:
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    private IEnumerator PlayerAttack()
+    {
+        dialog.changeText("Player Attack");
+
+        bool isDefeated = enemy.TakeDamege(player.Attack, enemy.Defend);
+        yield return new WaitForSeconds(1.5F);
+        float dm = player.Attack - enemy.Defend;
+        EnemyHUD.UpdateHp(enemy.currentHp);
+        if (isDefeated)
+        {
+            UIManager_Root.Pop(choosePanel);
+            State = BatterState.Win;
+        }
+        else
+        {
+            choosePanel.SetActive(false);
+            State = BatterState.Wait;
+        }
+
     }
 }

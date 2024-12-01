@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BatterEmeny : CharacteBase
 {
+    public UIManager UIManager_Root;
     protected override void Awake()
     {
         base.Awake();
@@ -11,5 +12,9 @@ public class BatterEmeny : CharacteBase
     protected override void Start()
     {
         base.Start();
+    }
+    private void Update()
+    {
+
     }
 }

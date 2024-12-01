@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4264621225894164856}
   - component: {fileID: 3566504508204023730}
   - component: {fileID: 8171007236274065511}
-  - component: {fileID: 6403324957059347289}
   m_Layer: 0
   m_Name: testCharacter
   m_TagString: Untagged
@@ -106,26 +105,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6403324957059347289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5487180759994185152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f6b82fd6dc378d40b42ee7efdd066cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: aaaa
-  MaxHp: 100
-  currentHp: 100
-  MaxMp: 100
-  currentMp: 100
-  Attack: 20
-  Defend: 10
-  Level: 1
-  MaxExp: 100
-  currentExp: 0
-  speed: 20

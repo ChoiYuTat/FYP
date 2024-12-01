@@ -43,5 +43,5 @@ public class BasePanel
     {
         UIMethods.GetInstance().AddOrGetComponent<CanvasGroup>(ActiveObj).interactable = false;
     }
-
+    
 }

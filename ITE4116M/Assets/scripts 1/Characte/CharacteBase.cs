@@ -24,6 +24,37 @@ public class CharacteBase : MonoBehaviour
         currentHp = MaxHp;
         currentMp = MaxMp;
 
+    }
 
+    protected virtual float ChangHp(float num)
+    {
+
+        currentHp = Mathf.Clamp(currentHp + num, 0, MaxHp);
+        if(currentMp <= 0)
+        {
+
+        }
+        return currentHp;
+    }
+
+    protected virtual float ChangMp(float num)
+    {
+
+        currentMp = Mathf.Clamp(currentMp + num, 0, MaxMp);
+        if (currentMp <= 0)
+        {
+
+        }
+        return currentMp;
+    }
+
+    public bool TakeDamege(float atk , float def)
+    {
+        float dmg = atk - def;
+        ChangHp(-dmg);
+        if (currentHp <= 0)
+            return true;
+        else
+            return false;
     }
 }
