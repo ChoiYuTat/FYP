@@ -34,6 +34,8 @@ public class GameRoot : MonoBehaviour
     public GameObject chooseAction;
     public GameObject choosePanel;
 
+    int turn = 1; 
+
     public enum BatterState
     {
         Start,PlayerTurn,EnemyTurn,Win,Lose,Wait
@@ -77,6 +79,7 @@ public class GameRoot : MonoBehaviour
         UIManager_Root.CanvasObj = UIMethods.GetInstance().FindCanvas();
         State = BatterState.Start;
         StartCoroutine(SetupBatter());
+        
     }
 
     // Update is called once per frame
@@ -89,7 +92,31 @@ public class GameRoot : MonoBehaviour
                 UIManager_Root.Push(new MainMenuPanel());
             }
         }
-        if (State == BatterState.PlayerTurn)
+
+        if(State == BatterState.PlayerTurn && turn ==0)
+        {
+            player.currentAction += Time.deltaTime * player.actionSpeed;
+            enemy.currentAction += Time.deltaTime * enemy.actionSpeed;
+            if(player.currentAction >= player.MaxAction) 
+            {   
+                State = BatterState.PlayerTurn;
+                player.currentAction = 0;
+                turn = 1;
+                PlayerTurn();
+
+            }else if(enemy.currentAction >= enemy.MaxAction)
+            {
+                State = BatterState.EnemyTurn;
+                enemy.currentAction = 0;
+                turn = 1;
+                EnemyTurn();
+            }
+        }
+
+
+
+
+        if (State == BatterState.PlayerTurn && turn > 0)
         {
             BattleChoose();
         }
@@ -113,7 +140,7 @@ public class GameRoot : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
 
 
-        if(BatterCaracte.speed > BatterEmeny.speed)
+        if(player.speed > enemy.speed)
         {
             State = BatterState.PlayerTurn;
             PlayerTurn();
@@ -133,6 +160,10 @@ public class GameRoot : MonoBehaviour
         UIManager_Root.Push(new ChoosePanel());
     }
 
+    private void EnemyTurn()
+    {
+
+    }
     private void BattleChoose()
     {
         Debug.Log(i);

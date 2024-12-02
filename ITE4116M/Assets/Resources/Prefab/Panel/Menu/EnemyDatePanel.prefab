@@ -421,6 +421,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hp: {fileID: 5590487937605090311}
+  Mp: {fileID: 1219477480349670457}
+  playerName: {fileID: 2789825513974240666}
+  Hpslider: {fileID: 8569023514431790597}
+  Mpslider: {fileID: 3946089545376482502}
   Characte: {fileID: 0}
 --- !u!1 &1082533919581857382
 GameObject:

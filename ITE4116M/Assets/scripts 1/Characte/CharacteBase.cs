@@ -15,6 +15,9 @@ public class CharacteBase : MonoBehaviour
     public float MaxExp;
     public float currentExp;
     public float speed;
+    public float actionSpeed;
+    public float currentAction;
+    public float MaxAction = 1000;
     protected virtual void Awake()
     {
 

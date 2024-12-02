@@ -312,6 +312,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6472813999321420718, guid: 947d032b09684304ca9a169681c01f94,
+        type: 3}
+      propertyPath: Characte
+      value: 
+      objectReference: {fileID: 5080948543052046863}
     - target: {fileID: 6656906647472526425, guid: 947d032b09684304ca9a169681c01f94,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -330,11 +335,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1795578665174279884, guid: 947d032b09684304ca9a169681c01f94,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 587921016}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 947d032b09684304ca9a169681c01f94, type: 3}
 --- !u!1 &311034549
 GameObject:
@@ -627,34 +628,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455848412}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &587921013 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1795578665174279884, guid: 947d032b09684304ca9a169681c01f94,
-    type: 3}
-  m_PrefabInstance: {fileID: 288242888}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &587921014 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2625387835885134312, guid: 947d032b09684304ca9a169681c01f94,
     type: 3}
   m_PrefabInstance: {fileID: 288242888}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &587921016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587921013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6408e042d9c06ea4c8efb4e507ccded1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hp: {fileID: 1624268619}
-  playerName: {fileID: 1593864528}
-  Mp: {fileID: 1514095397}
-  Characte: {fileID: 5080948543052046863}
 --- !u!1 &684645300
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,47 +899,11 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &1514095397 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 947490659791527247, guid: 947d032b09684304ca9a169681c01f94,
-    type: 3}
-  m_PrefabInstance: {fileID: 288242888}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1593864528 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8198260166604537758, guid: 947d032b09684304ca9a169681c01f94,
-    type: 3}
-  m_PrefabInstance: {fileID: 288242888}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1611787037 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1219477480349670457, guid: d7d60e6a53064484a8e5b55308ecb928,
     type: 3}
   m_PrefabInstance: {fileID: 1929634148}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1624268619 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3667004784983761526, guid: 947d032b09684304ca9a169681c01f94,
-    type: 3}
-  m_PrefabInstance: {fileID: 288242888}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -1328,6 +1271,9 @@ MonoBehaviour:
   MaxExp: 0
   currentExp: 0
   speed: 20
+  actionSpeed: 0
+  currentAction: 0
+  MaxAction: 0
   UIManager_Root:
     playerName: 
     HP: 
@@ -1411,6 +1357,9 @@ MonoBehaviour:
   MaxExp: 100
   currentExp: 0
   speed: 15
+  actionSpeed: 0
+  currentAction: 0
+  MaxAction: 0
   UIManager_Root:
     playerName: 
     HP: 
