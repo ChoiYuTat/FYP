@@ -67,6 +67,10 @@ public class GameRoot : MonoBehaviour
             scene2 scene = new scene2();
             SceneControl_Root.SceneLoad(scene.SceneName, scene);
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            FightManager.Instance.curHp -= 1;
+        }
     }
 }
 

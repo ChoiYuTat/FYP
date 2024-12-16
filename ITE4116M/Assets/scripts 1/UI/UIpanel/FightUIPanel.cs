@@ -8,7 +8,6 @@ public class FightUIPanel : BasePanel
     private static string name = "FightUIPanel";
     private static string path = "Prefab/Panel/Menu/FightUIPanel";
     public static readonly UIType uIType = new UIType(path, name);
-
     private Text cardCountText;
     private Text nocardCountText;
     private Text defText;
@@ -32,7 +31,6 @@ public class FightUIPanel : BasePanel
         hpImg = UIMethods.GetInstance().GetOrAddSingleComponentInChild<Image>(ActiveObj, "fill");
         UpdateHp();
         UpdatePower();
-        UpdateHp();
         UpdateDef();
         UpdateCardCount();
         UpdateUsedCardCount();
@@ -42,6 +40,7 @@ public class FightUIPanel : BasePanel
     {
         hpText.text = FightManager.Instance.curHp + "/" + FightManager.Instance.MaxHp;
         hpImg.fillAmount = (float)FightManager.Instance.curHp / (float)FightManager.Instance.MaxHp;
+        Debug.Log(hpText.text);
     }
     public void UpdatePower()
     {

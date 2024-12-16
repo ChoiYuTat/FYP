@@ -26,11 +26,12 @@ public class FightManager : MonoBehaviour
 
     public void Init()
     {
-        MaxHp = 10;
+        MaxHp = 100;
         curHp = MaxHp;
         MaxPowerCount = 5;
         curPowerCount = MaxPowerCount;
         DefenseCount = 10; 
+
     }
     private void Awake()
     {
