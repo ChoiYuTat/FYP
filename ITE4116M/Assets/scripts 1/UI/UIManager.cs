@@ -9,13 +9,6 @@ using TMPro;
 [System.Serializable]
 public class UIManager
 {
-    public string playerName;
-    public string HP;
-    public string MP;
-    public string MaxHp;
-    public string MaxMp;
-
-
     /// <summary>
     /// uiobject的字典中，Key为其对应的UIType中的Name,将其名称和对应的物体绑定上
     /// </summary>
@@ -166,34 +159,9 @@ public class UIManager
 
             }
         }
+
+
         
-    }
-
-    public void IntitHUD(CharacteBase Characte)
-    {
-        playerName = "";
-        this.playerName = Characte.Name;
-        HP = "";
-        this.HP = Characte.currentHp.ToString();
-        MaxHp = "";
-        this.MaxHp = Characte.MaxHp.ToString();
-        MP = "";
-        this.MP = Characte.currentHp.ToString();
-        MaxMp = "";
-        this.MaxMp = Characte.MaxMp.ToString();
-
-        Debug.Log(playerName);
-        Debug.Log(MP);
-        Debug.Log(HP);
-    }
-
-    public void UpdateHp(float hp)
-    {
-        HP = hp.ToString();
-    }
-    public void UpdateMp(float mp)
-    {
-        MP = mp.ToString();
     }
 
 }

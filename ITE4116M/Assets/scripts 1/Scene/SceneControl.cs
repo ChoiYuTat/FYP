@@ -25,7 +25,7 @@ public class SceneControl
 
     public SceneControl() 
     {
-        instance = this;
+        instance = this; 
 
         dict_scene = new Dictionary<string, SceneBase>();
         //dict_scene.Add();
