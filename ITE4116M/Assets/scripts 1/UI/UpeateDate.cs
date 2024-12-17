@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 public class UpDateData : MonoBehaviour
@@ -10,7 +11,13 @@ public class UpDateData : MonoBehaviour
     public Image hpImg;
     public Text hpText;
     public Text PowerCountText;
+    private List<CardItem> cardItemList;
+    public Fight_PlayerTurn fight_Player;
 
+    private void Awake()
+    {
+        cardItemList = new List<CardItem>();
+    }
     private void Update()
     {
         UpdateHp();
@@ -40,6 +47,25 @@ public class UpDateData : MonoBehaviour
     public void UpdateUsedCardCount()
     {
         nocardCountText.text = FightCardManager.Instance.usedCardList.Count.ToString();
+    }
+
+    public void CreateCardItem(int count)
+    {
+        if(count > FightCardManager.Instance.cardList.Count)
+        {
+            count = FightCardManager.Instance.cardList.Count;
+        }
+        for (int i = 0; i < count; i++) 
+        {   
+            GameObject obj = Instantiate(Resources.Load("UI/CardItem"),transform) as GameObject;
+            obj.GetComponent<RectTransform>().anchoredPosition = new Vector2(-1000, -700);
+            var item = obj.AddComponent<CardItem>();
+            string cardId = FightCardManager.Instance.DrawCard();
+            Dictionary<string, string> data = GameConfigManager.Instance.GetCardById(cardId);
+            item.Init(data);
+            cardItemList.Add(item);
+
+        }
     }
 
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 /// <summary>
 /// Control the scene UI object push to stack or pop out from stack
 /// Control the dict info for manager
@@ -164,4 +165,30 @@ public class UIManager
         
     }
 
+    public BasePanel Find(string name)
+    {
+        List<BasePanel> UIList = new List<BasePanel>();
+        for (int j = 0; j < stack_ui.Count; j++)
+        {
+            UIList[j] = stack_ui.Peek();
+        }
+        for (int i = 0; i < UIList.Count; i++)
+        {
+            if (UIList[i].uiType.Name == name)
+            {
+                return UIList[i];
+            }
+        }
+        return null;
+    }
+
+    public T GetUI<T>(string name) where T : BasePanel
+    {
+        BasePanel ui = Find(name);
+        if (ui != null)
+        {
+            return ui.ActiveObj.GetComponent<T>();
+        }
+        return null;
+    }
 }

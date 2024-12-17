@@ -6,15 +6,15 @@ public class FightCardManager : MonoBehaviour
 {
     public static FightCardManager Instance = new FightCardManager();
 
-    public List<string> cardList;//≥È≈∆∂—
+    public List<string> cardList;
 
-    public List<string> usedCardList;//óâ≈∆∂—
+    public List<string> usedCardList;
     public void Init()
     {
         cardList = new List<string>();
         usedCardList = new List<string>();
 
-        //temp ≥È≈∆∂—
+        
         List<string> tempList = new List<string>();
         //save card temp
         tempList.AddRange(RoleManager.instance.cardList);
@@ -31,4 +31,22 @@ public class FightCardManager : MonoBehaviour
 
         Debug.Log(cardList.Count);
     }
+
+    public bool hasCard()
+    {
+        return cardList.Count > 0;
+    }
+
+    public string DrawCard()
+    {
+        string id = cardList[cardList.Count -1];
+
+        cardList.RemoveAt(cardList.Count - 1);
+
+        return id;
+    }
+
+
+
+
 }
