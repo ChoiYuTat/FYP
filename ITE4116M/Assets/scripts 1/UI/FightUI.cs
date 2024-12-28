@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-public class UpDateData : MonoBehaviour
+using DG.Tweening;
+public class FightUI : FightUIBase
 {
     public Text cardCountText;
     public Text nocardCountText;
@@ -17,6 +18,12 @@ public class UpDateData : MonoBehaviour
     private void Awake()
     {
         cardItemList = new List<CardItem>();
+        cardCountText = transform.Find("hasCard/icon/Text").GetComponent<Text>();
+        nocardCountText = transform.Find("noCard/icon/Text").GetComponent<Text>();
+        PowerCountText = transform.Find("mana/Text").GetComponent<Text>();
+        hpText = transform.Find("hp/moneyTxt").GetComponent<Text>();
+        hpImg = transform.Find("hp/fill").GetComponent<Image>();
+        defText = transform.Find("hp/fangyu/Text").GetComponent<Text>();
     }
     private void Update()
     {
@@ -65,6 +72,17 @@ public class UpDateData : MonoBehaviour
             item.Init(data);
             cardItemList.Add(item);
 
+        }
+    }
+
+    public void UpdateCardItemPos()
+    {
+        float offset = 400.0f / cardItemList.Count;
+        Vector2 starPos = new Vector2(-cardItemList.Count / 2.0f * offset + offset * 0.5f, -200);
+        for (int i = 0; i < cardItemList.Count; i++)
+        {
+            cardItemList[i].GetComponent<RectTransform>().DOAnchorPos(starPos, 0.5f);
+            starPos.x = starPos.x + offset;
         }
     }
 

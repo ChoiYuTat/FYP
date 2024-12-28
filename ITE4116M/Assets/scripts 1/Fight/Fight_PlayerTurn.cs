@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class Fight_PlayerTurn : FightUnit
 {
-    public UpDateData UpDateData;
     public override void Init()
     {
         base.Init();
-        UIManager.GetInstance().GetUI<FightUIPanel>("UpDateData").CreateCardItem(4);
+        FightUIManager.Instance.ShowTip("PlayerTure", Color.green, delegate ()
+        {
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").CreateCardItem(4);
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateCardItemPos();
+        });
     }
 
 

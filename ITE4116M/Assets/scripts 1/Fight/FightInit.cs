@@ -9,7 +9,8 @@ public class FightInit : FightUnit
         FightManager.Instance.Init();
         EnemyManager.instance.LoadRes("10003");
         FightCardManager.Instance.Init();
-        UIManager.GetInstance().Push(new FightUIPanel());
+        FightUIManager.Instance.ShowUI<FightUI>("FightUI");
+        FightManager.Instance.ChangeType(FightType.Player);
     }
 
     public override void OnUpDate()
