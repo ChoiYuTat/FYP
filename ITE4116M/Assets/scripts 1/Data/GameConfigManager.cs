@@ -9,6 +9,7 @@ public class GameConfigManager
     private GameConfigData cardData;
     private GameConfigData enemyData;
     private GameConfigData levelData;
+    private GameConfigData cardTypeData;
     private TextAsset textAsset;
 
     public void Init()
@@ -21,6 +22,10 @@ public class GameConfigManager
 
         textAsset = Resources.Load<TextAsset>("Data/level");
         levelData = new GameConfigData(textAsset.text);
+
+        textAsset = Resources.Load<TextAsset>("Data/cardType");
+        cardTypeData = new GameConfigData(textAsset.text);
+
     }
 
     public List<Dictionary<string,string>> GetCardLines()
@@ -47,6 +52,10 @@ public class GameConfigManager
     public Dictionary<string, string> GetLevelById(string id)
     {
         return levelData.GetOnById(id);
+    }
+    public Dictionary<string, string> GetCardTypeById(string id)
+    {
+        return cardTypeData.GetOnById(id);
     }
 
 }

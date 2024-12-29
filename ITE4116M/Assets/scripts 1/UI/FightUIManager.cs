@@ -117,4 +117,16 @@ public class FightUIManager : MonoBehaviour
         });
         MonoBehaviour.Destroy(obj, 2);
     }
+    public GameObject CreateActionIcon()
+    {
+        GameObject obj = Instantiate(Resources.Load("UI/actionIcon"), UIManager.GetInstance().CanvasObj.transform) as GameObject;
+        obj.transform.SetAsLastSibling();
+        return obj;
+    }
+    public GameObject CreateHpItem()
+    {
+        GameObject obj = Instantiate(Resources.Load("UI/HpItem"), UIManager.GetInstance().CanvasObj.transform) as GameObject;
+        obj.transform.SetAsLastSibling();
+        return obj;
+    }
 }

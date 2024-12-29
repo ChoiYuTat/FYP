@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3850002315228431323}
   - component: {fileID: 3850002315228431325}
   - component: {fileID: 3850002315228431322}
-  m_Layer: 5
+  m_Layer: 4
   m_Name: icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 3850002315520892017}
   - component: {fileID: 3850002315520892019}
   - component: {fileID: 3850002315520892016}
-  m_Layer: 5
+  m_Layer: 4
   m_Name: bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3850002315648523304}
-  m_Layer: 5
+  m_Layer: 4
   m_Name: CardItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 3850002315711320788}
   - component: {fileID: 3850002315711320790}
   - component: {fileID: 3850002315711320791}
-  m_Layer: 5
+  m_Layer: 4
   m_Name: useTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 3850002315888101835}
   - component: {fileID: 3850002315888101837}
   - component: {fileID: 3850002315888101834}
-  m_Layer: 5
+  m_Layer: 4
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 3850002316556688216}
   - component: {fileID: 3850002316556688218}
   - component: {fileID: 3850002316556688219}
-  m_Layer: 5
+  m_Layer: 4
   m_Name: nameTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 7165447155259197786}
   - component: {fileID: 2310513154278003395}
   - component: {fileID: 346706569708696083}
-  m_Layer: 5
+  m_Layer: 4
   m_Name: msgTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}

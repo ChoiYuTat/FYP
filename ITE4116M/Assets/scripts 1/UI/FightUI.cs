@@ -78,12 +78,11 @@ public class FightUI : FightUIBase
     public void UpdateCardItemPos()
     {
         float offset = 400.0f / cardItemList.Count;
-        Vector2 starPos = new Vector2(-cardItemList.Count / 2.0f * offset + offset * 0.5f, -200);
+        Vector2 starPos = new Vector2(-cardItemList.Count / 2.0f * offset + offset * 0.5f, -150);
         for (int i = 0; i < cardItemList.Count; i++)
         {
             cardItemList[i].GetComponent<RectTransform>().DOAnchorPos(starPos, 0.5f);
             starPos.x = starPos.x + offset;
         }
     }
-
 }
