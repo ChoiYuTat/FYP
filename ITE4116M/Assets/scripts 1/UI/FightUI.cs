@@ -77,7 +77,7 @@ public class FightUI : FightUIBase
 
     public void UpdateCardItemPos()
     {
-        float offset = 400.0f / cardItemList.Count;
+        float offset = 600.0f / cardItemList.Count;
         Vector2 starPos = new Vector2(-cardItemList.Count / 2.0f * offset + offset * 0.5f, -150);
         for (int i = 0; i < cardItemList.Count; i++)
         {

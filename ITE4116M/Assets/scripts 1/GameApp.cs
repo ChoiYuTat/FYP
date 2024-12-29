@@ -10,8 +10,7 @@ public class GameApp : MonoBehaviour
         GameConfigManager.Instance.Init();
         RoleManager.instance.Init();
         FightManager.Instance.ChangeType(FightType.Init);
-
-
+        AudioManager.Instance.Init();
     }
 
 }

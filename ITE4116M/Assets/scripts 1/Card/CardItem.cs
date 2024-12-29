@@ -6,7 +6,7 @@ using DG.Tweening;
 using UnityEngine.EventSystems;
 
 
-public class CardItem : MonoBehaviour,IPointerExitHandler,IPointerEnterHandler,IDragHandler,IEndDragHandler
+public class CardItem : MonoBehaviour,IPointerExitHandler,IPointerEnterHandler,IDragHandler,IEndDragHandler,IBeginDragHandler
 {
     public Dictionary<string, string> data;
     private int indexer;
@@ -14,28 +14,23 @@ public class CardItem : MonoBehaviour,IPointerExitHandler,IPointerEnterHandler,I
     {
         this.data = data;
     }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        throw new System.NotImplementedException();
-    }
-
     public void OnPointerEnter(PointerEventData eventData)
     {
         transform.DOScale(0.6f, 0.1f);
         indexer = transform.GetSiblingIndex();
         transform.SetAsLastSibling();
+
+        transform.Find("bg").GetComponent<Image>().material.SetColor("_lineColor", Color.yellow);
+        transform.Find("bg").GetComponent<Image>().material.SetFloat("_lineWidth", 10);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         transform.DOScale(0.5f, 0.1f);
         transform.SetSiblingIndex(indexer);
+
+        transform.Find("bg").GetComponent<Image>().material.SetColor("_lineColor", Color.black);
+        transform.Find("bg").GetComponent<Image>().material.SetFloat("_lineWidth", 1);
     }
 
     private void Start()
@@ -47,5 +42,36 @@ public class CardItem : MonoBehaviour,IPointerExitHandler,IPointerEnterHandler,I
         transform.Find("bg/useTxt").GetComponent<Text>().text = data["Expend"];
 
         transform.Find("bg/Text").GetComponent<Text>().text = GameConfigManager.Instance.GetCardTypeById(data["Type"])["Name"];
+
+        transform.Find("bg").GetComponent<Image>().material = Instantiate(Resources.Load<Material>("Mats/outline"));
+
+    }
+
+    Vector2 initPos;
+    public virtual void OnBeginDrag(PointerEventData eventData)
+    {
+        initPos = transform.GetComponent<RectTransform>().anchoredPosition;
+
+        AudioManager.Instance.PlayEffect("Cards/draw");
+    }
+
+    public virtual void OnDrag(PointerEventData eventData)
+    {
+        Vector2 pos;
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            transform.parent.GetComponent<RectTransform>(),
+            eventData.position,
+            eventData.pressEventCamera,
+            out pos
+            ))
+        {
+            transform.GetComponent<RectTransform>().anchoredPosition = pos;
+        }
+    }
+
+    public virtual void OnEndDrag(PointerEventData eventData)
+    {
+        transform.GetComponent<RectTransform>().anchoredPosition = initPos;
+        transform.SetSiblingIndex(indexer);
     }
 }
