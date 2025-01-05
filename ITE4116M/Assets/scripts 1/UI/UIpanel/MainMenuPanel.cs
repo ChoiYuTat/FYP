@@ -19,6 +19,7 @@ public class MainMenuPanel : BasePanel
         base.OnStart();
         UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Exit").onClick.AddListener(Exit);
         UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Save").onClick.AddListener(Save);
+        UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Load").onClick.AddListener(Load);
         UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Character").onClick.AddListener(Character);
 
     }
@@ -33,7 +34,7 @@ public class MainMenuPanel : BasePanel
     }
     private void Load()
     {
-        GameRoot.GetInstance().UIManager_Root.Push(new CharacterPanel());
+        GameRoot.GetInstance().UIManager_Root.Push(new LoadPanel());
     }
     private void Exit()
     {
