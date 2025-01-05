@@ -4,16 +4,16 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 
-public class CharacterPanel : BasePanel
+public class SavePanel : BasePanel
 {
-    private static string name = "CharacterPanel";
-    private static string path = "Prefab/Panel/Menu/CharacterPanel";
+    private static string name = "SavePanel";
+    private static string path = "Prefab/Panel/Menu/SavePanel";
     public static readonly UIType uIType = new UIType(path, name);
-    public CharacterPanel() : base(uIType)
+    public SavePanel() : base(uIType)
     {
 
     }
-    
+
     public override void OnStart()
     {
         base.OnStart();
