@@ -74,4 +74,36 @@ public class CardItem : MonoBehaviour,IPointerExitHandler,IPointerEnterHandler,I
         transform.GetComponent<RectTransform>().anchoredPosition = initPos;
         transform.SetSiblingIndex(indexer);
     }
+
+    public virtual bool TryUse()
+    {
+        int cost = int.Parse(data["Expend"]);
+
+        if(cost > FightManager.Instance.curPowerCount)
+        {
+            AudioManager.Instance.PlayEffect("Effect/loss");
+
+            FightUIManager.Instance.ShowTip("No Mana", Color.red);
+
+            return false;
+        }
+        else
+        {
+
+            FightManager.Instance.curPowerCount -= cost;
+
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdatePower();
+
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").RemoveCard(this);
+             
+            return true;
+        }
+    }
+
+    public void PlayEffect(Vector3 pos)
+    {
+        GameObject effectObj = Instantiate(Resources.Load(data["Effects"])) as GameObject;
+        effectObj.transform.position = pos;
+        Destroy(effectObj, 2);
+    }
 }

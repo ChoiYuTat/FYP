@@ -66,9 +66,10 @@ public class FightUI : FightUIBase
         {   
             GameObject obj = Instantiate(Resources.Load("UI/CardItem"),transform) as GameObject;
             obj.GetComponent<RectTransform>().anchoredPosition = new Vector2(-1000, -700);
-            var item = obj.AddComponent<CardItem>();
+            //var item = obj.AddComponent<CardItem>();
             string cardId = FightCardManager.Instance.DrawCard();
             Dictionary<string, string> data = GameConfigManager.Instance.GetCardById(cardId);
+            CardItem item = obj.AddComponent(System.Type.GetType(data["Script"])) as CardItem;
             item.Init(data);
             cardItemList.Add(item);
 
@@ -84,5 +85,26 @@ public class FightUI : FightUIBase
             cardItemList[i].GetComponent<RectTransform>().DOAnchorPos(starPos, 0.5f);
             starPos.x = starPos.x + offset;
         }
+    }
+
+    public void RemoveCard(CardItem item)
+    {
+        AudioManager.Instance.PlayEffect("Cards/cardShove");
+
+        item.enabled = false;
+
+        FightCardManager.Instance.usedCardList.Add(item.data["Id"]);
+
+        nocardCountText.text = FightCardManager.Instance.usedCardList.Count.ToString();
+
+        cardItemList.Remove(item);
+
+        UpdateCardItemPos();
+
+        item.GetComponent<RectTransform>().DOAnchorPos(new Vector2(1000, -150),0.25f);
+
+        item.transform.DOScale(0, 0.25f);
+
+        Destroy(item.gameObject, 1);
     }
 }

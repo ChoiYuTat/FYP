@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour
     public int MaxHP;
     public int CurHP;
 
+    SkinnedMeshRenderer _mashRenderer;
 
     public void Init(Dictionary<string,string> data)
     {
@@ -38,6 +39,8 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _mashRenderer = transform.GetComponentInChildren<SkinnedMeshRenderer>();
+
         type = ActionType.None;
         hpItemObj = FightUIManager.Instance.CreateHpItem();
         actionObj = FightUIManager.Instance.CreateActionIcon();
@@ -91,5 +94,15 @@ public class Enemy : MonoBehaviour
     public void UpdateDefend()
     {
         defendTxt.text = Defend.ToString();
+    }
+
+    public void OnSelect()
+    {
+        _mashRenderer.material.SetColor("_OtlColor", Color.red);
+    }
+
+    public void OnUnSelect()
+    {
+        _mashRenderer.material.SetColor("_OtlColor", Color.black);
     }
 }
