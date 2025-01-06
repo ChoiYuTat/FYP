@@ -62,6 +62,13 @@ public class GameRoot : MonoBehaviour
                 UIManager_Root.Push(new MainMenuPanel());
             }
         }
+        else
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                UIManager_Root.Pop(false);
+            }
+        }
         if (Input.GetKeyDown(KeyCode.B))
         {
             scene2 scene = new scene2();
