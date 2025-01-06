@@ -26,6 +26,9 @@ public class AttackCardItem : CardItem, IPointerDownHandler
     {
         AudioManager.Instance.PlayEffect("Cards/draw");
 
+        FightUIManager.Instance.ShowUI<LineUI>("LineUI");
+        FightUIManager.Instance.GetUI<LineUI>("LineUI").SetStarPos(transform.GetComponent<RectTransform>().anchoredPosition);
+
         Cursor.visible = false;
         StopAllCoroutines();
         StartCoroutine(OnMouseDownRight(eventData));
@@ -42,13 +45,14 @@ public class AttackCardItem : CardItem, IPointerDownHandler
             }
 
             Vector2 pos;
-            if(RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 transform.parent.GetComponent<RectTransform>(),
                 pData.position,
                 pData.pressEventCamera,
                 out pos
                 ))
             {
+                FightUIManager.Instance.GetUI<LineUI>("LineUI").SetEndPos(pos);
                 CheckRayToEnemy();
             }
 
@@ -56,6 +60,7 @@ public class AttackCardItem : CardItem, IPointerDownHandler
         }
 
         Cursor.visible = true;
+        FightUIManager.Instance.CloseUI("LineUI");
     }
 
     Enemy hitEnemy;
@@ -75,6 +80,8 @@ public class AttackCardItem : CardItem, IPointerDownHandler
                 StopAllCoroutines();
 
                 Cursor.visible = true;
+                FightUIManager.Instance.CloseUI("LineUI");
+
 
                 if (TryUse())
                 {

@@ -16,7 +16,7 @@ public class CardItem : MonoBehaviour,IPointerExitHandler,IPointerEnterHandler,I
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        transform.DOScale(0.6f, 0.1f);
+        transform.DOScale(0.5f, 0.1f);
         indexer = transform.GetSiblingIndex();
         transform.SetAsLastSibling();
 
@@ -26,7 +26,7 @@ public class CardItem : MonoBehaviour,IPointerExitHandler,IPointerEnterHandler,I
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        transform.DOScale(0.5f, 0.1f);
+        transform.DOScale(0.35f, 0.1f);
         transform.SetSiblingIndex(indexer);
 
         transform.Find("bg").GetComponent<Image>().material.SetColor("_lineColor", Color.black);
