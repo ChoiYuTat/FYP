@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using Unity.VisualScripting;
 
 public class SaveSystem
 {
@@ -53,8 +54,51 @@ public class SaveSystem
     {
         File.Delete(GetPath(fileName));
     }
-    
-    //public static string FindAuto()
+
+    public static string FindAuto()
+    {
+        if (Directory.Exists(Application.persistentDataPath))
+        {
+            FileInfo[] fileInfos = new DirectoryInfo(Application.persistentDataPath).GetFiles("*");
+            for (int i = 0; i < fileInfos.Length; i++)
+            {
+                if (fileInfos[i].Name.EndsWith(".auto"))
+                {
+                    return fileInfos[i].Name;
+                }
+            }
+        }
+        return "";
+    }
     #endregion
+
+    #region DeleteAll
+    #if UNITY_EDITOR
+    [UnityEditor.MenuItem("Delete/Records List")]
+    #endif
+    public static void DeleteRecord() 
+    {
+        UnityEngine.PlayerPrefs.DeleteAll();
+        Debug.Log("Delete All List");
+    }
+
+    [UnityEditor.MenuItem("Delete/Player Data")]
+    public static void DeletPlayerData()
+    {
+        ClearDictionary(Application.persistentDataPath);
+        Debug.Log("Delet Player Data");
+    }
+    static void ClearDictionary(string path)
+    {  if(Directory.Exists(path))
+        {
+            FileInfo[] f = new DirectoryInfo(path).GetFiles("*");
+            for(int i = 0;i < f.Length;i++)
+            {
+                Debug.Log($"Delete{f[i].Name}");
+                File.Delete(f[i].FullName);
+            }
+        }
+    }
+#endregion
 
 }
