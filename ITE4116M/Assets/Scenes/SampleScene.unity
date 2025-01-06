@@ -338,6 +338,16 @@ PrefabInstance:
       propertyPath: hideCursorAtBeginning
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2133495790370156510, guid: c2fa6ab5cf3f5324bb91623c8f3c9e74,
+        type: 3}
+      propertyPath: onSwitchToKeyboard.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133495790370156510, guid: c2fa6ab5cf3f5324bb91623c8f3c9e74,
+        type: 3}
+      propertyPath: onSwitchToKeyboard.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
