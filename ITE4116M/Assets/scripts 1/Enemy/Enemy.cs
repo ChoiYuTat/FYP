@@ -32,6 +32,8 @@ public class Enemy : MonoBehaviour
 
     SkinnedMeshRenderer _mashRenderer;
 
+    public Animator ani;
+
     public void Init(Dictionary<string,string> data)
     {
         this.data = data;
@@ -40,6 +42,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         _mashRenderer = transform.GetComponentInChildren<SkinnedMeshRenderer>();
+        ani = transform.GetComponent<Animator>();
 
         type = ActionType.None;
         hpItemObj = FightUIManager.Instance.CreateHpItem();
@@ -104,5 +107,41 @@ public class Enemy : MonoBehaviour
     public void OnUnSelect()
     {
         _mashRenderer.material.SetColor("_OtlColor", Color.black);
+    }
+
+    public void Hit(int val )
+    {
+        if (Defend >= val)
+        {
+            Defend -= val;
+
+            ani.Play("hit", 0, 0);
+        }
+        else
+        {
+            val = val - Defend;
+            Defend = 0;
+            CurHP -= val;
+            if (CurHP <= 0)
+            {
+                CurHP = 0;
+
+                ani.Play("die");
+
+                EnemyManager.instance.DeleteEnemy(this);
+
+                Destroy(gameObject, 1);
+                Destroy(actionObj);
+                Destroy(hpItemObj);
+            }
+            else
+            {
+                ani.Play("hit", 0, 0);
+            }
+
+        }
+
+        UpdateDefend();
+        UpdateHp();
     }
 }
