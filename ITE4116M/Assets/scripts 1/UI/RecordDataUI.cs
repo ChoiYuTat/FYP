@@ -16,7 +16,7 @@ public class RecordDataUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
     public static System.Action<int> OnLeftClick;
     public static System.Action<int> OnRightClick;
     public static System.Action<int> OnEnter;
-    public static System.Action<int> OnExit;
+    public static System.Action OnExit;
 
     int id;
 
@@ -62,7 +62,7 @@ public class RecordDataUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 
         if(OnExit != null)
         {
-            //OnExit();
+            OnExit();
         }
     }
 
@@ -87,8 +87,8 @@ public class RecordDataUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 
             string time = full.Substring(9, 6);
 
-            //TimeManager.SetDate(ref date);
-            //TimeManager.SetTime(ref time);
+            TimeManager.SetDate(ref date);
+            TimeManager.SetTime(ref time);
 
             recordName.text = date+" "+time;
 
