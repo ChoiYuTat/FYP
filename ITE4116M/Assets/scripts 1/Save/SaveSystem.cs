@@ -75,7 +75,7 @@ public class SaveSystem
     #region DeleteAll
     #if UNITY_EDITOR
     [UnityEditor.MenuItem("Delete/Records List")]
-    #endif
+    
     public static void DeleteRecord() 
     {
         UnityEngine.PlayerPrefs.DeleteAll();
@@ -99,6 +99,15 @@ public class SaveSystem
             }
         }
     }
+
+    [UnityEditor.MenuItem("Delete/All")]
+    
+    public static void DeleteAll()
+    {
+        DeletPlayerData();
+        DeleteRecord();
+    }
+    #endif
 #endregion
 
 }

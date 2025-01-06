@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class RecordData : MonoBehaviour
 {
+    public static RecordData Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public const int recordNum = 3;
     public const string NAME = "RecordData";
 
@@ -30,7 +45,11 @@ public class RecordData : MonoBehaviour
     }
     void ForLoad(SaveData saveData)
     {
-        
+        lastID = saveData.lastID;
+        for(int i = 0;i < recordNum; i++)
+        {
+            recordName[i] = saveData.recordName[i];
+        }
     }
     
     public void Save()
@@ -47,4 +66,6 @@ public class RecordData : MonoBehaviour
             ForLoad(saveData);
         }
     }
+    
+
 }
