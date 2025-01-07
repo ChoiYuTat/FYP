@@ -47,5 +47,25 @@ public class EnemyManager
     public void DeleteEnemy(Enemy enemy)
     {
         enemyList.Remove(enemy);
+
+        if(enemyList.Count == 0)
+        {
+            FightManager.Instance.ChangeType(FightType.Win);
+        }
+    }
+
+    public IEnumerator DoAllEnemyAction()
+    {
+        for(int i = 0; i < enemyList.Count; i++)
+        {
+            yield return FightManager.Instance.StartCoroutine(enemyList[i].DoAction());
+        }
+
+        for(int i = 0; i < enemyList.Count; i++)
+        {
+            enemyList[i].SetRandomAction();
+        }
+
+        FightManager.Instance.ChangeType(FightType.Player);
     }
 }

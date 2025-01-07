@@ -72,7 +72,10 @@ public class FightUI : FightUIBase
     {
         if(count > FightCardManager.Instance.cardList.Count)
         {
-            count = FightCardManager.Instance.cardList.Count;
+            FightCardManager.Instance.Init();
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateCardItemPos();
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateCardCount();
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateUsedCardCount();
         }
         for (int i = 0; i < count; i++) 
         {   

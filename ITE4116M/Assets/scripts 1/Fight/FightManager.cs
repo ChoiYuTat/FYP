@@ -63,7 +63,31 @@ public class FightManager : MonoBehaviour
         }
         fightUnit.Init();
     }
-    // Update is called once per frame
+   
+    public void GetPlayerHit(int hit)
+    {
+        if(DefenseCount >= hit)
+        {
+            DefenseCount -= hit;
+        }
+        else
+        {
+            hit = hit - DefenseCount;
+            DefenseCount = 0;
+            curHp -= hit;
+            if(curHp <= 0)
+            {
+                curHp = 0;
+                ChangeType(FightType.Loss);
+            }
+        }
+
+        FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateDef();
+        FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateHp();
+
+    }
+
+
     private void Update()
     {
         if (fightUnit != null)

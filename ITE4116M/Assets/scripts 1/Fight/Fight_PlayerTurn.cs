@@ -7,17 +7,34 @@ public class Fight_PlayerTurn : FightUnit
 {
     public override void Init()
     {
-        base.Init();
         FightUIManager.Instance.ShowTip("PlayerTure", Color.green, delegate ()
         {
-            FightUIManager.Instance.GetUI<FightUI>("FightUI").CreateCardItem(4);
+            FightManager.Instance.curPowerCount = FightManager.Instance.MaxPowerCount;
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdatePower();
+
+            if (FightCardManager.Instance.hasCard() == false)
+            {
+                FightCardManager.Instance.Init();
+
+                FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateUsedCardCount();
+            }
+
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").CreateCardItem(6);
             FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateCardItemPos();
+
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateCardCount();
+
         });
     }
 
 
     public override void OnUpDate()
     {
-        base.OnUpDate();
+        if (FightCardManager.Instance.hasCard() == false)
+        {
+            FightCardManager.Instance.Init();
+
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateUsedCardCount();
+        }
     }
 }

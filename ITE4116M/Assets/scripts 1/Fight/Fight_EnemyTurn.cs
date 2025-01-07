@@ -9,7 +9,7 @@ public class Fight_EnemyTurn : FightUnit
         FightUIManager.Instance.GetUI<FightUI>("FightUI").RemoveAllCards();
         FightUIManager.Instance.ShowTip("Enemy Turn", Color.red, delegate ()
           {
-              
+              FightManager.Instance.StartCoroutine(EnemyManager.instance.DoAllEnemyAction());
           });
     }
 

@@ -81,7 +81,7 @@ public class CardItem : MonoBehaviour,IPointerExitHandler,IPointerEnterHandler,I
 
         if(cost > FightManager.Instance.curPowerCount)
         {
-            AudioManager.Instance.PlayEffect("Effect/loss");
+            AudioManager.Instance.PlayEffect("Effect/lose");
 
             FightUIManager.Instance.ShowTip("No Mana", Color.red);
 

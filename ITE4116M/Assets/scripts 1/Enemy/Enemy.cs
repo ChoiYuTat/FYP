@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 
 public enum ActionType
@@ -34,7 +35,7 @@ public class Enemy : MonoBehaviour
 
     public Animator ani;
 
-    public void Init(Dictionary<string,string> data)
+    public void Init(Dictionary<string, string> data)
     {
         this.data = data;
     }
@@ -56,7 +57,7 @@ public class Enemy : MonoBehaviour
         hpImage = hpItemObj.transform.Find("fill").GetComponent<Image>();
 
         hpItemObj.transform.position = Camera.main.WorldToScreenPoint(transform.position + Vector3.up * 2f);
-        actionObj.transform.position = Camera.main.WorldToScreenPoint(transform.Find("head").position + new Vector3(0,0.5f,0));
+        actionObj.transform.position = Camera.main.WorldToScreenPoint(transform.Find("head").position + new Vector3(0, 0.5f, 0));
 
         SetRandomAction();
 
@@ -86,7 +87,7 @@ public class Enemy : MonoBehaviour
                 defendTf.gameObject.SetActive(false);
                 break;
         }
-    }     
+    }
 
     public void UpdateHp()
     {
@@ -109,7 +110,7 @@ public class Enemy : MonoBehaviour
         _mashRenderer.material.SetColor("_OtlColor", Color.black);
     }
 
-    public void Hit(int val )
+    public void Hit(int val)
     {
         if (Defend >= val)
         {
@@ -144,4 +145,38 @@ public class Enemy : MonoBehaviour
         UpdateDefend();
         UpdateHp();
     }
+
+    public void HideAction()
+    {
+        attackTf.gameObject.SetActive(false);
+        defendTf.gameObject.SetActive(false);
+    }
+
+    public IEnumerator DoAction()
+    {
+        HideAction();
+
+        ani.Play("attack");
+        yield return new WaitForSeconds(0.5f);
+
+        switch (type)
+        {
+            case ActionType.None:
+                break;
+            case ActionType.Attack:
+                FightManager.Instance.GetPlayerHit(Attack);
+                Camera.main.DOShakePosition(0.1f, 0.2f, 5, 45); 
+                break;
+            case ActionType.Defend:
+                Defend += 1;
+                UpdateDefend();
+                break;
+        }
+
+
+        yield return new WaitForSeconds(1);
+
+        ani.Play("idle");
+    }
+
 }
