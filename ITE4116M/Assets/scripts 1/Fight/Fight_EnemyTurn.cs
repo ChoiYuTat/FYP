@@ -6,7 +6,11 @@ public class Fight_EnemyTurn : FightUnit
 {
     public override void Init()
     {
-        base.Init();
+        FightUIManager.Instance.GetUI<FightUI>("FightUI").RemoveAllCards();
+        FightUIManager.Instance.ShowTip("Enemy Turn", Color.red, delegate ()
+          {
+              
+          });
     }
 
     public override void OnUpDate()

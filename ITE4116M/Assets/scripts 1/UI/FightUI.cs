@@ -4,6 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using System;
+
 public class FightUI : FightUIBase
 {
     public Text cardCountText;
@@ -24,7 +26,17 @@ public class FightUI : FightUIBase
         hpText = transform.Find("hp/moneyTxt").GetComponent<Text>();
         hpImg = transform.Find("hp/fill").GetComponent<Image>();
         defText = transform.Find("hp/fangyu/Text").GetComponent<Text>();
+        transform.Find("turnBtn").GetComponent<Button>().onClick.AddListener(onChangeTurnBtn);
     }
+
+    private void onChangeTurnBtn()
+    {
+        if (FightManager.Instance.fightUnit is Fight_PlayerTurn)
+        {
+            FightManager.Instance.ChangeType(FightType.Enemy);
+        }    
+    }
+
     private void Update()
     {
         UpdateHp();
@@ -106,5 +118,15 @@ public class FightUI : FightUIBase
         item.transform.DOScale(0, 0.25f);
 
         Destroy(item.gameObject, 1);
+
+
+    }
+
+    public void RemoveAllCards()
+    {
+        for (int i = cardItemList.Count - 1; i >= 0; i--)
+        {
+            RemoveCard(cardItemList[i]);
+        }
     }
 }
