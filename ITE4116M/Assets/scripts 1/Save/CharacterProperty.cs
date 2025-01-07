@@ -6,7 +6,7 @@ using UnityEngine;
 public struct CharacterData
 {
     public Vector3 Position;
-    public Vector3 Rotation;
+    //public Vector3 Rotation;
     
 
 }
@@ -24,6 +24,6 @@ public class CharacterProperty : MonoBehaviour
     void Update()
     {
         Property.Position= transform.position;
-        Property.Rotation =transform.eulerAngles;
+        //Property.Rotation =transform.eulerAngles;
     }
 }
