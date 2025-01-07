@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 
 public class SaveSystem
 {
-    
+    public static string shotPath=$"{Application.persistentDataPath}/Shot";
     static string GetPath(string fileName)
     {
         return Path.Combine(Application.persistentDataPath, fileName);
@@ -71,9 +71,68 @@ public class SaveSystem
         return "";
     }
     #endregion
+    #region PrtSc
+    public static void CameraCapture (int i ,Camera camera,Rect rect)
+    {
+        if(!Directory.Exists(SaveSystem.shotPath))
+        {  
+            Directory.CreateDirectory(SaveSystem.shotPath);
+        }
+        string path = Path.Combine(SaveSystem.shotPath, $"{i}.png");
+       
 
+            int w=(int)rect.width;
+            int h=(int)rect.height;
+
+            RenderTexture rt = new RenderTexture(w, h, 0);
+            camera.targetTexture = rt;
+            camera.Render();
+
+            RenderTexture.active=rt;
+
+            Texture2D t2D = new Texture2D(w, h, TextureFormat.RGB24, true);
+
+            t2D.ReadPixels(rect, 0, 0);
+            t2D.Apply();
+
+        byte[]bytes=t2D.EncodeToPNG();
+        File.WriteAllBytes(path, bytes);
+
+        camera.targetTexture=null;
+        RenderTexture.active=null;
+        GameObject.Destroy(rt);
+    }
+
+    public static Sprite LoadShot(int i)
+    {
+        var path = Path.Combine(shotPath, $"{i}.png");
+
+        Texture2D t = new Texture2D(640, 360);
+        t.LoadImage(GetImgByte(path));
+        return Sprite.Create(t, new Rect(0, 0, t.width, t.height), new Vector2(0.5f, 0.5f));
+    }
+
+    static byte[] GetImgByte(string path)
+    {
+        FileStream s = new FileStream(path, FileMode.Open);
+        byte[] imgByte = new byte[s.Length];
+        s.Read(imgByte,0,imgByte.Length);
+        s.Close();
+        return imgByte;
+    }
+
+    public static void DeleteShot(int i)
+    {
+        var path = Path.Combine(shotPath, $"{i}.png");
+        if(File.Exists(path))
+        {
+            File.Delete(path);
+            Debug.Log($"deleted image");
+        }
+    }
+        #endregion
     #region DeleteAll
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
     [UnityEditor.MenuItem("Delete/Records List")]
     
     public static void DeleteRecord() 
