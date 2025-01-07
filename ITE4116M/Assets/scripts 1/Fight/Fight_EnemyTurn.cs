@@ -7,6 +7,9 @@ public class Fight_EnemyTurn : FightUnit
     public override void Init()
     {
         FightUIManager.Instance.GetUI<FightUI>("FightUI").RemoveAllCards();
+        FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdatePower();
+        FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateCardCount();
+        FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateUsedCardCount();
         FightUIManager.Instance.ShowTip("Enemy Turn", Color.red, delegate ()
           {
               FightManager.Instance.StartCoroutine(EnemyManager.instance.DoAllEnemyAction());

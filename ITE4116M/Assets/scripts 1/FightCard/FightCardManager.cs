@@ -46,6 +46,22 @@ public class FightCardManager : MonoBehaviour
         return id;
     }
 
+    public void Shuffle()
+    {
+        List<string> tempList = new List<string>();
+        tempList.AddRange(usedCardList);
+        while (tempList.Count > 0)
+        {
+            //random card
+            int tempIndex = 0;
+            //add temp card to cardList
+            cardList.Add(tempList[tempIndex]);
+            //remove temp card
+            tempList.RemoveAt(tempIndex);
+            usedCardList.RemoveAt(tempIndex);
+            tempIndex++;
+        }
+    }
 
 
 
