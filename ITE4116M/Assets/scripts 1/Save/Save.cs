@@ -9,7 +9,9 @@ public class Save : MonoBehaviour
     public CharacterProperty savecharatcer;
     public string savetxt;
     public byte[] loadforbyte;
+   
     public string loadtxt;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,6 @@ public class Save : MonoBehaviour
             savecharatcer.Property = JsonUtility.FromJson<CharacterData>(loadtxt);
             savecharatcer.transform.position = savecharatcer.Property.Position;
         }
-        
+      
     }
 }
