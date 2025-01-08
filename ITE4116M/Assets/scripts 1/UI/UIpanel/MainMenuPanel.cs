@@ -38,7 +38,8 @@ public class MainMenuPanel : BasePanel
     }
     private void Exit()
     {
-        GameRoot.GetInstance().UIManager_Root.Pop(false);
+        //GameRoot.GetInstance().UIManager_Root.Pop(false);
+        Application.Quit();
     }
 
     public override void OnEnable()
