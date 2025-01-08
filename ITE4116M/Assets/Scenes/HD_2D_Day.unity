@@ -21448,6 +21448,8 @@ GameObject:
   - component: {fileID: 649196201}
   - component: {fileID: 649196200}
   - component: {fileID: 649196196}
+  - component: {fileID: 649196207}
+  - component: {fileID: 649196206}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -21515,9 +21517,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 649196197}
+  - {fileID: 649196202}
   selectedCommands:
-  - {fileID: 649196199}
+  - {fileID: 649196206}
   variables:
   - {fileID: 649196191}
   description: 
@@ -21784,7 +21786,7 @@ MonoBehaviour:
   storyText: Hmmmmm...let me think about it.
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 21300000, guid: 2410d74f63711a646bfbc47e223c28b2, type: 3}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -22081,6 +22083,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 649196207}
   - {fileID: 649196199}
   - {fileID: 649196196}
   suppressAllAutoSelections: 0
@@ -22191,6 +22194,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 649196206}
   - {fileID: 649196201}
   suppressAllAutoSelections: 0
 --- !u!114 &649196203
@@ -22259,6 +22263,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
+--- !u!114 &649196206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649196181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 21
+  indentLevel: 0
+  storyText: no, i'm busy now....
+  description: 
+  character: {fileID: 1136104308}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &649196207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649196181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 20
+  indentLevel: 0
+  storyText: yes, i'm ready!!
+  description: 
+  character: {fileID: 1136104308}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &649376576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36984,11 +37042,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Player
+  nameText: Luna
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 2410d74f63711a646bfbc47e223c28b2, type: 3}
+  - {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
