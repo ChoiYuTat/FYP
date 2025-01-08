@@ -26,7 +26,7 @@ public class FightManager : MonoBehaviour
 
     public void Init()
     {
-        MaxHp = 100;
+        MaxHp = 20;
         curHp = MaxHp;
         MaxPowerCount = 5;
         curPowerCount = MaxPowerCount;

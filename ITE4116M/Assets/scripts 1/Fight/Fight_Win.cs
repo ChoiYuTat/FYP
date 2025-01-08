@@ -6,7 +6,11 @@ public class Fight_Win : FightUnit
 {
     public override void Init()
     {
-        FightManager.Instance.StopAllCoroutines();
+        FightUIManager.Instance.ShowTip("Victory!!!", Color.green, delegate ()
+        {
+            FightManager.Instance.StopAllCoroutines();
+        });
+        
     }
 
     public override void OnUpDate()

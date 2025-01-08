@@ -6,7 +6,10 @@ public class Fight_Loss : FightUnit
 {
     public override void Init()
     {
-        FightManager.Instance.StopAllCoroutines();
+        FightUIManager.Instance.ShowTip("Fail!!!", Color.red, delegate ()
+        {
+            FightManager.Instance.StopAllCoroutines();
+        });
     }
 
     public override void OnUpDate()
