@@ -21515,8 +21515,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 649196183}
-  selectedCommands: []
+  - {fileID: 649196197}
+  selectedCommands:
+  - {fileID: 649196199}
   variables:
   - {fileID: 649196191}
   description: 
@@ -21561,7 +21562,7 @@ MonoBehaviour:
   storyText: Hi! I am Catherine. an adventurer of this town.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -21589,7 +21590,7 @@ MonoBehaviour:
     defeat it?
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -22070,7 +22071,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 122.680176
-    y: 103.80612
+    y: 103.13945
     width: 70.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -22097,10 +22098,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  storyText: Let go
+  storyText: I knew that you're not the person only willing to watching when the
+    dangers come. let's go!!!!
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1550158491}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -22153,8 +22155,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Alright, if you changed your mine, please let me know.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1550158491}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -22233,7 +22235,7 @@ MonoBehaviour:
   storyText: Are you ready?
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -52152,7 +52154,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: bb75d9f58c31a4940b6001241916ebf0, type: 3}
+  - {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
