@@ -21469,9 +21469,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -46.23819
+    x: -46.90486
     y: 121.306114
-    width: 82
+    width: 82.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21517,7 +21517,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 649196197}
   selectedCommands:
-  - {fileID: 649196196}
+  - {fileID: 649196199}
   variables:
   - {fileID: 649196191}
   description: 
@@ -21559,10 +21559,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 1
-  storyText: Hi!
+  storyText: Hi! I am Catherine. an adventurer of this town.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -21586,10 +21586,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 1
-  storyText: I am GAY!!!!!!!!
+  storyText: Our town is under attack by monsters, would you wiilling to help us
+    defeat it?
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -21780,7 +21781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 1
-  storyText: ok....
+  storyText: Hmmmmm...let me think about it.
   description: 
   character: {fileID: 1136104308}
   portrait: {fileID: 21300000, guid: 2410d74f63711a646bfbc47e223c28b2, type: 3}
@@ -22070,8 +22071,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 122.680176
-    y: 103.80612
-    width: 70
+    y: 103.13945
+    width: 70.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22097,10 +22098,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  storyText: Let go
+  storyText: I knew that you're not the person only willing to watching when the
+    dangers come. let's go!!!!
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1550158491}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -22124,7 +22126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 1
-  text: 'no
+  text: 'no, i''m busy now....
 
 '
   description: 
@@ -22151,10 +22153,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  storyText: bey
+  storyText: Alright, if you changed your mine, please let me know.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1550158491}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -22180,7 +22182,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 125.680176
     y: 166.80612
-    width: 64
+    width: 64.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22205,7 +22207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 1
-  text: yes
+  text: yes, i'm ready!!
   description: 
   targetBlock: {fileID: 649196197}
   hideIfVisited: 0
@@ -22230,10 +22232,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 1
-  storyText: go?
+  storyText: Are you ready?
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -52148,11 +52150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: NPC1
+  nameText: Catherine
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
+  - {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
