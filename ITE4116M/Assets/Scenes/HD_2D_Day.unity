@@ -10106,7 +10106,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.19080894, y: 0, z: 0, w: 0.9816273}
-  m_LocalPosition: {x: 43.81, y: 20.036, z: 39.37}
+  m_LocalPosition: {x: 43.81, y: 21.536, z: 35.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45426,6 +45426,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7957672952589722927, guid: 5edb3e471cb307d4f83089c71f70ee97,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957672952589722927, guid: 5edb3e471cb307d4f83089c71f70ee97,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957672952589722927, guid: 5edb3e471cb307d4f83089c71f70ee97,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957672952589722927, guid: 5edb3e471cb307d4f83089c71f70ee97,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.81
       objectReference: {fileID: 0}
@@ -45473,6 +45488,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957672952589722927, guid: 5edb3e471cb307d4f83089c71f70ee97,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9182741912260106834, guid: 5edb3e471cb307d4f83089c71f70ee97,
         type: 3}
@@ -68411,7 +68431,7 @@ Transform:
   m_GameObject: {fileID: 2039715876}
   serializedVersion: 2
   m_LocalRotation: {x: 0.19080894, y: 0, z: 0, w: 0.9816273}
-  m_LocalPosition: {x: 43.81, y: 20.036, z: 39.37}
+  m_LocalPosition: {x: 43.81, y: 21.536, z: 35.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -71998,7 +72018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 3
-  m_FollowOffset: {x: 0, y: 2, z: -3}
+  m_FollowOffset: {x: 0, y: 3.5, z: -7}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -72500,9 +72520,9 @@ Transform:
   m_GameObject: {fileID: 6353048367743595117}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.74, y: 18.036, z: 42.37}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 39.84, y: 14.82, z: 22.97}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3263407941407913580}
   - {fileID: 1550158492}
