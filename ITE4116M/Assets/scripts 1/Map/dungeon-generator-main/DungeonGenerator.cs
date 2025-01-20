@@ -44,6 +44,7 @@ public class DungeonGenerator : MonoBehaviour
     void Start()
     {
         MazeGenerator();
+
     }
 
     void GenerateDungeon()
@@ -88,8 +89,11 @@ public class DungeonGenerator : MonoBehaviour
 
                     var newRoom = Instantiate(rooms[randomRoom].room, new Vector3(i * offset.x, 0, -j * offset.y), Quaternion.identity, transform).GetComponent<RoomBehaviour>();
                     newRoom.UpdateRoom(currentCell.status);
-                    newRoom.name += " " + i + "-" + j;
-
+                    if (i < size.x - 1 || j < size.y - 1)
+                    {
+                        newRoom.name += " " + i + "-" + j;
+                    }
+                    else newRoom.name = "boss";
                 }
             }
         }
@@ -99,7 +103,6 @@ public class DungeonGenerator : MonoBehaviour
     void MazeGenerator()
     {
         board = new List<Cell>();
-
         for (int i = 0; i < size.x; i++)
         {
             for (int j = 0; j < size.y; j++)
