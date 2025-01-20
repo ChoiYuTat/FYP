@@ -21,7 +21,7 @@ public class MainMenuPanel : BasePanel
         UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Save").onClick.AddListener(Save);
         UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Load").onClick.AddListener(Load);
         UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Character").onClick.AddListener(Character);
-
+        UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Buttle (1)").onClick.AddListener(Option);
     }
 
     private void Character()
@@ -35,6 +35,10 @@ public class MainMenuPanel : BasePanel
     private void Load()
     {
         GameRoot.GetInstance().UIManager_Root.Push(new LoadPanel());
+    }
+    private void Option()
+    {
+        GameRoot.GetInstance().UIManager_Root.Push(new Options());
     }
     private void Exit()
     {

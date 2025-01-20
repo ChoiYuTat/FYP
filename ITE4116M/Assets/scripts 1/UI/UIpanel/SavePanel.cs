@@ -17,7 +17,7 @@ public class SavePanel : BasePanel
     public override void OnStart()
     {
         base.OnStart();
-        UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Exit").onClick.AddListener(Exit);
+      
     }
 
     private void Exit()
