@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
+using static Fungus.AssertCommand;
 
 public class SavePanel : BasePanel
 {
@@ -17,12 +18,12 @@ public class SavePanel : BasePanel
     public override void OnStart()
     {
         base.OnStart();
-        UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Exit").onClick.AddListener(Exit);
+        UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Save1").onClick.AddListener(Save);
     }
 
-    private void Exit()
+    private void Save()
     {
-        GameRoot.GetInstance().UIManager_Root.Pop(false);
+
     }
     public override void OnEnable()
     {
