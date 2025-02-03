@@ -37,6 +37,8 @@ public class DungeonGenerator : MonoBehaviour
     public int startPos = 0;
     public Rule[] rooms;
     public Vector2 offset;
+    bool isPlayer = false;
+    [SerializeField] private CameraTargetBinder cameraBinder;
 
     List<Cell> board;
 
@@ -108,6 +110,13 @@ public class DungeonGenerator : MonoBehaviour
             for (int j = 0; j < size.y; j++)
             {
                 board.Add(new Cell());
+                if (j == 0 && i == 0 && !isPlayer)
+                {
+                    GameObject PlayerPrefab = Resources.Load("testCharacter") as GameObject;
+                    PlayerPrefab = Object.Instantiate(PlayerPrefab, new Vector3(0,0,0), Quaternion.identity);
+                    cameraBinder.BindCameraToPlayer(PlayerPrefab);
+                    isPlayer = true;
+                }
             }
         }
 
