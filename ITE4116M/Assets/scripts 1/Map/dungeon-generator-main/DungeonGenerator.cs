@@ -13,7 +13,7 @@ public class DungeonGenerator : MonoBehaviour
     [System.Serializable]
     public class Rule
     {
-        public GameObject room ;
+        public GameObject room;
         public Vector2Int minPosition;
         public Vector2Int maxPosition;
 
@@ -23,7 +23,7 @@ public class DungeonGenerator : MonoBehaviour
         {
             // 0 - cannot spawn 1 - can spawn 2 - HAS to spawn
 
-            if (x>= minPosition.x && x<=maxPosition.x && y >= minPosition.y && y <= maxPosition.y)
+            if (x >= minPosition.x && x <= maxPosition.x && y >= minPosition.y && y <= maxPosition.y)
             {
                 return obligatory ? 2 : 1;
             }
@@ -66,17 +66,18 @@ public class DungeonGenerator : MonoBehaviour
                     {
                         int p = rooms[k].ProbabilityOfSpawning(i, j);
 
-                        if(p == 2)
+                        if (p == 2)
                         {
                             randomRoom = k;
                             break;
-                        } else if (p == 1)
+                        }
+                        else if (p == 1)
                         {
                             availableRooms.Add(k);
                         }
                     }
 
-                    if(randomRoom == -1)
+                    if (randomRoom == -1)
                     {
                         if (availableRooms.Count > 0)
                         {
@@ -113,7 +114,7 @@ public class DungeonGenerator : MonoBehaviour
                 if (j == 0 && i == 0 && !isPlayer)
                 {
                     GameObject PlayerPrefab = Resources.Load("testCharacter") as GameObject;
-                    PlayerPrefab = Object.Instantiate(PlayerPrefab, new Vector3(0,0,0), Quaternion.identity);
+                    PlayerPrefab = Object.Instantiate(PlayerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
                     cameraBinder.BindCameraToPlayer(PlayerPrefab);
                     isPlayer = true;
                 }
@@ -126,13 +127,13 @@ public class DungeonGenerator : MonoBehaviour
 
         int k = 0;
 
-        while (k<1000)
+        while (k < 1000)
         {
             k++;
 
             board[currentCell].visited = true;
 
-            if(currentCell == board.Count - 1)
+            if (currentCell == board.Count - 1)
             {
                 break;
             }
@@ -201,7 +202,7 @@ public class DungeonGenerator : MonoBehaviour
         List<int> neighbors = new List<int>();
 
         //check up neighbor
-        if (cell - size.x >= 0 && !board[(cell-size.x)].visited)
+        if (cell - size.x >= 0 && !board[(cell - size.x)].visited)
         {
             neighbors.Add((cell - size.x));
         }
@@ -213,15 +214,15 @@ public class DungeonGenerator : MonoBehaviour
         }
 
         //check right neighbor
-        if ((cell+1) % size.x != 0 && !board[(cell +1)].visited)
+        if ((cell + 1) % size.x != 0 && !board[(cell + 1)].visited)
         {
-            neighbors.Add((cell +1));
+            neighbors.Add((cell + 1));
         }
 
         //check left neighbor
         if (cell % size.x != 0 && !board[(cell - 1)].visited)
         {
-            neighbors.Add((cell -1));
+            neighbors.Add((cell - 1));
         }
 
         return neighbors;
