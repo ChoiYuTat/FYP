@@ -8,6 +8,7 @@ TagManager:
   - Laser
   - Enemy
   - wall
+  - BettleRoom
   layers:
   - Default
   - TransparentFX
