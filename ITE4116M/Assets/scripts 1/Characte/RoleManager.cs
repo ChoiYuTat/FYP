@@ -11,8 +11,8 @@ public class RoleManager
     public void Init()
     {
         cardList = new List<string>();
-        cardList.Add("1000");
-        cardList.Add("1000");
+        cardList.Add("1001");
+        cardList.Add("1001");
         cardList.Add("1000");
         cardList.Add("1000");
 
