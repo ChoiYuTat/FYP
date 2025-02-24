@@ -16,8 +16,8 @@ public class RoleManager
         cardList.Add("1000");
         cardList.Add("1000");
 
-        cardList.Add("1001");
-        cardList.Add("1001");
+        cardList.Add("1000");
+        cardList.Add("1000");
         cardList.Add("1001");
         cardList.Add("1001");
 

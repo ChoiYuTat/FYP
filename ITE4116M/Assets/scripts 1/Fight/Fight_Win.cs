@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fight_Win : FightUnit
 {
@@ -9,6 +10,9 @@ public class Fight_Win : FightUnit
         FightUIManager.Instance.ShowTip("Victory!!!", Color.green, delegate ()
         {
             FightManager.Instance.StopAllCoroutines();
+            SceneManager.LoadScene("TestBattle");
+            FightUIManager.Instance.CloseAllUI("FightUI");
+            DungeonGenerator.Instance.Init();
         });
         
     }
@@ -17,4 +21,5 @@ public class Fight_Win : FightUnit
     {
         base.OnUpDate();
     }
+
 }
