@@ -19,7 +19,7 @@ public class RecordData : MonoBehaviour
         }
     }
 
-    public const int recordNum = 9;
+    public const int recordNum = 15;
     public const string NAME = "RecordData";
 
     public string[] recordName = new string[recordNum];

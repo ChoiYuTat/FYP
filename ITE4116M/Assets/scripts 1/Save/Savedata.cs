@@ -21,11 +21,13 @@ public class Savedata : MonoBehaviour
 
     public string scensName;
     public float gameTime;
+    public int level;
    
     public class SaveData
     {
         public string scensName;
         public float gameTime;
+        public int level;
     }
 
     SaveData ForSave()
@@ -33,6 +35,7 @@ public class Savedata : MonoBehaviour
         var saveData = new SaveData();
         saveData.scensName = scensName;
         saveData.gameTime = gameTime;
+        saveData.level = level;
         
         return saveData;
     }
