@@ -1,9 +1,17 @@
+using Fungus;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DungeonGenerator : MonoBehaviour
 {
+    public static DungeonGenerator Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     public class Cell
     {
         public bool visited = false;
@@ -33,22 +41,37 @@ public class DungeonGenerator : MonoBehaviour
 
     }
 
+    public GameObject PlayerPrefab;
+    public Transform DungeonManager;
     public Vector2Int size;
     public int startPos = 0;
     public Rule[] rooms;
     public Vector2 offset;
     bool isPlayer = false;
     [SerializeField] private CameraTargetBinder cameraBinder;
+    [SerializeField] private GameObject VirtualCamera;
 
     List<Cell> board;
 
-    // Start is called before the first frame update
     void Start()
     {
         MazeGenerator();
+        PlayerPrefab = Resources.Load("testCharacter") as GameObject;
+        PlayerPrefab = Object.Instantiate(PlayerPrefab, new Vector3(0, 0, 0), Quaternion.identity, DungeonManager);
+        SetCamera();
+        isPlayer = true;
 
     }
-
+    public void Init()
+    {
+        SetCamera();
+    }
+    public void SetCamera()
+    {
+        VirtualCamera = GameObject.Find("Virtual Camera");
+        cameraBinder = VirtualCamera.GetComponent<CameraTargetBinder>();
+        cameraBinder.BindCameraToPlayer(PlayerPrefab);
+    }
     void GenerateDungeon()
     {
 
@@ -113,10 +136,7 @@ public class DungeonGenerator : MonoBehaviour
                 board.Add(new Cell());
                 if (j == 0 && i == 0 && !isPlayer)
                 {
-                    GameObject PlayerPrefab = Resources.Load("testCharacter") as GameObject;
-                    PlayerPrefab = Object.Instantiate(PlayerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-                    cameraBinder.BindCameraToPlayer(PlayerPrefab);
-                    isPlayer = true;
+
                 }
             }
         }

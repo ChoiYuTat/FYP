@@ -8,6 +8,9 @@ public class GameRoot : MonoBehaviour
 {
     private static GameRoot instance;
 
+    private DungeonGenerator DungeonGenerator;
+    public DungeonGenerator DungeonGenerator_Root;
+
     private UIManager UIManager;
     public UIManager UIManager_Root;
 
@@ -38,6 +41,8 @@ public class GameRoot : MonoBehaviour
 
         UIManager = new UIManager();
         UIManager_Root = UIManager;
+        DungeonGenerator = new DungeonGenerator();
+        DungeonGenerator_Root = DungeonGenerator;
         SceneControl = new SceneControl();
     }
 
