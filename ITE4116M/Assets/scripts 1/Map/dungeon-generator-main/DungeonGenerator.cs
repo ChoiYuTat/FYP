@@ -10,12 +10,15 @@ public class DungeonGenerator : MonoBehaviour
 
     [Header("Debug Info")]
     [SerializeField] private int deadEndCount = 0; // 序列化以便在Inspector查看
-
+    [Header("Special Room Settings")]
+    [Range(0f, 1f)] public float specialRoomChance = 0.7f; // 死路生成特殊房間機率
 
 
     private void Awake()
     {
         Instance = this;
+        PlayerPrefab = Resources.Load("testCharacter") as GameObject;
+        PlayerPrefab = Object.Instantiate(PlayerPrefab, new Vector3(0, 0, 0), Quaternion.identity, DungeonManager);
     }
 
     public void Init()
@@ -42,6 +45,7 @@ public class DungeonGenerator : MonoBehaviour
     {
         public bool visited = false;
         public bool[] status = new bool[4];
+        public bool isExplored;
         public bool isDeadEnd = false; // 死路標記
     }
 
@@ -53,26 +57,10 @@ public class DungeonGenerator : MonoBehaviour
         public Vector2Int maxPosition;
         [Range(1, 100)] public int spawnWeight = 50; // 生成權重
         public RoomType roomType;
-        public bool isObligatory;
         public bool spawnOnlyAtDeadEnd; // 僅在死路生成
 
-        [Header("Special Room Settings")]
-        [Range(0f, 1f)] public float specialRoomChance = 0.7f; // 死路生成特殊房間機率
-
-        //public int ProbabilityOfSpawning(int x, int y)
-        //{
-        //    // 0 - cannot spawn 1 - can spawn 2 - HAS to spawn
-
-        //    if (x >= minPosition.x && x <= maxPosition.x && y >= minPosition.y && y <= maxPosition.y)
-        //    {
-        //        return isObligatory ? 2 : 1;
-        //    }
-
-        //    return 0;
-        //}
-
     }
-
+    
 
     public GameObject PlayerPrefab;
     public Transform DungeonManager;
@@ -84,17 +72,21 @@ public class DungeonGenerator : MonoBehaviour
     [SerializeField] private CameraTargetBinder cameraBinder;
     [SerializeField] private GameObject VirtualCamera;
 
-    List<Cell> board;
+    public List<Cell> board;
 
     void Start()
     {
         MazeGenerator();
-        PlayerPrefab = Resources.Load("testCharacter") as GameObject;
-        PlayerPrefab = Object.Instantiate(PlayerPrefab, new Vector3(0, 0, 0), Quaternion.identity, DungeonManager);
         SetCamera();
         isPlayer = true;
         ForceDeadEnd();
 
+    }
+
+    public Transform getPlayer()
+    {
+        GameObject player = PlayerPrefab;
+        return player.transform;
     }
 
 
@@ -111,7 +103,15 @@ public class DungeonGenerator : MonoBehaviour
     }
     void GenerateDungeon()
     {
-        MarkDeadEnds();
+        MarkDeadEnds(); // 先標記所有死路
+        // 后处理：如果没有死路则强制生成
+        if (deadEndCount == 0)
+        {
+            float dynamicChance = Mathf.Clamp(1f - (deadEndCount * 0.2f), 0.3f, 0.8f);
+            specialRoomChance = dynamicChance;  
+            ForceDeadEnd();
+            MarkDeadEnds(); // 重新统计
+        }
         // 獲取 Boss 房間的配置
         RoomRule bossRule = FindRule(RoomType.Boss);
 
@@ -142,7 +142,7 @@ public class DungeonGenerator : MonoBehaviour
                 }
 
                 // 死路生成邏輯
-                if (currentCell.isDeadEnd && Random.value < 1)
+                if (currentCell.isDeadEnd && Random.value < specialRoomChance)
                 {
                     List<RoomRule> deadEndRules = GetDeadEndValidRules(i, j);
                     if (deadEndRules.Count > 0)
@@ -159,14 +159,6 @@ public class DungeonGenerator : MonoBehaviour
                     SpawnRoom(SelectRoomByWeight(validRules), i, j);
                 }
             }
-        }
-
-        MarkDeadEnds(); // 先標記所有死路
-        // 后处理：如果没有死路则强制生成
-        if (deadEndCount == 0)
-        {
-            ForceDeadEnd();
-            MarkDeadEnds(); // 重新统计
         }
     }
 
@@ -269,6 +261,7 @@ public class DungeonGenerator : MonoBehaviour
 
         newRoom.UpdateRoom(board[(x + y * size.x)].status);
         newRoom.name = $"{rule.roomType} Room ({x},{y})";
+        board[x + y * size.x].isExplored = false;
     }
     void ForceDeadEnd()
     {
