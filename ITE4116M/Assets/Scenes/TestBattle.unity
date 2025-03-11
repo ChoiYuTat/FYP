@@ -913,23 +913,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9414399be85daf84ea2fd3d94670d3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deadEndCount: 0
   PlayerPrefab: {fileID: 0}
   DungeonManager: {fileID: 8370374374906508312}
-  size: {x: 6, y: 6}
+  size: {x: 5, y: 5}
   startPos: 0
-  rooms:
-  - room: {fileID: 8485914696622304995, guid: 25290dc65e99d1347b0eb1edd6f8033d, type: 3}
+  roomRules:
+  - prefab: {fileID: 8485914696622304995, guid: a84ea6ff7a2136440998ac6171e90ebe,
+      type: 3}
     minPosition: {x: 0, y: 0}
     maxPosition: {x: 0, y: 0}
-    obligatory: 0
-  - room: {fileID: 8485914696622304995, guid: 8cb01a690ee875f4699c09ee03ef7bc0, type: 3}
+    spawnWeight: 1
+    roomType: 4
+    isObligatory: 0
+    spawnOnlyAtDeadEnd: 0
+    specialRoomChance: 0.7
+  - prefab: {fileID: 8485914696622304995, guid: 25290dc65e99d1347b0eb1edd6f8033d,
+      type: 3}
     minPosition: {x: 0, y: 0}
     maxPosition: {x: 0, y: 0}
-    obligatory: 0
-  - room: {fileID: 8485914696622304995, guid: a84ea6ff7a2136440998ac6171e90ebe, type: 3}
+    spawnWeight: 0
+    roomType: 1
+    isObligatory: 0
+    spawnOnlyAtDeadEnd: 0
+    specialRoomChance: 0.7
+  - prefab: {fileID: 8485914696622304995, guid: a84ea6ff7a2136440998ac6171e90ebe,
+      type: 3}
     minPosition: {x: 0, y: 0}
-    maxPosition: {x: 0, y: 0}
-    obligatory: 0
+    maxPosition: {x: 5, y: 5}
+    spawnWeight: 50
+    roomType: 0
+    isObligatory: 0
+    spawnOnlyAtDeadEnd: 0
+    specialRoomChance: 0.7
+  - prefab: {fileID: 8485914696622304995, guid: 8cb01a690ee875f4699c09ee03ef7bc0,
+      type: 3}
+    minPosition: {x: 0, y: 0}
+    maxPosition: {x: 10, y: 10}
+    spawnWeight: 100
+    roomType: 2
+    isObligatory: 0
+    spawnOnlyAtDeadEnd: 1
+    specialRoomChance: 1
+  - prefab: {fileID: 8485914696622304995, guid: 8cb01a690ee875f4699c09ee03ef7bc0,
+      type: 3}
+    minPosition: {x: 0, y: 0}
+    maxPosition: {x: 5, y: 5}
+    spawnWeight: 10
+    roomType: 2
+    isObligatory: 0
+    spawnOnlyAtDeadEnd: 0
+    specialRoomChance: 1
+  - prefab: {fileID: 8485914696622304995, guid: 25290dc65e99d1347b0eb1edd6f8033d,
+      type: 3}
+    minPosition: {x: 0, y: 0}
+    maxPosition: {x: 10, y: 10}
+    spawnWeight: 20
+    roomType: 5
+    isObligatory: 0
+    spawnOnlyAtDeadEnd: 0
+    specialRoomChance: 1
   offset: {x: 28, y: 13}
   cameraBinder: {fileID: 0}
   VirtualCamera: {fileID: 0}
