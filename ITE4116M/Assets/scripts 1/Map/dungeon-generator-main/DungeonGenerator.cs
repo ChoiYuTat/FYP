@@ -35,7 +35,7 @@ public class DungeonGenerator : MonoBehaviour
     {
         Normal,          // 普通房間
         Boss,           // Boss房間
-        Treasure,      // 寶箱房
+        Treasure,      // ?箱房
         Shop,           // 商店
         Spawn,          // 初始房間
         Enemy
@@ -46,7 +46,7 @@ public class DungeonGenerator : MonoBehaviour
         public bool visited = false;
         public bool[] status = new bool[4];
         public bool isExplored;
-        public bool isDeadEnd = false; // 死路標記
+        public bool isDeadEnd = false; // 死路標?
     }
 
     [System.Serializable]
@@ -99,11 +99,11 @@ public class DungeonGenerator : MonoBehaviour
                 return rule;
             }
         }
-        return null; // 如果沒有找到對應類型的規則
+        return null; // 如果沒有找到對應?型的?則
     }
     void GenerateDungeon()
     {
-        MarkDeadEnds(); // 先標記所有死路
+        MarkDeadEnds(); // 先標?所有死路
         // 后处理：如果没有死路则强制生成
         if (deadEndCount == 0)
         {
@@ -127,21 +127,21 @@ public class DungeonGenerator : MonoBehaviour
 
                 if (!currentCell.visited) continue;
 
-                // 強制生成初始房間
+                // ?制生成初始房間
                 if (i == 0 && j == 0)
                 {
                     if (spawnRule != null) SpawnRoom(spawnRule, i, j);
                     continue;
                 }
 
-                // 強制生成Boss房間
+                // ?制生成Boss房間
                 if (i == size.x - 1 && j == size.y - 1)
                 {
                     if (bossRule != null) SpawnRoom(bossRule, i, j);
                     continue;
                 }
 
-                // 死路生成邏輯
+                // 死路生成??
                 if (currentCell.isDeadEnd && Random.value < specialRoomChance)
                 {
                     List<RoomRule> deadEndRules = GetDeadEndValidRules(i, j);
@@ -211,7 +211,7 @@ public class DungeonGenerator : MonoBehaviour
         {
             if (rule.roomType == RoomType.Spawn ||
                 rule.roomType == RoomType.Boss ||
-                rule.spawnOnlyAtDeadEnd) // 排除僅限死路的規則
+                rule.spawnOnlyAtDeadEnd) // 排除僅限死路的?則
                 continue;
 
             if (IsInRange(rule, x, y))
