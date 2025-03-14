@@ -34,7 +34,7 @@ public class DateSaveManager : MonoBehaviour
 
     void SaveData()
     {
-        string json = JsonUtility.ToJson(list);
+        string json = JsonUtility.ToJson(list , true);
         string Filepath = Application.streamingAssetsPath + "/PlayerData.json";
 
         using(StreamWriter sw = new StreamWriter(Filepath))
