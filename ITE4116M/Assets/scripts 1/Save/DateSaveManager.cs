@@ -9,7 +9,7 @@ public class CardList
 {
     public List<string> cardList = new List<string>();
 }
-
+[System.Serializable]
 public class PlayerList
 {
     public List<CardList> playerList = new List<CardList>();
@@ -22,7 +22,7 @@ public class DateSaveManager : MonoBehaviour
 
     void GenerateData()
     {
-        player.cardList = new List<string>();
+        player = new CardList();
         player.cardList.Add("1000");
         player.cardList.Add("1000");
         player.cardList.Add("1000");
