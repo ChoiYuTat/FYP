@@ -70,11 +70,10 @@ public class DateSaveManager : MonoBehaviour
                 json = sr.ReadToEnd();
                 sr.Close();
             }
+
             list = JsonUtility.FromJson<PlayerList>(json);
-            for (int i = 0; i > this.player.cardList.Count; i++)
-            {
-                currcardList.Add(player.cardList[i]);
-            }
+            player = list.playerList[0];
+            currcardList.AddRange(player.cardList);
         }
         else
         {
