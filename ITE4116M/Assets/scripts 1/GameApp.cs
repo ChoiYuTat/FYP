@@ -11,6 +11,7 @@ public class GameApp : MonoBehaviour
         RoleManager.instance.Init();
         FightManager.Instance.ChangeType(FightType.Init);
         AudioManager.Instance.Init();
+        DateSaveManager.instance.GenerateData();
     }
 
 }

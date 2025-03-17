@@ -17,7 +17,7 @@ public class FightCardManager : MonoBehaviour
         
         List<string> tempList = new List<string>();
         //save card temp
-        tempList.AddRange(RoleManager.instance.cardList);
+        tempList.AddRange(DateSaveManager.instance.LoadData());
 
         while (tempList.Count > 0)
         {

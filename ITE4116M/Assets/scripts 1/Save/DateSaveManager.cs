@@ -17,10 +17,19 @@ public class PlayerList
 
 public class DateSaveManager : MonoBehaviour
 {
-    public PlayerList list = new PlayerList();
-    CardList player;
+    public static DateSaveManager instance = new DateSaveManager();
 
-    void GenerateData()
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    public PlayerList list = new PlayerList();
+    public CardList player;
+    CardList useCardList;
+    public List<string> currcardList = new List<string>();
+
+    public void GenerateData()
     {
         player = new CardList();
         player.cardList.Add("1000");
@@ -28,7 +37,11 @@ public class DateSaveManager : MonoBehaviour
         player.cardList.Add("1000");
         player.cardList.Add("1000");
         player.cardList.Add("1000");
-
+        player.cardList.Add("1000");
+        player.cardList.Add("1000");
+        player.cardList.Add("1000");
+        player.cardList.Add("1000");
+        player.cardList.Add("1000");
         list.playerList.Add(player);
     }
 
@@ -45,10 +58,31 @@ public class DateSaveManager : MonoBehaviour
         }
     }
 
-    private void Start()
+     public List<string> LoadData()
     {
-        GenerateData();
+        string json;
+        string filename = Application.streamingAssetsPath + "/PlayerData.json";
+
+        if (File.Exists(filename))
+        {
+            using (StreamReader sr = new StreamReader(filename))
+            {
+                json = sr.ReadToEnd();
+                sr.Close();
+            }
+            list = JsonUtility.FromJson<PlayerList>(json);
+            for (int i = 0; i > this.player.cardList.Count; i++)
+            {
+                currcardList.Add(player.cardList[i]);
+            }
+        }
+        else
+        {
+            GenerateData();
+        }
+        return currcardList;
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.S)){
