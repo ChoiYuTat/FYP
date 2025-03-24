@@ -13,7 +13,9 @@ public class FogController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fogButton.onClick.AddListener(StatFadeFog);    
+        Time.timeScale = 1;
+        fogButton.onClick.AddListener(StatFadeFog);
+        
     }
 
     void StatFadeFog()
