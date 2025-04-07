@@ -34,7 +34,7 @@ public class TestNPCcontrol : MonoBehaviour
     void Update()
     {
         Say();
-        Debug.Log(canChat);
+        
     }
 
     private void Say()
