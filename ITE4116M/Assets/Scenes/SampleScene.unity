@@ -2312,7 +2312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fogButton: {fileID: 129003178}
-  fadeDuration: 1
+  fogFadeDuration: 3
 --- !u!4 &354842188
 Transform:
   m_ObjectHideFlags: 0
