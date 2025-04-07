@@ -1,5 +1,5 @@
 Id	Name	Index	
-Id	卡牌类型的名称	下标	
+Id	卡牌類型的名稱	下標	
 10000	All	0	
 10001	Attack	1	
 10002	Defense	2	
