@@ -11,13 +11,19 @@ public class TestNPCcontrol : MonoBehaviour
 
 
     private void OnTriggerEnter(Collider other)
-    {
-        canChat = true;
+    { 
+        if(other.tag == "Player")
+        {
+            canChat = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        canChat = false;
+        if (other.tag == "Player")
+        {
+            canChat = false;
+        }
     }
     void Start()
     {
@@ -28,6 +34,7 @@ public class TestNPCcontrol : MonoBehaviour
     void Update()
     {
         Say();
+        Debug.Log(canChat);
     }
 
     private void Say()

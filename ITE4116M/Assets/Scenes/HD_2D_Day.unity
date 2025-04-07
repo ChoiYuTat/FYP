@@ -21436,7 +21436,6 @@ GameObject:
   - component: {fileID: 649196183}
   - component: {fileID: 649196187}
   - component: {fileID: 649196190}
-  - component: {fileID: 649196191}
   - component: {fileID: 649196194}
   - component: {fileID: 649196192}
   - component: {fileID: 649196195}
@@ -21451,6 +21450,7 @@ GameObject:
   - component: {fileID: 649196196}
   - component: {fileID: 649196207}
   - component: {fileID: 649196206}
+  - component: {fileID: 649196208}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -21472,9 +21472,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -46.90486
+    x: -48.081333
     y: 121.306114
-    width: 82
+    width: 82.94117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21506,11 +21506,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 802.3198, y: 382.36053}
+  scrollPos: {x: 173.36632, y: 376.27805}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.85000014
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -21519,9 +21519,10 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 649196183}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 649196195}
   variables:
-  - {fileID: 649196191}
+  - {fileID: 649196208}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -21601,21 +21602,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 1
   setSayDialog: {fileID: 0}
---- !u!114 &649196191
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649196181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 2
-  key: firstChat
-  value: 1
 --- !u!114 &649196192
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -21631,7 +21617,7 @@ MonoBehaviour:
   itemId: 7
   indentLevel: 1
   anyVar:
-    variable: {fileID: 649196191}
+    variable: {fileID: 649196208}
     data:
       animatorData:
         animatorRef: {fileID: 0}
@@ -21813,7 +21799,7 @@ MonoBehaviour:
   conditions:
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 649196191}
+      variable: {fileID: 649196208}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -22184,7 +22170,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 125.680176
     y: 166.80612
-    width: 64
+    width: 64.117645
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22316,6 +22302,21 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &649196208
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649196181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: isFirst
+  value: 0
 --- !u!1001 &649376576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45312,6 +45313,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139762044713486585, guid: 5edb3e471cb307d4f83089c71f70ee97,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7957672952589722927, guid: 5edb3e471cb307d4f83089c71f70ee97,
         type: 3}
