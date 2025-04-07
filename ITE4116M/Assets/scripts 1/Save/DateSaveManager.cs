@@ -23,7 +23,7 @@ public class DateSaveManager : MonoBehaviour
     {
         instance = this;
     }
-
+    private string Filepath = Application.streamingAssetsPath + "/PlayerData.json";
     public PlayerList list = new PlayerList();
     public CardList player;
     CardList useCardList;
@@ -31,25 +31,29 @@ public class DateSaveManager : MonoBehaviour
 
     public void GenerateData()
     {
-        player = new CardList();
-        player.cardList.Add("1000");
-        player.cardList.Add("1000");
-        player.cardList.Add("1000");
-        player.cardList.Add("1000");
-        player.cardList.Add("1000");
-        player.cardList.Add("1000");
-        player.cardList.Add("1000");
-        player.cardList.Add("1000");
-        player.cardList.Add("1000");
-        player.cardList.Add("1000");
-        list.playerList.Add(player);
+        if (!File.Exists(Filepath))
+        {
+            player = new CardList();
+            player.cardList.Add("1000");
+            player.cardList.Add("1000");
+            player.cardList.Add("1000");
+            player.cardList.Add("1000");
+            player.cardList.Add("1000");
+            player.cardList.Add("1000");
+            player.cardList.Add("1000");
+            player.cardList.Add("1000");
+            player.cardList.Add("1000");
+            player.cardList.Add("1000");
+            list.playerList.Add(player);
+        }
     }
 
     void SaveData()
     {
+        player.cardList = currcardList;
         string json = JsonUtility.ToJson(list , true);
         string Filepath = Application.streamingAssetsPath + "/PlayerData.json";
-
+        
         using(StreamWriter sw = new StreamWriter(Filepath))
         {
             sw.WriteLine(json);
@@ -61,11 +65,11 @@ public class DateSaveManager : MonoBehaviour
      public List<string> LoadData()
     {
         string json;
-        string filename = Application.streamingAssetsPath + "/PlayerData.json";
+        string Filename = Application.streamingAssetsPath + "/PlayerData.json";
 
-        if (File.Exists(filename))
+        if (File.Exists(Filename))
         {
-            using (StreamReader sr = new StreamReader(filename))
+            using (StreamReader sr = new StreamReader(Filename))
             {
                 json = sr.ReadToEnd();
                 sr.Close();
@@ -81,10 +85,15 @@ public class DateSaveManager : MonoBehaviour
         }
         return currcardList;
     }
-
+    public void AddCardtoCardList(string id)
+    {
+        this.currcardList.Add(id);
+        SaveData();
+    }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S)){
+        if (Input.GetKeyDown(KeyCode.S))
+        {
             SaveData();
         }
     }

@@ -13,5 +13,4 @@ public class GameApp : MonoBehaviour
         AudioManager.Instance.Init();
         DateSaveManager.instance.GenerateData();
     }
-
 }

@@ -34,7 +34,7 @@ public static class MyEditor
                 DataTable table = dataSet.Tables[0];
 
                 readTableToTxt(files[i], table);
-
+                fs.Close();
             }
         }
 

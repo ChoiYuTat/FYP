@@ -24,7 +24,7 @@ public class SelectCardUI : FightUIBase
 
     private void onAdd()
     {
-
+        
     }
 
     private void onHP()

@@ -10,9 +10,8 @@ public class Fight_Win : FightUnit
         FightUIManager.Instance.ShowTip("Victory!!!", Color.green, delegate ()
         {
             FightManager.Instance.StopAllCoroutines();
-            SceneManager.LoadScene("TestBattle");
             FightUIManager.Instance.CloseAllUI("FightUI");
-            DungeonGenerator.Instance.Init();
+            FightUIManager.Instance.ShowUI<GetCardUI>("GetCardUI");
         });
         
     }
