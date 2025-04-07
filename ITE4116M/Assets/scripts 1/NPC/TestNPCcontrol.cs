@@ -43,7 +43,7 @@ public class TestNPCcontrol : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Flowchart flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+                Flowchart flowchart = GameObject.Find("Flowchart(windy)").GetComponent<Flowchart>();
                 if (flowchart.HasBlock(charName))
                 {
                     flowchart.ExecuteBlock("NPC1");
