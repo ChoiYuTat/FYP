@@ -4369,7 +4369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: VO.
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 0.4198113, g: 0.8023592, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -13103,7 +13103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Hint
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 1, g: 0.9862055, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
