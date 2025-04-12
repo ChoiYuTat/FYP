@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,40 +8,52 @@ public class FogController : MonoBehaviour
 {
 
     public Button fogButton;
-    public float fadeDuration = 3.0f;
-    private bool isFading = false;
+    //public float fadeDuration = 3.0f;
+    //private bool isFading = false;
+    public float fogFadeDuration = 3.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 1;
-        fogButton.onClick.AddListener(StatFadeFog);
+        Time.timeScale = 0;
+        RenderSettings.fog = true;
+        RenderSettings.fogDensity = 1f;
+        //fogButton.onClick.AddListener(StatFadeFog);
+        fogButton.onClick.AddListener(OnStartButtonClick);
         
     }
 
-    void StatFadeFog()
+    private void OnStartButtonClick()
     {
-        if(!isFading)
-        {
-            StartCoroutine(FadeFogDensity());
-        }
+        StartCoroutine(FadeFogDensity());
+        Time.timeScale = 1;
+        
     }
+
+    //void StatFadeFog()
+    //{
+    //    if(!isFading)
+    //    {
+    //        StartCoroutine(FadeFogDensity());
+    //    }
+    //}
 
     System.Collections.IEnumerator FadeFogDensity()
     {
-        isFading = true;
+        //isFading = true;
         float startDensity = RenderSettings.fogDensity;
-        float targetDensity = 0.0f;
-        float elapsedTime = 0f;
-        while (elapsedTime<fadeDuration)
+        //float targetDensity = 0.0f;
+        float elapsedTime = 1f;
+
+        while (elapsedTime< fogFadeDuration)
         {
-            RenderSettings.fogDensity = Mathf.Lerp(startDensity, targetDensity, elapsedTime / fadeDuration);
+            RenderSettings.fogDensity = Mathf.Lerp(startDensity, 0f, elapsedTime / fogFadeDuration);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        RenderSettings.fogDensity = targetDensity;
+        //RenderSettings.fogDensity = targetDensity;
         RenderSettings.fog = false;
-        isFading = false;
+        //isFading = false;
     }
 
     // Update is called once per frame

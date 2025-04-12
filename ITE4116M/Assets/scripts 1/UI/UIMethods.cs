@@ -49,7 +49,8 @@ public class UIMethods
     /// <returns>Canvas Object</returns>
     public GameObject FindCanvas() 
     {
-        GameObject gameObject_canvas = GameObject.FindObjectOfType<Canvas>().gameObject;
+        //GameObject gameObject_canvas = GameObject.FindObjectOfType<Canvas>().gameObject;
+        GameObject gameObject_canvas = GameObject.Find("Canvas");
         if (gameObject_canvas == null)  
         {
             Debug.LogError("当前场景当中没有Canvas,请添加！");

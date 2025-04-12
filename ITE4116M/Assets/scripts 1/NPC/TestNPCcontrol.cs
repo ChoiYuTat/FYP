@@ -11,13 +11,19 @@ public class TestNPCcontrol : MonoBehaviour
 
 
     private void OnTriggerEnter(Collider other)
-    {
-        canChat = true;
+    { 
+        if(other.tag == "Player")
+        {
+            canChat = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        canChat = false;
+        if (other.tag == "Player")
+        {
+            canChat = false;
+        }
     }
     void Start()
     {
@@ -28,6 +34,7 @@ public class TestNPCcontrol : MonoBehaviour
     void Update()
     {
         Say();
+        
     }
 
     private void Say()
@@ -36,7 +43,7 @@ public class TestNPCcontrol : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Flowchart flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+                Flowchart flowchart = GameObject.Find("Flowchart(windy)").GetComponent<Flowchart>();
                 if (flowchart.HasBlock(charName))
                 {
                     flowchart.ExecuteBlock("NPC1");
