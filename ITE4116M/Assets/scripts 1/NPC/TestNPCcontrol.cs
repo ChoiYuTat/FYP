@@ -5,7 +5,7 @@ using Fungus;
 public class TestNPCcontrol : MonoBehaviour
 {
 
-    public string charName = "NPC1";
+    public string charName = "windy";
 
     private bool canChat = false;
 
