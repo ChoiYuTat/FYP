@@ -1,0 +1,1786 @@
+fileFormatVersion: 2
+guid: 5e54e0f8b31c87345a003b56951a188c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1000
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b51396c5559b0849bb9e42484351c64
+      internalID: -258630091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 996
+        width: 74
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069a7f2bc6563a74384e592a888e3434
+      internalID: -1314063589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 970
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd502186cceaad544a64497e1a3209c5
+      internalID: 1466246762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 965
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfe473d4f6da214bbe41b5125480647
+      internalID: -1019300207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_4
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 965
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316f4873799e9c14a813f218f22431c7
+      internalID: -925750067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 965
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5feeb0bb8b0ccd04ea0306814600856c
+      internalID: -1198254533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_6
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 964
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19907f437c8b1794999c975f115b05d7
+      internalID: 792291294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_7
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 956
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb54c952eca8ba346b2314615cc2e4de
+      internalID: -1564168925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_8
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 956
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f6ec5a9b35dcb4c9a175fc4706479a
+      internalID: -811871924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_9
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 956
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bc59b077a4b904cbfeb22c4381719c
+      internalID: 1498005419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_10
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 954
+        width: 38
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd1e6eb5633a074d9e3c67c46ae564b
+      internalID: 1911223613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 882
+        width: 38
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9a1fee2484df044b6214ea3342d31c
+      internalID: -164378134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_12
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 882
+        width: 34
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e492c83aae9c645bdc95cf103ec55f
+      internalID: -2121023612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 882
+        width: 34
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9007e0880776842b9e515631ea282e
+      internalID: 2118890542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_14
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 882
+        width: 34
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a4d507f76474b479e2a020193ace4c
+      internalID: -1725461356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_15
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 882
+        width: 34
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d8bd0c59df8f74f942f024f891657d
+      internalID: -411162044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 882
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d7735546ca66041a6141ade5665372
+      internalID: 1431065677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_17
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 882
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4574dda19f0e58d4db695b3d8159db98
+      internalID: -1804938420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_18
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 882
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202c0e291fe6dce488fa7635792a6b97
+      internalID: 730169516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_19
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 882
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5342cfe0785884442b8b8b580f4a226c
+      internalID: 1523940076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 880
+        width: 32
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f59ca6675e917341806cb6e0358a810
+      internalID: 520144692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_21
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 880
+        width: 32
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97271f582e5d51741ad77e5a6b04d370
+      internalID: 269256644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_22
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 880
+        width: 36
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c1ec24495ae0e40a66fab515400ebf
+      internalID: -250760344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 806
+        width: 36
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69af228e65971cc4ab99a8fae3684fd3
+      internalID: -902713260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_24
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 806
+        width: 32
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6626008cabd9145bb1e6a0cc512024
+      internalID: 2108128277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_25
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 806
+        width: 32
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de73753c1d957c4fb423b8ee337cdd8
+      internalID: 268837369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_26
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 806
+        width: 44
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efd503724e0c454eb5289ff340e6819
+      internalID: -1264567699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_27
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 806
+        width: 42
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f80674cf7c2c24cbb6e4ed193c8906
+      internalID: 1916561160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_28
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 806
+        width: 34
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0f1968743c207408c6d53a16f060b0
+      internalID: 420551594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_29
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 806
+        width: 44
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a0b1f303c585b47b9921431b9d5927
+      internalID: 1996370961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_30
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 804
+        width: 46
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe6262759f6fa64b9a55c584ca74d8a
+      internalID: -1777716941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_31
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 804
+        width: 46
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b10af91212bf0499b1ac95f76449ab
+      internalID: -689780082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_32
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 804
+        width: 46
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9101ed9a60cc1494a9860c5558636b6c
+      internalID: 1844512476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_33
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 804
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2dff90654e3eb4e950692ae144b9ee
+      internalID: -1945334155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_34
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 728
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c37f905282d0940b5bd9921e44ee98
+      internalID: -74760717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_35
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 728
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c0fb04d6ec14b459cd8f46332f5fe7
+      internalID: -1944870162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_36
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 728
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffbb86aaa584e54c8ab9ef240e31b54
+      internalID: 1792456778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_37
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 728
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7626fdc4dbc3e2742b923a09f1baa4eb
+      internalID: -591640877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_38
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 728
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fac3dc589721c4f8d8a025d870b39f
+      internalID: 993573543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_39
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 728
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8f74c0207f4754fad56ebae7678688
+      internalID: -1926591272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_40
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 728
+        width: 30
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5338027b6e80c6a4a99a5f95633a3525
+      internalID: -724689013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_41
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 728
+        width: 30
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6820bb753ef35647a9b0fde084cbfca
+      internalID: 32270826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_42
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 728
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0cc35faf50bf85428f29d690360036a
+      internalID: 883659867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_43
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 726
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c452693749fdc04995cc7ba44751b7f
+      internalID: -62642533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_44
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 726
+        width: 50
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692867e8ae486cf4b99ff8674af9e4cd
+      internalID: 1028309847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_45
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 726
+        width: 46
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c25f410422081b4aa2748cb7b0c2fec
+      internalID: 152125535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_46
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 648
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855665cd9c168b542825756d59e82f60
+      internalID: 1436278246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_47
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 648
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7304a9767d667d14f82a2ef13fba350a
+      internalID: -1739435916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_48
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 648
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f9e5b820f0941448cb03acaee2ce3b
+      internalID: -148914611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_49
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 648
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468f1983c7f7625499ab8f256a281176
+      internalID: -870163013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_50
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 648
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe75a696388a3946bf26f6e98f2d1db
+      internalID: -1195413059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_51
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 648
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6d6daeede006641b7990cec474c305
+      internalID: -1122199833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_52
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 648
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da35e9d2a03f51e42b4869bb408be6dc
+      internalID: -2024439083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_53
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 648
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7602d84c4165b4bab5563b6305b993
+      internalID: 807527923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_54
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 648
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353c886822ec3f147b02a07b1844322f
+      internalID: -1386354193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_55
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 648
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7a293923a0b664c8da7c8778de9f8e
+      internalID: -1974407494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_56
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 648
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303189b56558f63439ba083ed3cb834c
+      internalID: -1334457493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_57
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 648
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9c61944fe509d428a79c03e07ed949
+      internalID: -870365719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_58
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0b1841e22740a49a59f156e6e88f23
+      internalID: 1311605080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_59
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bce7114ccbd1d94f835ad65e5af2653
+      internalID: 1984842240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_60
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76601b003ac00504fbbbe6dfc7bb4c8f
+      internalID: 2115198247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_61
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5458b4291323849a6dccbaca039fd6
+      internalID: 1454919234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_62
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3460fd08c9dd944bc1defbe3c23ecd
+      internalID: -639640286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_63
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dfe30b36e870b44b9e9fe2f5162cfd
+      internalID: 1445006382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_64
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba304723d863b5b408e25f2095ef7a88
+      internalID: -1829919445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_65
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c71ec84bbe5104c984f1ea0724b178
+      internalID: 1661838281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_66
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b5027e2d91c204b8d7da9d8403d7a5
+      internalID: 745078190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_67
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180bc438347d2a3439e10c416b2a696d
+      internalID: 317161239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_68
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623d2301e9b3f634791f3e4ab0da4d01
+      internalID: 1752428400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_69
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 570
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8b7df4da51ff84aa11b03eacb98da5
+      internalID: 1356780757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_70
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 492
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c0571c3f38e4140a8b865e5ae2975d
+      internalID: -914378219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_71
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 492
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9e6a8e616596444b14c614b9bff5c5
+      internalID: -268625424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_72
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 492
+        width: 30
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b07d75809fc444fb7d75f6bd2246cf
+      internalID: 950849582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_73
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 492
+        width: 30
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2592b4693a08e7c40a735d03357e868b
+      internalID: -339506686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_74
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 488
+        width: 36
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e228fe0305661b641b8aed047938ce92
+      internalID: -1301453596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChrNpcTX_NonYf001_Fml_trim_75
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 488
+        width: 36
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ea32685a556a344b50dd8946a9be08
+      internalID: -1195688276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ChrNpcTX_NonYf001_Fml_trim_0: -258630091
+      ChrNpcTX_NonYf001_Fml_trim_1: -1314063589
+      ChrNpcTX_NonYf001_Fml_trim_10: 1911223613
+      ChrNpcTX_NonYf001_Fml_trim_11: -164378134
+      ChrNpcTX_NonYf001_Fml_trim_12: -2121023612
+      ChrNpcTX_NonYf001_Fml_trim_13: 2118890542
+      ChrNpcTX_NonYf001_Fml_trim_14: -1725461356
+      ChrNpcTX_NonYf001_Fml_trim_15: -411162044
+      ChrNpcTX_NonYf001_Fml_trim_16: 1431065677
+      ChrNpcTX_NonYf001_Fml_trim_17: -1804938420
+      ChrNpcTX_NonYf001_Fml_trim_18: 730169516
+      ChrNpcTX_NonYf001_Fml_trim_19: 1523940076
+      ChrNpcTX_NonYf001_Fml_trim_2: 1466246762
+      ChrNpcTX_NonYf001_Fml_trim_20: 520144692
+      ChrNpcTX_NonYf001_Fml_trim_21: 269256644
+      ChrNpcTX_NonYf001_Fml_trim_22: -250760344
+      ChrNpcTX_NonYf001_Fml_trim_23: -902713260
+      ChrNpcTX_NonYf001_Fml_trim_24: 2108128277
+      ChrNpcTX_NonYf001_Fml_trim_25: 268837369
+      ChrNpcTX_NonYf001_Fml_trim_26: -1264567699
+      ChrNpcTX_NonYf001_Fml_trim_27: 1916561160
+      ChrNpcTX_NonYf001_Fml_trim_28: 420551594
+      ChrNpcTX_NonYf001_Fml_trim_29: 1996370961
+      ChrNpcTX_NonYf001_Fml_trim_3: -1019300207
+      ChrNpcTX_NonYf001_Fml_trim_30: -1777716941
+      ChrNpcTX_NonYf001_Fml_trim_31: -689780082
+      ChrNpcTX_NonYf001_Fml_trim_32: 1844512476
+      ChrNpcTX_NonYf001_Fml_trim_33: -1945334155
+      ChrNpcTX_NonYf001_Fml_trim_34: -74760717
+      ChrNpcTX_NonYf001_Fml_trim_35: -1944870162
+      ChrNpcTX_NonYf001_Fml_trim_36: 1792456778
+      ChrNpcTX_NonYf001_Fml_trim_37: -591640877
+      ChrNpcTX_NonYf001_Fml_trim_38: 993573543
+      ChrNpcTX_NonYf001_Fml_trim_39: -1926591272
+      ChrNpcTX_NonYf001_Fml_trim_4: -925750067
+      ChrNpcTX_NonYf001_Fml_trim_40: -724689013
+      ChrNpcTX_NonYf001_Fml_trim_41: 32270826
+      ChrNpcTX_NonYf001_Fml_trim_42: 883659867
+      ChrNpcTX_NonYf001_Fml_trim_43: -62642533
+      ChrNpcTX_NonYf001_Fml_trim_44: 1028309847
+      ChrNpcTX_NonYf001_Fml_trim_45: 152125535
+      ChrNpcTX_NonYf001_Fml_trim_46: 1436278246
+      ChrNpcTX_NonYf001_Fml_trim_47: -1739435916
+      ChrNpcTX_NonYf001_Fml_trim_48: -148914611
+      ChrNpcTX_NonYf001_Fml_trim_49: -870163013
+      ChrNpcTX_NonYf001_Fml_trim_5: -1198254533
+      ChrNpcTX_NonYf001_Fml_trim_50: -1195413059
+      ChrNpcTX_NonYf001_Fml_trim_51: -1122199833
+      ChrNpcTX_NonYf001_Fml_trim_52: -2024439083
+      ChrNpcTX_NonYf001_Fml_trim_53: 807527923
+      ChrNpcTX_NonYf001_Fml_trim_54: -1386354193
+      ChrNpcTX_NonYf001_Fml_trim_55: -1974407494
+      ChrNpcTX_NonYf001_Fml_trim_56: -1334457493
+      ChrNpcTX_NonYf001_Fml_trim_57: -870365719
+      ChrNpcTX_NonYf001_Fml_trim_58: 1311605080
+      ChrNpcTX_NonYf001_Fml_trim_59: 1984842240
+      ChrNpcTX_NonYf001_Fml_trim_6: 792291294
+      ChrNpcTX_NonYf001_Fml_trim_60: 2115198247
+      ChrNpcTX_NonYf001_Fml_trim_61: 1454919234
+      ChrNpcTX_NonYf001_Fml_trim_62: -639640286
+      ChrNpcTX_NonYf001_Fml_trim_63: 1445006382
+      ChrNpcTX_NonYf001_Fml_trim_64: -1829919445
+      ChrNpcTX_NonYf001_Fml_trim_65: 1661838281
+      ChrNpcTX_NonYf001_Fml_trim_66: 745078190
+      ChrNpcTX_NonYf001_Fml_trim_67: 317161239
+      ChrNpcTX_NonYf001_Fml_trim_68: 1752428400
+      ChrNpcTX_NonYf001_Fml_trim_69: 1356780757
+      ChrNpcTX_NonYf001_Fml_trim_7: -1564168925
+      ChrNpcTX_NonYf001_Fml_trim_70: -914378219
+      ChrNpcTX_NonYf001_Fml_trim_71: -268625424
+      ChrNpcTX_NonYf001_Fml_trim_72: 950849582
+      ChrNpcTX_NonYf001_Fml_trim_73: -339506686
+      ChrNpcTX_NonYf001_Fml_trim_74: -1301453596
+      ChrNpcTX_NonYf001_Fml_trim_75: -1195688276
+      ChrNpcTX_NonYf001_Fml_trim_8: -811871924
+      ChrNpcTX_NonYf001_Fml_trim_9: 1498005419
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
