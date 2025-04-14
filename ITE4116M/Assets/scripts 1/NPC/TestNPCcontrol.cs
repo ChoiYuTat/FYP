@@ -46,7 +46,7 @@ public class TestNPCcontrol : MonoBehaviour
                 Flowchart flowchart = GameObject.Find("Flowchart(windy)").GetComponent<Flowchart>();
                 if (flowchart.HasBlock(charName))
                 {
-                    flowchart.ExecuteBlock("NPC1");
+                    flowchart.ExecuteBlock("windy");
                 }
             }
         }

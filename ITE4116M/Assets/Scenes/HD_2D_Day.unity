@@ -21474,12 +21474,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: -48.081333
     y: 121.306114
-    width: 81.37254
+    width: 84.509796
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: NPC1
+  blockName: windy
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -21520,7 +21520,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 649196183}
   selectedCommands:
-  - {fileID: 649196194}
+  - {fileID: 649196195}
   variables:
   - {fileID: 649196208}
   description: 
@@ -72972,7 +72972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b8130c4a429f5445953efd253ddc84a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: NPC1
+  charName: windy
 --- !u!136 &6353048367743595119
 CapsuleCollider:
   m_ObjectHideFlags: 0
