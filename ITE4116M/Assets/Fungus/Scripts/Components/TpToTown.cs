@@ -11,7 +11,7 @@ public class TpToTwon : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log(123);
+           
 
             SceneManager.LoadScene(3);
         }
