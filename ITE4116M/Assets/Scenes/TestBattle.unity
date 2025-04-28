@@ -245,7 +245,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 279301439}
   selectedCommands:
-  - {fileID: 279301459}
+  - {fileID: 279301448}
   variables:
   - {fileID: 279301456}
   description: 
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 1
-  storyText: Check your pocket, I already give you some "Recaller Card". They may
+  storyText: Check your pocket, I already give you some "Recaller's Card". They may
     help you want you are in danger.
   description: 
   character: {fileID: 557164977}
@@ -1064,7 +1064,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &279301459
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
