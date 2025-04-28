@@ -21582,7 +21582,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -136.6853
     y: 123.096085
-    width: 84.95935
+    width: 82.87671
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21645,11 +21645,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 191.17328, y: 170.45541}
+  scrollPos: {x: 50.043888, y: 172.6271}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 401.33334
-  zoom: 0.81999993
+  zoom: 0.73
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -21657,8 +21657,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 649196247}
-  selectedCommands: []
+  - {fileID: 649196245}
+  selectedCommands:
+  - {fileID: 649196244}
   variables:
   - {fileID: 649196208}
   - {fileID: 649196215}
@@ -22180,7 +22181,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 130.43631
     y: 92.53781
-    width: 70.3252
+    width: 69.178085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22207,7 +22208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  storyText: OH THANK GOODNESS! Come Follow me i'll show you the way.
+  storyText: OH THANK GOODNESS!  i'll show you the way.
   description: 
   character: {fileID: 1550158491}
   portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
@@ -22290,7 +22291,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 124.46066
     y: 165.58661
-    width: 64.63415
+    width: 63.69863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23676,9 +23677,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 555.1682
-    y: 68.56903
-    width: 84.14635
+    x: 557.90796
+    y: 67.199165
+    width: 82.87671
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23745,7 +23746,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 553.5411
     y: 139.30067
-    width: 85.77236
+    width: 84.246574
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23879,7 +23880,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 314.51785
     y: 85.64217
-    width: 119.9187
+    width: 115.753426
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
