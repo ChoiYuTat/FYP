@@ -21657,9 +21657,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 649196245}
-  selectedCommands:
-  - {fileID: 649196244}
+  - {fileID: 649196247}
+  selectedCommands: []
   variables:
   - {fileID: 649196208}
   - {fileID: 649196215}
@@ -53824,7 +53823,7 @@ Transform:
   m_GameObject: {fileID: 1535178970}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.411, y: 0.602, z: 0.474}
+  m_LocalPosition: {x: -0.59, y: 0.602, z: 0.695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
