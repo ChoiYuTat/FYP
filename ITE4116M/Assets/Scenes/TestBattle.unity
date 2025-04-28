@@ -153,6 +153,7 @@ GameObject:
   - component: {fileID: 279301458}
   - component: {fileID: 279301457}
   - component: {fileID: 279301459}
+  - component: {fileID: 279301460}
   m_Layer: 0
   m_Name: Flowchart(Hints)
   m_TagString: Untagged
@@ -201,6 +202,7 @@ MonoBehaviour:
   eventHandler: {fileID: 279301438}
   commandList:
   - {fileID: 279301458}
+  - {fileID: 279301460}
   - {fileID: 279301442}
   - {fileID: 279301444}
   - {fileID: 279301445}
@@ -244,8 +246,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 279301439}
-  selectedCommands:
-  - {fileID: 279301448}
+  selectedCommands: []
   variables:
   - {fileID: 279301456}
   description: 
@@ -1089,6 +1090,24 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &279301460
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279301437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 18
+  indentLevel: 1
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
 --- !u!1 &363839976
 GameObject:
   m_ObjectHideFlags: 0

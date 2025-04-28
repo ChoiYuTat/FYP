@@ -21582,7 +21582,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -136.6853
     y: 123.096085
-    width: 82.87671
+    width: 85.82088
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21645,11 +21645,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 230.86583, y: 198.65451}
+  scrollPos: {x: 47.290188, y: 329.34473}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 401.33334
-  zoom: 0.73
+  zoom: 0.6700003
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -22180,7 +22180,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 130.43631
     y: 92.53781
-    width: 69.178085
+    width: 70.89551
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22290,7 +22290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 124.46066
     y: 165.58661
-    width: 63.69863
+    width: 64.92537
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23678,7 +23678,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 557.90796
     y: 67.199165
-    width: 82.87671
+    width: 85.82088
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23745,7 +23745,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 553.5411
     y: 139.30067
-    width: 84.246574
+    width: 87.313416
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23879,7 +23879,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 314.51785
     y: 85.64217
-    width: 115.753426
+    width: 121.641754
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -53808,7 +53808,7 @@ GameObject:
   - component: {fileID: 1535178973}
   - component: {fileID: 1535178972}
   m_Layer: 0
-  m_Name: lunaSprite
+  m_Name: villagerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53839,7 +53839,7 @@ Animator:
   m_GameObject: {fileID: 1535178970}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5d5f30448857dac438d57a3b90753fb8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3b0db4bca347b2e4c99c745578e7d659, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
