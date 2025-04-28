@@ -192,7 +192,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 77
+    width: 76.31579
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -233,19 +233,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 75, y: 212}
+  scrollPos: {x: 99.08396, y: 223.33145}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.76000005
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 279301439}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 279301456}
@@ -2058,7 +2057,7 @@ MonoBehaviour:
   specialRoomChance: 0.7
   PlayerPrefab: {fileID: 0}
   DungeonManager: {fileID: 8370374374906508312}
-  size: {x: 5, y: 5}
+  size: {x: 4, y: 4}
   startPos: 0
   roomRules:
   - prefab: {fileID: 8485914696622304995, guid: a84ea6ff7a2136440998ac6171e90ebe,
