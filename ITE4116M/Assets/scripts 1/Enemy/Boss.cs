@@ -5,7 +5,7 @@ using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class OpenEnemy : MonoBehaviour
+public class Boss : MonoBehaviour
 {
     private bool canOpen = false;
     private bool isOpen = false;

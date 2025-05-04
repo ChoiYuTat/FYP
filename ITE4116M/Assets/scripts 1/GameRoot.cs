@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Fungus;
 
 public class GameRoot : MonoBehaviour
 {
@@ -16,6 +17,18 @@ public class GameRoot : MonoBehaviour
 
     private SceneControl SceneControl;
     public SceneControl SceneControl_Root { get => SceneControl; }
+
+
+
+
+    public Flowchart flowchart;
+    public string chatName;
+    public GameState currentGameState; 
+    public enum GameState
+    {
+        FirstGame,
+        SecondGame,
+    }
 
     public static GameRoot GetInstance()
     {
@@ -44,6 +57,7 @@ public class GameRoot : MonoBehaviour
         DungeonGenerator = new DungeonGenerator();
         DungeonGenerator_Root = DungeonGenerator;
         SceneControl = new SceneControl();
+        flowchart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
     }
 
     // Start is called before the first frame update
@@ -51,15 +65,25 @@ public class GameRoot : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         UIManager_Root.CanvasObj = UIMethods.GetInstance().FindCanvas();
-
-        scene1 Scene1 = new scene1();
-        SceneControl_Root.dict_scene.Add(Scene1.SceneName,Scene1);
-
+        currentGameState = GameState.FirstGame;
     }
-
-    // Update is called once per frame
     void Update()
     {
+        switch (currentGameState)
+        {
+            case GameState.FirstGame:
+                if (flowchart.HasBlock(chatName))
+                {
+                    Debug.Log("Executing block: " + chatName);
+                    flowchart.ExecuteBlock("startHint");
+                    currentGameState = GameState.SecondGame;
+                }
+                break;
+            case GameState.SecondGame:
+                    
+                break;
+        }
+
         if (!UIManager.dict_uiObject.ContainsKey("MainMenuPanel"))
         {
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -69,20 +93,33 @@ public class GameRoot : MonoBehaviour
         }
         else
         {
-            if(Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 UIManager_Root.Pop(false);
             }
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
-            scene2 scene = new scene2();
-            SceneControl_Root.SceneLoad(scene.SceneName, scene);
+            scene2 scene2 = new scene2();
+            SceneControl_Root.SceneLoad(scene2.SceneName, scene2);
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
             FightManager.Instance.curHp -= 1;
         }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            BackHome();
+        }
+        
+    }
+
+
+
+    public void BackHome()
+    {
+        scene1 Scene1 = new scene1();
+        SceneControl_Root.SceneLoad(Scene1.SceneName, Scene1);
     }
 }
 

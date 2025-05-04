@@ -9,6 +9,8 @@ public class TestNPCcontrol : MonoBehaviour
 
     private bool canChat = false;
 
+    public GameRoot gameRoot;
+
 
     private void OnTriggerEnter(Collider other)
     { 
@@ -27,7 +29,7 @@ public class TestNPCcontrol : MonoBehaviour
     }
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -48,6 +50,7 @@ public class TestNPCcontrol : MonoBehaviour
                 {
                     flowchart.ExecuteBlock("windy");
                 }
+                gameRoot.currentGameState = GameRoot.GameState.SecondGame;
             }
         }
     }

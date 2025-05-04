@@ -5041,6 +5041,51 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1345852876}
   m_SourcePrefab: {fileID: 100100000, guid: 1677c2b98f08f474dad04340efceeaf5, type: 3}
+--- !u!1 &142946389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142946390}
+  - component: {fileID: 142946391}
+  m_Layer: 0
+  m_Name: w
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &142946390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142946389}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 53.204, y: 16.376, z: 35.43}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &142946391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142946389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec613f0bd39214468923f2b0ccc3326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &143679645 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4144777977184186158, guid: 1677c2b98f08f474dad04340efceeaf5,
@@ -16033,6 +16078,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1671632491}
+  - {fileID: 649196185}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &490735019
@@ -16050,6 +16096,9 @@ MonoBehaviour:
   DungeonGenerator_Root: {fileID: 0}
   UIManager_Root:
     CanvasObj: {fileID: 1159208096}
+  flowchart: {fileID: 0}
+  chatName: startHint
+  currentGameState: 0
 --- !u!1 &493128340 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7654292636512102835, guid: 23bc8abb1b881cc458c51bba8615cfe5,
@@ -21657,7 +21706,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 649196252}
+  - {fileID: 649196245}
   selectedCommands: []
   variables:
   - {fileID: 649196208}
@@ -21680,12 +21729,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649196181}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -145.36682, y: -238.1365, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 490735018}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &649196187
 MonoBehaviour:
@@ -23743,8 +23792,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 553.5411
-    y: 139.30067
+    x: 547.57086
+    y: 136.3156
     width: 87.313416
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -30196,7 +30245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 649196184}
+  selectedFlowchart: {fileID: 2072686158}
 --- !u!4 &840730570
 Transform:
   m_ObjectHideFlags: 1
@@ -48387,7 +48436,6 @@ GameObject:
   - component: {fileID: 1379438562}
   - component: {fileID: 1379438561}
   - component: {fileID: 1379438560}
-  - component: {fileID: 1379438559}
   - component: {fileID: 1379438558}
   m_Layer: 0
   m_Name: villager
@@ -48419,19 +48467,6 @@ CapsuleCollider:
   m_Height: 1.0676842
   m_Direction: 1
   m_Center: {x: 0, y: 0.6806221, z: 0}
---- !u!114 &1379438559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379438557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b8130c4a429f5445953efd253ddc84a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charName: windy
 --- !u!136 &1379438560
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -71745,14 +71780,13 @@ GameObject:
   - component: {fileID: 2072686158}
   - component: {fileID: 2072686160}
   - component: {fileID: 2072686159}
-  - component: {fileID: 2072686162}
   - component: {fileID: 2072686163}
   - component: {fileID: 2072686164}
   - component: {fileID: 2072686165}
   - component: {fileID: 2072686166}
   - component: {fileID: 2072686167}
   m_Layer: 0
-  m_Name: Flowchart(startHint)
+  m_Name: Flowchart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71771,7 +71805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 181, y: 143.5}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -71784,8 +71818,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2072686160}
-  selectedCommands:
-  - {fileID: 2072686167}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -71838,8 +71871,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
-    y: 70
+    x: 69
+    y: 66
     width: 98
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -71847,7 +71880,7 @@ MonoBehaviour:
   itemId: 0
   blockName: startHint
   description: 
-  eventHandler: {fileID: 2072686162}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2072686166}
   - {fileID: 2072686159}
@@ -71864,28 +71897,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072686157}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2072686162
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072686157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 2072686160}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
 --- !u!114 &2072686163
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -71987,7 +72005,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &2072686167
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -75264,6 +75282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charName: windy
+  gameRoot: {fileID: 0}
 --- !u!136 &6353048367743595119
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -75523,12 +75542,12 @@ SceneRoots:
   - {fileID: 2039715878}
   - {fileID: 1352437106}
   - {fileID: 5272164486541315344}
+  - {fileID: 142946390}
   - {fileID: 1379438562}
   - {fileID: 1565158182}
   - {fileID: 490735018}
-  - {fileID: 649196185}
-  - {fileID: 2072686161}
   - {fileID: 1439563014}
   - {fileID: 840730570}
   - {fileID: 350459937}
   - {fileID: 1872910912}
+  - {fileID: 2072686161}

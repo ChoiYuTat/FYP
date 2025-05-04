@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class scene2 : SceneBase
 {
-    public readonly string SceneName = "TestBatter";
+    public readonly string SceneName = "Boss";
     public override void EnterScene()
     {
     }

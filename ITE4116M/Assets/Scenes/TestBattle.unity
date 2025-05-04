@@ -1908,7 +1908,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2016197991
 GameObject:
@@ -2067,13 +2067,13 @@ MonoBehaviour:
     spawnWeight: 1
     roomType: 4
     spawnOnlyAtDeadEnd: 0
-  - prefab: {fileID: 8485914696622304995, guid: 25290dc65e99d1347b0eb1edd6f8033d,
+  - prefab: {fileID: 8485914696622304995, guid: e2a4e63d5cc4c624c9dfb8c210a02734,
       type: 3}
     minPosition: {x: 0, y: 0}
     maxPosition: {x: 0, y: 0}
     spawnWeight: 30
     roomType: 1
-    spawnOnlyAtDeadEnd: 0
+    spawnOnlyAtDeadEnd: 1
   - prefab: {fileID: 8485914696622304995, guid: a84ea6ff7a2136440998ac6171e90ebe,
       type: 3}
     minPosition: {x: 0, y: 0}
@@ -2085,21 +2085,21 @@ MonoBehaviour:
       type: 3}
     minPosition: {x: 0, y: 0}
     maxPosition: {x: 10, y: 10}
-    spawnWeight: 100
+    spawnWeight: 50
     roomType: 2
     spawnOnlyAtDeadEnd: 1
   - prefab: {fileID: 8485914696622304995, guid: 8cb01a690ee875f4699c09ee03ef7bc0,
       type: 3}
     minPosition: {x: 0, y: 0}
     maxPosition: {x: 5, y: 5}
-    spawnWeight: 10
+    spawnWeight: 5
     roomType: 2
     spawnOnlyAtDeadEnd: 0
-  - prefab: {fileID: 8485914696622304995, guid: 25290dc65e99d1347b0eb1edd6f8033d,
+  - prefab: {fileID: 8485914696622304995, guid: 9a73206e34a3a1c4dac7dce58b6ee21e,
       type: 3}
     minPosition: {x: 0, y: 0}
     maxPosition: {x: 10, y: 10}
-    spawnWeight: 20
+    spawnWeight: 50
     roomType: 5
     spawnOnlyAtDeadEnd: 0
   offset: {x: 28, y: 13}
