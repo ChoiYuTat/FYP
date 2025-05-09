@@ -29,6 +29,8 @@ public class GameRoot : MonoBehaviour
     {
         FirstGame,
         SecondGame,
+        Story1End,
+        Story2End
     }
 
     public static GameRoot GetInstance()
@@ -82,6 +84,14 @@ public class GameRoot : MonoBehaviour
                 break;
             case GameState.SecondGame:
                     
+                break;
+
+            case GameState.Story1End:
+
+                break;
+
+                case GameState.Story2End:
+
                 break;
         }
 

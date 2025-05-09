@@ -203,7 +203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 62.333344
+    x: 61.00003
     y: 69.99997
     width: 77.333336
     height: 40
@@ -265,8 +265,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 279301439}
-  selectedCommands:
-  - {fileID: 279301459}
+  selectedCommands: []
   variables:
   - {fileID: 279301456}
   - {fileID: 279301472}
@@ -1413,8 +1412,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 249.06659
-    y: 47.309845
+    x: 245.73322
+    y: 47.976517
     width: 84.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2473,7 +2472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1933053076}
+  selectedFlowchart: {fileID: 279301440}
 --- !u!4 &1500648007
 Transform:
   m_ObjectHideFlags: 1
@@ -3182,8 +3181,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1933053075}
-  selectedCommands:
-  - {fileID: 1933053071}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
