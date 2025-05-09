@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Fungus;
+using UnityEngine.SceneManagement;
 
 public class GameRoot : MonoBehaviour
 {
@@ -112,6 +113,7 @@ public class GameRoot : MonoBehaviour
             BackHome();
         }
         
+
     }
 
 
@@ -121,5 +123,7 @@ public class GameRoot : MonoBehaviour
         scene1 Scene1 = new scene1();
         SceneControl_Root.SceneLoad(Scene1.SceneName, Scene1);
     }
+
+    
 }
 
