@@ -18,7 +18,7 @@ public class SavePanel : BasePanel
     public override void OnStart()
     {
         base.OnStart();
-        UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Save1").onClick.AddListener(Save);
+        UIMethods.GetInstance().GetOrAddSingleComponentInChild<Button>(ActiveObj, "Save").onClick.AddListener(Save);
     }
 
     private void Save()

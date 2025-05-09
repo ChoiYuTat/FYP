@@ -55,81 +55,81 @@ public class SaveSystem
         File.Delete(GetPath(fileName));
     }
 
-    public static string FindAuto()
-    {
-        if (Directory.Exists(Application.persistentDataPath))
-        {
-            FileInfo[] fileInfos = new DirectoryInfo(Application.persistentDataPath).GetFiles("*");
-            for (int i = 0; i < fileInfos.Length; i++)
-            {
-                if (fileInfos[i].Name.EndsWith(".auto"))
-                {
-                    return fileInfos[i].Name;
-                }
-            }
-        }
-        return "";
-    }
-    #endregion
-    #region PrtSc
-    public static void CameraCapture (int i ,Camera camera,Rect rect)
-    {
-        if(!Directory.Exists(SaveSystem.shotPath))
-        {  
-            Directory.CreateDirectory(SaveSystem.shotPath);
-        }
-        string path = Path.Combine(SaveSystem.shotPath, $"{i}.png");
+    //public static string FindAuto()
+    //{
+    //    if (Directory.Exists(Application.persistentDataPath))
+    //    {
+    //        FileInfo[] fileInfos = new DirectoryInfo(Application.persistentDataPath).GetFiles("*");
+    //        for (int i = 0; i < fileInfos.Length; i++)
+    //        {
+    //            if (fileInfos[i].Name.EndsWith(".auto"))
+    //            {
+    //                return fileInfos[i].Name;
+    //            }
+    //        }
+    //    }
+    //    return "";
+    //}
+    //#endregion
+    //#region PrtSc
+    //public static void CameraCapture (int i ,Camera camera,Rect rect)
+    //{
+    //    if(!Directory.Exists(SaveSystem.shotPath))
+    //    {  
+    //        Directory.CreateDirectory(SaveSystem.shotPath);
+    //    }
+    //    string path = Path.Combine(SaveSystem.shotPath, $"{i}.png");
        
 
-            int w=(int)rect.width;
-            int h=(int)rect.height;
+    //        int w=(int)rect.width;
+    //        int h=(int)rect.height;
 
-            RenderTexture rt = new RenderTexture(w, h, 0);
-            camera.targetTexture = rt;
-            camera.Render();
+    //        RenderTexture rt = new RenderTexture(w, h, 0);
+    //        camera.targetTexture = rt;
+    //        camera.Render();
 
-            RenderTexture.active=rt;
+    //        RenderTexture.active=rt;
 
-            Texture2D t2D = new Texture2D(w, h, TextureFormat.RGB24, true);
+    //        Texture2D t2D = new Texture2D(w, h, TextureFormat.RGB24, true);
 
-            t2D.ReadPixels(rect, 0, 0);
-            t2D.Apply();
+    //        t2D.ReadPixels(rect, 0, 0);
+    //        t2D.Apply();
 
-        byte[]bytes=t2D.EncodeToPNG();
-        File.WriteAllBytes(path, bytes);
+    //    byte[]bytes=t2D.EncodeToPNG();
+    //    File.WriteAllBytes(path, bytes);
 
-        camera.targetTexture=null;
-        RenderTexture.active=null;
-        GameObject.Destroy(rt);
-    }
+    //    camera.targetTexture=null;
+    //    RenderTexture.active=null;
+    //    GameObject.Destroy(rt);
+    //}
 
-    public static Sprite LoadShot(int i)
-    {
-        var path = Path.Combine(shotPath, $"{i}.png");
+    //public static Sprite LoadShot(int i)
+    //{
+    //    var path = Path.Combine(shotPath, $"{i}.png");
 
-        Texture2D t = new Texture2D(640, 360);
-        t.LoadImage(GetImgByte(path));
-        return Sprite.Create(t, new Rect(0, 0, t.width, t.height), new Vector2(0.5f, 0.5f));
-    }
+    //    Texture2D t = new Texture2D(640, 360);
+    //    t.LoadImage(GetImgByte(path));
+    //    return Sprite.Create(t, new Rect(0, 0, t.width, t.height), new Vector2(0.5f, 0.5f));
+    //}
 
-    static byte[] GetImgByte(string path)
-    {
-        FileStream s = new FileStream(path, FileMode.Open);
-        byte[] imgByte = new byte[s.Length];
-        s.Read(imgByte,0,imgByte.Length);
-        s.Close();
-        return imgByte;
-    }
+    //static byte[] GetImgByte(string path)
+    //{
+    //    FileStream s = new FileStream(path, FileMode.Open);
+    //    byte[] imgByte = new byte[s.Length];
+    //    s.Read(imgByte,0,imgByte.Length);
+    //    s.Close();
+    //    return imgByte;
+    //}
 
-    public static void DeleteShot(int i)
-    {
-        var path = Path.Combine(shotPath, $"{i}.png");
-        if(File.Exists(path))
-        {
-            File.Delete(path);
-            Debug.Log($"deleted image");
-        }
-    }
+    //public static void DeleteShot(int i)
+    //{
+    //    var path = Path.Combine(shotPath, $"{i}.png");
+    //    if(File.Exists(path))
+    //    {
+    //        File.Delete(path);
+    //        Debug.Log($"deleted image");
+    //    }
+    //}
         #endregion
     #region DeleteAll
 #if UNITY_EDITOR
