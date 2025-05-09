@@ -157,8 +157,6 @@ GameObject:
   - component: {fileID: 279301464}
   - component: {fileID: 279301463}
   - component: {fileID: 279301462}
-  - component: {fileID: 279301466}
-  - component: {fileID: 279301465}
   - component: {fileID: 279301470}
   - component: {fileID: 279301469}
   - component: {fileID: 279301468}
@@ -168,6 +166,7 @@ GameObject:
   - component: {fileID: 279301474}
   - component: {fileID: 279301473}
   - component: {fileID: 279301477}
+  - component: {fileID: 279301478}
   m_Layer: 0
   m_Name: Flowchart(story)
   m_TagString: Untagged
@@ -204,7 +203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 62.333344
+    x: 61.00003
     y: 69.99997
     width: 77.333336
     height: 40
@@ -265,7 +264,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 279301464}
+  - {fileID: 279301439}
   selectedCommands: []
   variables:
   - {fileID: 279301456}
@@ -417,7 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 1
-  storyText: I'm using my ability to talk to you.
+  storyText: You're already in a domain created by my ability.
   description: 
   character: {fileID: 557164977}
   portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
@@ -444,7 +443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 1
-  storyText: Wow?!!!! Where are you?
+  storyText: Wow?!!!! Where am I?
   description: 
   character: {fileID: 1276280825}
   portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
@@ -1397,7 +1396,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 279301475}
   commandList:
-  - {fileID: 279301465}
+  - {fileID: 279301478}
   suppressAllAutoSelections: 0
 --- !u!114 &279301464
 MonoBehaviour:
@@ -1413,8 +1412,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 252.39996
-    y: 44.643173
+    x: 245.73322
+    y: 47.976517
     width: 84.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1424,63 +1423,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 279301476}
   commandList:
-  - {fileID: 279301466}
   - {fileID: 279301477}
   suppressAllAutoSelections: 0
---- !u!114 &279301465
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279301437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 23
-  indentLevel: 0
-  storyText: story2
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &279301466
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279301437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 22
-  indentLevel: 0
-  storyText: story1
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &279301468
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1848,6 +1792,158 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 31
+  indentLevel: 0
+  anyVar:
+    variable: {fileID: 279301472}
+    data:
+      animatorData:
+        animatorRef: {fileID: 0}
+        animatorVal: {fileID: 0}
+      audioSourceData:
+        audioSourceRef: {fileID: 0}
+        audioSourceVal: {fileID: 0}
+      booleanData:
+        booleanRef: {fileID: 0}
+        booleanVal: 0
+      collectionData:
+        collectionRef: {fileID: 0}
+        collectionVal: {fileID: 0}
+      collider2DData:
+        collider2DRef: {fileID: 0}
+        collider2DVal: {fileID: 0}
+      colliderData:
+        colliderRef: {fileID: 0}
+        colliderVal: {fileID: 0}
+      colorData:
+        colorRef: {fileID: 0}
+        colorVal: {r: 0, g: 0, b: 0, a: 0}
+      floatData:
+        floatRef: {fileID: 0}
+        floatVal: 0
+      gameObjectData:
+        gameObjectRef: {fileID: 0}
+        gameObjectVal: {fileID: 0}
+      integerData:
+        integerRef: {fileID: 0}
+        integerVal: 0
+      materialData:
+        materialRef: {fileID: 0}
+        materialVal: {fileID: 0}
+      matrix4x4Data:
+        matrix4x4Ref: {fileID: 0}
+        matrix4x4Val:
+          e00: 0
+          e01: 0
+          e02: 0
+          e03: 0
+          e10: 0
+          e11: 0
+          e12: 0
+          e13: 0
+          e20: 0
+          e21: 0
+          e22: 0
+          e23: 0
+          e30: 0
+          e31: 0
+          e32: 0
+          e33: 0
+      objectData:
+        objectRef: {fileID: 0}
+        objectVal: {fileID: 0}
+      quaternionData:
+        quaternionRef: {fileID: 0}
+        quaternionVal: {x: 0, y: 0, z: 0, w: 0}
+      rigidbody2DData:
+        rigidbody2DRef: {fileID: 0}
+        rigidbody2DVal: {fileID: 0}
+      rigidbodyData:
+        rigidbodyRef: {fileID: 0}
+        rigidbodyVal: {fileID: 0}
+      spriteData:
+        spriteRef: {fileID: 0}
+        spriteVal: {fileID: 0}
+      stringData:
+        stringRef: {fileID: 0}
+        stringVal: 
+      textureData:
+        textureRef: {fileID: 0}
+        textureVal: {fileID: 0}
+      transformData:
+        transformRef: {fileID: 0}
+        transformVal: {fileID: 0}
+      vector2Data:
+        vector2Ref: {fileID: 0}
+        vector2Val: {x: 0, y: 0}
+      vector3Data:
+        vector3Ref: {fileID: 0}
+        vector3Val: {x: 0, y: 0, z: 0}
+      vector4Data:
+        vector4Ref: {fileID: 0}
+        vector4Val: {x: 0, y: 0, z: 0, w: 0}
+  setOperator: 0
+  variable: {fileID: 0}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &279301478
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279301437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 32
   indentLevel: 0
   anyVar:
     variable: {fileID: 279301472}
@@ -2376,7 +2472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1933053076}
+  selectedFlowchart: {fileID: 279301440}
 --- !u!4 &1500648007
 Transform:
   m_ObjectHideFlags: 1
@@ -2826,7 +2922,6 @@ GameObject:
   - component: {fileID: 1933053077}
   - component: {fileID: 1933053076}
   - component: {fileID: 1933053075}
-  - component: {fileID: 1933053074}
   - component: {fileID: 1933053073}
   - component: {fileID: 1933053072}
   - component: {fileID: 1933053071}
@@ -2837,7 +2932,7 @@ GameObject:
   - component: {fileID: 1933053078}
   - component: {fileID: 1933053079}
   m_Layer: 0
-  m_Name: Flowchart(restart)
+  m_Name: Flowchart(exitGame)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2857,7 +2952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: It will restart the GAME. Please make sure your choice NOT WRONG!!
+  storyText: It will restart the RETURN TO THE TOWN. Please make sure your choice
+    NOT WRONG!!
   description: 
   character: {fileID: 512248306}
   portrait: {fileID: 0}
@@ -2911,7 +3007,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 304.6667
     y: 176.66667
-    width: 68.666664
+    width: 67.54385
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2938,12 +3034,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 305.33334
     y: 100.66667
-    width: 86.66667
+    width: 76.31578
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 4
-  blockName: restart
+  blockName: exit1
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -2963,7 +3059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  text: Yes, I need your help.(RESTART GAME)
+  text: Yes, I need your help.(RETURN TO TOWN)
   description: 
   targetBlock: {fileID: 1933053070}
   hideIfVisited: 0
@@ -3028,22 +3124,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1933053074
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933053064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000864f8e9e1748a39807861d0e60e29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1933053075}
-  suppressBlockAutoSelect: 0
-  keyPressType: 1
-  keyCode: 27
 --- !u!114 &1933053075
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3058,16 +3138,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 66.33333
-    y: 69.333336
-    width: 113.33333
+    x: 67.21047
+    y: 68.45614
+    width: 70.17543
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: New Block
+  blockName: Exit
   description: 
-  eventHandler: {fileID: 1933053074}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1933053073}
   - {fileID: 1933053072}
@@ -3088,11 +3168,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 299.96463, y: 111.85955}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.7600002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -3100,9 +3180,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1933053070}
-  selectedCommands:
-  - {fileID: 1933053078}
+  - {fileID: 1933053075}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -3145,12 +3224,12 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: TestBattle
+    stringVal: HD_2D_Day
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &1933053079
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3312,7 +3391,7 @@ MonoBehaviour:
   size: {x: 4, y: 4}
   startPos: 0
   roomRules:
-  - prefab: {fileID: 8485914696622304995, guid: a84ea6ff7a2136440998ac6171e90ebe,
+  - prefab: {fileID: 8485914696622304995, guid: 8230069baf4ec564e9b3e96c8371ed81,
       type: 3}
     minPosition: {x: 0, y: 0}
     maxPosition: {x: 0, y: 0}

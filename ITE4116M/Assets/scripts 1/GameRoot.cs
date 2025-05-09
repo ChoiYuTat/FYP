@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Fungus;
+using UnityEngine.SceneManagement;
 
 public class GameRoot : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class GameRoot : MonoBehaviour
     {
         FirstGame,
         SecondGame,
+        Story1End,
+        Story2End
     }
 
     public static GameRoot GetInstance()
@@ -82,6 +85,14 @@ public class GameRoot : MonoBehaviour
             case GameState.SecondGame:
                     
                 break;
+
+            case GameState.Story1End:
+
+                break;
+
+                case GameState.Story2End:
+
+                break;
         }
 
         if (!UIManager.dict_uiObject.ContainsKey("MainMenuPanel"))
@@ -112,6 +123,7 @@ public class GameRoot : MonoBehaviour
             BackHome();
         }
         
+
     }
 
 
@@ -121,5 +133,7 @@ public class GameRoot : MonoBehaviour
         scene1 Scene1 = new scene1();
         SceneControl_Root.SceneLoad(Scene1.SceneName, Scene1);
     }
+
+    
 }
 
