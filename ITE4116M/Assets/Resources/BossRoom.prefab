@@ -1003,7 +1003,6 @@ GameObject:
   - component: {fileID: 42013455168834529}
   - component: {fileID: 3787189151578564628}
   - component: {fileID: 8179223623212592172}
-  - component: {fileID: 3750170870770099615}
   m_Layer: 0
   m_Name: BossRoom
   m_TagString: BettleRoom
@@ -1103,18 +1102,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.442413, y: 1, z: 3.973292}
   m_Center: {x: 3.2082012, y: 0, z: -1.9958252}
---- !u!114 &3750170870770099615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8485914696622304995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6a845763a09c83499dc09ac17e557cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &22077598509719629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8120,11 +8107,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5219251854779223542, guid: edfb06eed3fa848459d5774d6b5d6409, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8518098418965299176, guid: edfb06eed3fa848459d5774d6b5d6409,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4855805705614195581}
   m_SourcePrefab: {fileID: 100100000, guid: edfb06eed3fa848459d5774d6b5d6409, type: 3}
+--- !u!1 &1661231009881143996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8518098418965299176, guid: edfb06eed3fa848459d5774d6b5d6409,
+    type: 3}
+  m_PrefabInstance: {fileID: 7006402195258738004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4855805705614195581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661231009881143996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee0a8343b73e34a47b2c45f4d4057ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rule: {fileID: 3787189151578564628}
 --- !u!4 &1664127684909611410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8512813623134141638, guid: edfb06eed3fa848459d5774d6b5d6409,

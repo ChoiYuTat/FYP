@@ -34,7 +34,7 @@ public class Boss : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 isOpen = true;
-                SceneManager.LoadScene("TestBatter");
+                SceneManager.LoadScene("Boss");
                 rule.isClear = true;
             }
             
