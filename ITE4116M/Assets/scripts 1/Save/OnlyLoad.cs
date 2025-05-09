@@ -42,7 +42,7 @@ public class OnlyLoad : MonoBehaviour
     void ShowDetails(int i)
     {
         var data = Savedata.Instance.ReadForShow(i);
-        screenShot.sprite = SaveSystem.LoadShot(i);
+        //screenShot.sprite = SaveSystem.LoadShot(i);
 
         gameTime.text = $"Game Time{TimeManager.GetFormatTime((int)data.gameTime)}";
         sceneName.text = $"Scene {data.scensName}";

@@ -8,9 +8,9 @@ public class TitleUI : MonoBehaviour
 {
     public Button Continue;
     public Button Load;
-    public Button Save;
+    //public Button Save;
     public Button Exit;
-    public Button New;
+    //public Button New;
 
     public GameObject recordPanel;
 
@@ -19,7 +19,7 @@ public class TitleUI : MonoBehaviour
         Continue.onClick.AddListener(() => LoadRecord(RecordData.Instance.lastID));
         Load.onClick.AddListener(OpenRecordPanel);
         OnlyLoad.OnLoad += LoadRecord;
-        New.onClick.AddListener(NewGame);
+        //New.onClick.AddListener(NewGame);
         Exit.onClick.AddListener(QuitGame);
     }
 
