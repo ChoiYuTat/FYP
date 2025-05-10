@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 279301475}
   - component: {fileID: 279301474}
   - component: {fileID: 279301473}
+  - component: {fileID: 279301477}
   m_Layer: 0
   m_Name: Flowchart(story)
   m_TagString: Untagged
@@ -229,6 +230,7 @@ MonoBehaviour:
   - {fileID: 279301453}
   - {fileID: 279301452}
   - {fileID: 279301459}
+  - {fileID: 279301477}
   - {fileID: 279301457}
   - {fileID: 279301462}
   - {fileID: 279301474}
@@ -263,7 +265,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 279301439}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 279301477}
   variables:
   - {fileID: 279301456}
   - {fileID: 279301472}
@@ -577,7 +580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 1
-  storyText: (Defeat all the mobs.)
+  storyText: (Defeat all the mobs and the final boss.)
   description: 
   character: {fileID: 512248306}
   portrait: {fileID: 0}
@@ -1775,6 +1778,33 @@ MonoBehaviour:
   parentBlock: {fileID: 279301464}
   suppressBlockAutoSelect: 0
   message: story1
+--- !u!114 &279301477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279301437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 31
+  indentLevel: 1
+  storyText: (If have some problem cannot fix, FIND WINDY on the spawn room.)
+  description: 
+  character: {fileID: 512248306}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &363839976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,7 +2861,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 67.21047
-    y: 68.45614
+    y: 67.57894
     width: 70.17543
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2872,7 +2902,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1933053075}
+  - {fileID: 1933053068}
   selectedCommands: []
   variables: []
   description: 
