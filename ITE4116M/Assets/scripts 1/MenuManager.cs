@@ -1,11 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    public List<Button> button;
     public GameObject menuPanel;
     public GameObject[] subPanels;
+
+    private void Start()
+    {
+        foreach (Button btn in button)
+        {
+            Button currentBtn = btn;
+            currentBtn.onClick.AddListener(() => OnButtonClicked(currentBtn));
+        }
+
+        void OnButtonClicked(Button clickedBtn)
+        {
+            foreach (Button btn in button)
+            {
+
+                btn.interactable = (btn == clickedBtn);
+            }
+        }
+    }
 
     void Update()
     {
@@ -16,7 +36,11 @@ public class MenuManager : MonoBehaviour
 
             if (hasActiveSubPanel)
             {
-                CloseAllSubPanels(); 
+                CloseAllSubPanels();
+                foreach (Button btn in button)
+                {
+                    btn.interactable = true;
+                }
             }
             else
             {

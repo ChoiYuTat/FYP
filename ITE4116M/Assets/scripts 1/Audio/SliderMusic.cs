@@ -11,7 +11,7 @@ public class SliderMusic : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource.volume = 0.1f;
+        audioSource.volume = 0.3f;
         muteState = false;
         preVolume = audioSource.volume; 
     }
