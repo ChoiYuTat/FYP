@@ -30,11 +30,11 @@ public class RoomRule : MonoBehaviour
     }
     private void CloseDoor()
     {
-        Debug.Log("Door is closed");
         for (int i = 0; i < DorrPrefab.Length; i++)
         {
             DorrPrefab[i].SetActive(true);
         }
+        isClear = false;
     }
 
     private void OpenDoor()

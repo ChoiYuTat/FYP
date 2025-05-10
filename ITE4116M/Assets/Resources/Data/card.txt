@@ -1,5 +1,8 @@
 Id	Name	Script	Type	Des	BgIcon	Icon	Expend	Arg0	Effects	
 唯一的識別（不能重複）	名稱	卡牌新增的腳本	卡牌類型的Id	描述	卡牌的背景圖資源路徑	圖示資源的路徑	消耗的費用	屬性值	特效	
-1000	Attack	AttackCardItem	10001	Deal {0} points of damage to a single enemy	Icon/BlueCard	Icon/sword_03e	1	100	Effects/GreenBloodExplosion	
-1001	Defense	DefendCard	10002	Increase {0} shield points	Icon/GreenCard	Icon/armor_01a	1	2	Effects/SpinZoneBlue	
+1000	Attack	AttackCardItem	10001	Deal {0} points of damage to a single enemy	Icon/BlueCard	Icon/sword_03e	1	50	Effects/GreenBloodExplosion	
+1001	Defense	DefendCard	10002	Increase {0} shield points	Icon/GreenCard	Icon/armor_01a	2	3	Effects/SpinZoneBlue	
 1002	spurious	AddCard	10003	Draw {0} cards from the deck	Icon/RedCard	Icon/wood_01a	2	2	Effects/SmokeExplosionDark	
+1003	ShieldBash	ShieldBash	10001	Deal {0} points of damage to a single enemy and Increase {0} shield points	Icon/BlueCard	Icon/sword_03e	3	40	Effects/GreenBloodExplosion	
+1004	ContinuousAttack	ContinuousAttack	10001	Deal {0} points of damage to a single enemy Until the magic power runs out	Icon/BlueCard	Icon/sword_03e	1	4	Effects/GreenBloodExplosion	
+1005	Strongdefense	Strongdefense	10002	Increase {0} shield points Until the magic power runs out	Icon/GreenCard	Icon/armor_01a	1	2	Effects/SpinZoneBlue	

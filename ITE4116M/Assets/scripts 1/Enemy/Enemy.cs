@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
 
     public Animator ani;
 
+    public Camera mainCamera;
     public void Init(Dictionary<string, string> data)
     {
         this.data = data;
@@ -42,7 +43,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _mashRenderer = transform.GetComponentInChildren<SkinnedMeshRenderer>();
+
         ani = transform.GetComponent<Animator>();
 
         type = ActionType.None;
@@ -56,9 +57,6 @@ public class Enemy : MonoBehaviour
         hpTxt = hpItemObj.transform.Find("hpTxt").GetComponent<Text>();
         hpImage = hpItemObj.transform.Find("fill").GetComponent<Image>();
 
-        hpItemObj.transform.position = Camera.main.WorldToScreenPoint(transform.position + Vector3.up * 2f);
-        actionObj.transform.position = Camera.main.WorldToScreenPoint(transform.Find("head").position + new Vector3(0, 0.5f, 0));
-
         SetRandomAction();
 
         Attack = int.Parse(data["Attack"]);
@@ -68,6 +66,8 @@ public class Enemy : MonoBehaviour
 
         UpdateHp();
         UpdateDefend();
+
+        sethppo();
     }
     public void SetRandomAction()
     {
@@ -102,12 +102,12 @@ public class Enemy : MonoBehaviour
 
     public void OnSelect()
     {
-        _mashRenderer.material.SetColor("_OtlColor", Color.red);
+        
     }
 
     public void OnUnSelect()
     {
-        _mashRenderer.material.SetColor("_OtlColor", Color.black);
+       
     }
 
     public void Hit(int val)
@@ -179,4 +179,11 @@ public class Enemy : MonoBehaviour
         ani.Play("idle");
     }
 
+
+    public void sethppo()
+    {
+        mainCamera = GameObject.Find("Camera").GetComponent<Camera>();
+        hpItemObj.transform.position = mainCamera.WorldToScreenPoint(transform.position + Vector3.up * 2f);
+        actionObj.transform.position = mainCamera.WorldToScreenPoint(transform.Find("head").position + new Vector3(0, 0.5f, 0));
+    }
 }

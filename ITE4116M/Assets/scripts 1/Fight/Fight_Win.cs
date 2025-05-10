@@ -44,6 +44,7 @@ public class Fight_Win : FightUnit
                 }   
                 BooleanVariable gameEndVar = flowchart.GetVariable<BooleanVariable>("GameEnd");
                 gameEndVar.Value = true;
+                DungeonGenerator.Instance.ReloadDungeon();
             }
             else
             {
