@@ -13,7 +13,7 @@ public class TpToTwon : MonoBehaviour
         {
            
 
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
     }
 }
