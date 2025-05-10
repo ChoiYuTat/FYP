@@ -95,20 +95,20 @@ public class GameRoot : MonoBehaviour
                 break;
         }
 
-        if (!UIManager.dict_uiObject.ContainsKey("MainMenuPanel"))
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                UIManager_Root.Push(new MainMenuPanel());
-            }
-        }
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                UIManager_Root.Pop(false);
-            }
-        }
+        //if (!UIManager.dict_uiObject.ContainsKey("MainMenuPanel"))
+        //{
+        //    if (Input.GetKeyDown(KeyCode.Escape))
+        //    {
+        //        UIManager_Root.Push(new MainMenuPanel());
+        //    }
+        //}
+        //else
+        //{
+        //    if (Input.GetKeyDown(KeyCode.Escape))
+        //    {
+        //        UIManager_Root.Pop(false);
+        //    }
+        //}
         if (Input.GetKeyDown(KeyCode.B))
         {
             scene2 scene2 = new scene2();
