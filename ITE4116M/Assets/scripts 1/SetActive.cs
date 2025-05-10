@@ -14,8 +14,8 @@ public class SetActive : MonoBehaviour
     public GameObject option;
     public GameObject userguide;
     public GameObject image;
-    public GameObject menu;
-    public bool isActive;
+    //public GameObject menu;
+    //public bool isActive;
     
     
 
@@ -47,10 +47,10 @@ public class SetActive : MonoBehaviour
         // Start is called before the first frame update
         void Start()
     {
-        if (menu != null)
-        {
-            isActive = menu.activeSelf;
-        }
+        //if (menu != null)
+        //{
+        //    isActive = menu.activeSelf;
+        //}
         
 
        
@@ -90,11 +90,11 @@ public class SetActive : MonoBehaviour
             //        UIManager_Root.Pop(false);
             //    }
             //}
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                isActive =!isActive;
-                menu.SetActive(isActive);
-            }
+            //if (Input.GetKeyDown(KeyCode.Escape))
+            //{
+            //    isActive =!isActive;
+            //    menu.SetActive(isActive);
+            //}
 
            
             
