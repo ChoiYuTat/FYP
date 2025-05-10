@@ -6,46 +6,53 @@ using UnityEngine.UI;
 
 public class SetActive : MonoBehaviour
 {
-    private static SetActive instance;
-    private UIManager UIManager;
-    public UIManager UIManager_Root;
+    //private static SetActive instance;
+    //private UIManager UIManager;
+    //public UIManager UIManager_Root;
     public List <Button> button;
 
     public GameObject option;
     public GameObject userguide;
     public GameObject image;
+    public GameObject menu;
+    public bool isActive;
     
 
-    public static SetActive GetInstance()
-    {
-        if (instance == null)
-        {
-            Debug.LogWarning("GameRoot Ins is false!");
-            return instance;
-        }
+    //public static SetActive GetInstance()
+    //{
+    //    if (instance == null)
+    //    {
+    //        Debug.LogWarning("GameRoot Ins is false!");
+    //        return instance;
+    //    }
 
-        return instance;
-    }
+    //    return instance;
+    //}
 
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+    //private void Awake()
+    //{
+    //    if (instance == null)
+    //    {
+    //        instance = this;
+    //    }
+    //    else
+    //    {
+    //        Destroy(this.gameObject);
+    //    }
 
-        UIManager = new UIManager();
-        UIManager_Root = UIManager;
-    }
+    //    UIManager = new UIManager();
+    //    UIManager_Root = UIManager;
+    //}
         // Start is called before the first frame update
         void Start()
     {
-        DontDestroyOnLoad(this);
-        UIManager_Root.CanvasObj = UIMethods.GetInstance().FindCanvas();
+        if (menu != null)
+        {
+            isActive = menu.activeSelf;
+        }
+
+       
+        //UIManager_Root.CanvasObj = UIMethods.GetInstance().FindCanvas();
         foreach (Button btn in button)
         {
             Button currentBtn = btn; 
@@ -67,20 +74,26 @@ public class SetActive : MonoBehaviour
     {
         if (Time.timeScale == 1)
         {
-            if (!UIManager.dict_uiObject.ContainsKey("MainMenuPanel"))
+            //if (!UIManager.dict_uiObject.ContainsKey("MainMenuPanel"))
+            //{
+            //    if (Input.GetKeyDown(KeyCode.Escape))
+            //    {
+            //        UIManager_Root.Push(new MainMenuPanel());
+            //    }
+            //}
+            //else
+            //{
+            //    if (Input.GetKeyDown(KeyCode.Escape))
+            //    {
+            //        UIManager_Root.Pop(false);
+            //    }
+            //}
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    UIManager_Root.Push(new MainMenuPanel());
-                }
+                isActive =!isActive;
+                menu.SetActive(isActive);
             }
-            else
-            {
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    UIManager_Root.Pop(false);
-                }
-            }
+            
         }
 
         if (Time.timeScale == 0)
