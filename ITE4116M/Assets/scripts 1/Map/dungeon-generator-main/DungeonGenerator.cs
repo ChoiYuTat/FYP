@@ -9,10 +9,19 @@ public class DungeonGenerator : MonoBehaviour
     public static DungeonGenerator Instance;
 
     [Header("Debug Info")]
-    [SerializeField] private int deadEndCount = 0; // 序列化以便在Inspector查看
+    [SerializeField] private int deadEndCount = 0; 
     [Header("Special Room Settings")]
-    [Range(0f, 1f)] public float specialRoomChance = 0.7f; // 死路生成特殊房間機率
+    [Range(0f, 1f)] public float specialRoomChance = 0.7f;
 
+
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ReloadDungeon();
+        }
+    }
 
     private void Awake()
     {
@@ -27,17 +36,18 @@ public class DungeonGenerator : MonoBehaviour
     }
     public void SetCamera()
     {
+        VirtualCamera = null;
         VirtualCamera = GameObject.Find("Virtual Camera");
         cameraBinder = VirtualCamera.GetComponent<CameraTargetBinder>();
         cameraBinder.BindCameraToPlayer(PlayerPrefab);
     }
     public enum RoomType
     {
-        Normal,          // 普通房間
-        Boss,           // Boss房間
-        Treasure,      // ?箱房
-        Shop,           // 商店
-        Spawn,          // 初始房間
+        Normal,          
+        Boss,           
+        Treasure,      
+        Shop,           
+        Spawn,          
         Enemy
 
     }
@@ -46,7 +56,7 @@ public class DungeonGenerator : MonoBehaviour
         public bool visited = false;
         public bool[] status = new bool[4];
         public bool isExplored;
-        public bool isDeadEnd = false; // 死路標?
+        public bool isDeadEnd = false; 
     }
 
     [System.Serializable]
@@ -55,9 +65,9 @@ public class DungeonGenerator : MonoBehaviour
         public GameObject prefab;
         public Vector2Int minPosition;
         public Vector2Int maxPosition;
-        [Range(1, 100)] public int spawnWeight = 50; // 生成權重
+        [Range(1, 100)] public int spawnWeight = 50; 
         public RoomType roomType;
-        public bool spawnOnlyAtDeadEnd; // 僅在死路生成
+        public bool spawnOnlyAtDeadEnd; 
 
     }
     
@@ -99,23 +109,23 @@ public class DungeonGenerator : MonoBehaviour
                 return rule;
             }
         }
-        return null; // 如果沒有找到對應?型的?則
+        return null; 
     }
     void GenerateDungeon()
     {
-        MarkDeadEnds(); // 先標?所有死路
-        // 后处理：如果没有死路则强制生成
+        MarkDeadEnds(); 
+        
         if (deadEndCount == 0)
         {
             float dynamicChance = Mathf.Clamp(1f - (deadEndCount * 0.2f), 0.3f, 0.8f);
             specialRoomChance = dynamicChance;  
             ForceDeadEnd();
-            MarkDeadEnds(); // 重新统计
+            MarkDeadEnds(); 
         }
-        // 獲取 Boss 房間的配置
+        
         RoomRule bossRule = FindRule(RoomType.Boss);
 
-        // 獲取初始房間的配置
+        
         RoomRule spawnRule = FindRule(RoomType.Spawn);
 
         for (int i = 0; i < size.x; i++)
@@ -127,21 +137,21 @@ public class DungeonGenerator : MonoBehaviour
 
                 if (!currentCell.visited) continue;
 
-                // ?制生成初始房間
+                
                 if (i == 0 && j == 0)
                 {
                     if (spawnRule != null) SpawnRoom(spawnRule, i, j);
                     continue;
                 }
 
-                // ?制生成Boss房間
+                
                 if (i == size.x - 1 && j == size.y - 1)
                 {
                     if (bossRule != null) SpawnRoom(bossRule, i, j);
                     continue;
                 }
 
-                // 死路生成??
+                
                 if (currentCell.isDeadEnd && Random.value < specialRoomChance)
                 {
                     List<RoomRule> deadEndRules = GetDeadEndValidRules(i, j);
@@ -152,7 +162,7 @@ public class DungeonGenerator : MonoBehaviour
                     }
                 }
 
-                // 普通房間生成
+                
                 List<RoomRule> validRules = GetValidRules(i, j, currentCell);
                 if (validRules.Count > 0)
                 {
@@ -399,4 +409,29 @@ public class DungeonGenerator : MonoBehaviour
 
         return neighbors;
     }
+
+    public void ReloadDungeon()
+    {
+        // 銷毀所有已生成的地牢房間
+        foreach (Transform child in transform)
+        {
+            if (child.GetComponent<RoomBehaviour>() != null)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+
+        // 清空地牢數據
+        board.Clear();
+        deadEndCount = 0;
+
+        // 重新生成迷宮
+        MazeGenerator();
+        Destroy(PlayerPrefab);
+        PlayerPrefab = Resources.Load("testCharacter") as GameObject;
+        PlayerPrefab = Object.Instantiate(PlayerPrefab, new Vector3(0, 0, 0), Quaternion.identity, DungeonManager);
+
+        SetCamera();
+    }
+
 }

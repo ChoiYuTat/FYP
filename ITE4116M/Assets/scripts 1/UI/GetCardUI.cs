@@ -32,14 +32,14 @@ public class GetCardUI : FightUIBase
     {
         for (int i = 0; i < 3; i++)
         {
-            cardIndex = UnityEngine.Random.Range(1000, 1002);
+            cardIndex = UnityEngine.Random.Range(1000, 1004);
             switch (cardIndex)
             {
                 case 1000:
-                    text[i].text = "Actten";
+                    text[i].text = "Attack";
                     btn[i].onClick.AddListener(() =>
                     {
-                        getAtt();
+                        GetCard("1000");
                     });
 
                     break;
@@ -47,34 +47,31 @@ public class GetCardUI : FightUIBase
                     text[i].text = "Deffect";
                     btn[i].onClick.AddListener(() =>
                     {
-                        getDef();
+                        GetCard("1001");
                     });
                     break;
                 case 1002:
                     text[i].text = "AddCard";
-                    btn[i].onClick.AddListener(() => { getAddCard(); });
+                    btn[i].onClick.AddListener(() => { GetCard("1002"); });
+                    break;
+                case 1003:
+                    text[i].text = "ShieldBash";
+                    btn[i].onClick.AddListener(() => { GetCard("1003"); });
+                    break;
+                case 1004:
+                    text[i].text = "ContinuousAttack";
+                    btn[i].onClick.AddListener(() => { GetCard("1004"); });
+                    break;
+                case 1005:
+                    text[i].text = "Strongdefense";
+                    btn[i].onClick.AddListener(() => { GetCard("1005"); });
                     break;
             }
         }
     }
-
-    private void getAddCard()
+    private void GetCard(string cardId)
     {
-        DateSaveManager.instance.AddCardtoCardList("1002");
-        SceneManager.LoadScene("TestBattle");
-        FightUIManager.Instance.CloseAllUI("GetCardUI");
-    }
-
-    private void getDef()
-    {
-        DateSaveManager.instance.AddCardtoCardList("1001");
-        SceneManager.LoadScene("TestBattle");
-        FightUIManager.Instance.CloseAllUI("GetCardUI");
-    }
-
-    private void getAtt()
-    {
-        DateSaveManager.instance.AddCardtoCardList("1000");
+        DateSaveManager.instance.AddCardtoCardList(cardId);
         SceneManager.LoadScene("TestBattle");
         FightUIManager.Instance.CloseAllUI("GetCardUI");
     }
