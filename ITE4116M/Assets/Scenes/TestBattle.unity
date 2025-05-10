@@ -266,7 +266,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 279301439}
   selectedCommands:
-  - {fileID: 279301477}
+  - {fileID: 279301454}
   variables:
   - {fileID: 279301456}
   - {fileID: 279301472}
@@ -1780,7 +1780,7 @@ MonoBehaviour:
   message: story1
 --- !u!114 &279301477
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
