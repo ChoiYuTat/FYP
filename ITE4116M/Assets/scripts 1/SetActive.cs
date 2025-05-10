@@ -17,6 +17,7 @@ public class SetActive : MonoBehaviour
     public GameObject menu;
     public bool isActive;
     
+    
 
     //public static SetActive GetInstance()
     //{
@@ -50,6 +51,7 @@ public class SetActive : MonoBehaviour
         {
             isActive = menu.activeSelf;
         }
+        
 
        
         //UIManager_Root.CanvasObj = UIMethods.GetInstance().FindCanvas();
@@ -93,6 +95,8 @@ public class SetActive : MonoBehaviour
                 isActive =!isActive;
                 menu.SetActive(isActive);
             }
+
+           
             
         }
 
