@@ -15312,6 +15312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abe5b5f47827bb5478826c9e999036ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UIManager_Root:
+    CanvasObj: {fileID: 0}
   button:
   - {fileID: 129003178}
   - {fileID: 603065325}
