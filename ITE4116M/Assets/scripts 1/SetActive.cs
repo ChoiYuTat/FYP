@@ -6,14 +6,46 @@ using UnityEngine.UI;
 
 public class SetActive : MonoBehaviour
 {
+    private static SetActive instance;
+    private UIManager UIManager;
+    public UIManager UIManager_Root;
     public List <Button> button;
 
     public GameObject option;
     public GameObject userguide;
     public GameObject image;
-    // Start is called before the first frame update
-    void Start()
+    
+
+    public static SetActive GetInstance()
     {
+        if (instance == null)
+        {
+            Debug.LogWarning("GameRoot Ins is false!");
+            return instance;
+        }
+
+        return instance;
+    }
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+
+        UIManager = new UIManager();
+        UIManager_Root = UIManager;
+    }
+        // Start is called before the first frame update
+        void Start()
+    {
+        DontDestroyOnLoad(this);
+        UIManager_Root.CanvasObj = UIMethods.GetInstance().FindCanvas();
         foreach (Button btn in button)
         {
             Button currentBtn = btn; 
@@ -33,15 +65,33 @@ public class SetActive : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-        
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Time.timeScale == 1)
         {
-            Enabled();
-            foreach (Button btn in button)
+            if (!UIManager.dict_uiObject.ContainsKey("MainMenuPanel"))
             {
-                btn.interactable = true;
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    UIManager_Root.Push(new MainMenuPanel());
+                }
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    UIManager_Root.Pop(false);
+                }
+            }
+        }
+
+        if (Time.timeScale == 0)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Enabled();
+                foreach (Button btn in button)
+                {
+                    btn.interactable = true;
+                }
             }
         }
     }
@@ -57,4 +107,6 @@ public class SetActive : MonoBehaviour
     {
         Application.Quit();
     }
-}
+
+   
+    }
