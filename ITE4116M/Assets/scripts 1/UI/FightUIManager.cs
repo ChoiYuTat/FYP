@@ -15,7 +15,7 @@ public class FightUIManager : MonoBehaviour
     {
         Instance = this;
 
-        canvasTf = GameObject.Find("Canvas").transform;
+        canvasTf = GameObject.Find("Canva").transform;
 
         uiList = new List<FightUIBase>();
     }
