@@ -67,7 +67,7 @@ public class TitleUI : MonoBehaviour
 
     void QuitGame()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 
     // Update is called once per frame

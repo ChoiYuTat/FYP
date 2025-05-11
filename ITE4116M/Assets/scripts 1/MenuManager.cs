@@ -88,4 +88,9 @@ public class MenuManager : MonoBehaviour
         
         targetPanel.SetActive(true);
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
