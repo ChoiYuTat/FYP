@@ -22339,8 +22339,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 649196343}
-  selectedCommands:
-  - {fileID: 649196353}
+  selectedCommands: []
   variables:
   - {fileID: 649196208}
   - {fileID: 649196215}
@@ -29010,7 +29009,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &649196363
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -29038,7 +29037,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &649196364
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

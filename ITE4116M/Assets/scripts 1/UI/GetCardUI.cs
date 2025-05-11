@@ -32,7 +32,7 @@ public class GetCardUI : FightUIBase
     {
         for (int i = 0; i < 3; i++)
         {
-            cardIndex = UnityEngine.Random.Range(1000, 1004);
+            cardIndex = UnityEngine.Random.Range(1000, 1006);
             switch (cardIndex)
             {
                 case 1000:
@@ -44,26 +44,26 @@ public class GetCardUI : FightUIBase
 
                     break;
                 case 1001:
-                    text[i].text = "Deffect";
+                    text[i].text = "Defense";
                     btn[i].onClick.AddListener(() =>
                     {
                         GetCard("1001");
                     });
                     break;
                 case 1002:
-                    text[i].text = "AddCard";
+                    text[i].text = "Supplies";
                     btn[i].onClick.AddListener(() => { GetCard("1002"); });
                     break;
                 case 1003:
-                    text[i].text = "ShieldBash";
+                    text[i].text = "KickBack";
                     btn[i].onClick.AddListener(() => { GetCard("1003"); });
                     break;
                 case 1004:
-                    text[i].text = "ContinuousAttack";
+                    text[i].text = "SPAttack";
                     btn[i].onClick.AddListener(() => { GetCard("1004"); });
                     break;
                 case 1005:
-                    text[i].text = "Strongdefense";
+                    text[i].text = "SPDefense";
                     btn[i].onClick.AddListener(() => { GetCard("1005"); });
                     break;
             }

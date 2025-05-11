@@ -23,6 +23,7 @@ public class Fight_Win : FightUnit
             if (scene.name == "Boss")
             {
                 FightManager.Instance.isfirst = true;
+
                 //Flowchart flowchart = GameObject.Find("Flowchart(windy)").GetComponent<Flowchart>();
                 //flowchart.SetVariable<BooleanVariable>("GameEnd", true);
 

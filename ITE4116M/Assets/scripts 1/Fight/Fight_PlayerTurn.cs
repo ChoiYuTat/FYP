@@ -19,7 +19,7 @@ public class Fight_PlayerTurn : FightUnit
                 FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateUsedCardCount();
             }
 
-            FightUIManager.Instance.GetUI<FightUI>("FightUI").CreateCardItem(6);
+            FightUIManager.Instance.GetUI<FightUI>("FightUI").CreateCardItem(4);
             FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateCardItemPos();
             FightUIManager.Instance.GetUI<FightUI>("FightUI").UpdateCardCount();
 

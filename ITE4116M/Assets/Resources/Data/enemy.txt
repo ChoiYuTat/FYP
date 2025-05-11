@@ -1,6 +1,6 @@
 Id	Name	Hp	Attack	Defend	Model	
 Id	名字	血量	攻擊力	防御盾	怪物的模型路徑	
-10001	Slime	1	1	1	Model/Slime	
-10002	Stoneman	10	10	3	Model/Golem	
+10001	Slime	5	3	5	Model/Slime	
+10002	Stoneman	5	10	15	Model/Golem	
 10003	turtle	5	5	2	Model/TurtleShell	
-10005	Boss	100	10	50	Model/TurtleShell	
+10005	Boss	50	20	50	Model/TurtleShell	
