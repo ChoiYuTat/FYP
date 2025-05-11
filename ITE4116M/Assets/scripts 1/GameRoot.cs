@@ -134,6 +134,12 @@ public class GameRoot : MonoBehaviour
         SceneControl_Root.SceneLoad(Scene1.SceneName, Scene1);
     }
 
-    
+    public void GoBattle()
+    {
+        scene2 scene2 = new scene2();
+        SceneControl_Root.SceneLoad(scene2.SceneName, scene2);
+    }
+
+
 }
 

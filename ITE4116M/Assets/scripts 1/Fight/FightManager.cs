@@ -29,11 +29,11 @@ public class FightManager : MonoBehaviour
     {
         if (isfirst)
         {
-            MaxHp = 20;
+            MaxHp = 1;
             curHp = MaxHp;
             MaxPowerCount = 3;
             curPowerCount = MaxPowerCount;
-            DefenseCount = 20;
+            DefenseCount = 1;
             isfirst = false;
         }
     }
