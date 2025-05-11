@@ -8050,6 +8050,11 @@ PrefabInstance:
       propertyPath: rule
       value: 
       objectReference: {fileID: 3787189151578564628}
+    - target: {fileID: -4448288755698225660, guid: 0ce06af2fe6357e418d015a38d63dac0,
+        type: 3}
+      propertyPath: gameObject
+      value: 
+      objectReference: {fileID: 4306489332659896071}
     - target: {fileID: 6551191474357589119, guid: 0ce06af2fe6357e418d015a38d63dac0,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -8125,6 +8130,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ce06af2fe6357e418d015a38d63dac0, type: 3}
+--- !u!1 &4306489332659896071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6554994308114135635, guid: 0ce06af2fe6357e418d015a38d63dac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 7006402195258738004}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4310292578932937003 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6551191474357589119, guid: 0ce06af2fe6357e418d015a38d63dac0,

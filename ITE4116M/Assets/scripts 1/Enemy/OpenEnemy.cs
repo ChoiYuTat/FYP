@@ -10,6 +10,7 @@ public class OpenEnemy : MonoBehaviour
     private bool canOpen = false;
     private bool isOpen = false;
     public RoomRule rule;
+    public GameObject gameObject; 
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,9 +34,11 @@ public class OpenEnemy : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+             
                 isOpen = true;
                 SceneManager.LoadScene("TestBatter");
                 rule.isClear = true;
+                Destroy(gameObject);
             }
             
         }
