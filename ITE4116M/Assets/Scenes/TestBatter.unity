@@ -220,12 +220,12 @@ GameObject:
   - component: {fileID: 412929472}
   - component: {fileID: 412929471}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &412929471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1076,7 +1076,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1440,6 +1440,7 @@ MonoBehaviour:
   MaxPowerCount: 0
   curPowerCount: 0
   DefenseCount: 0
+  isfirst: 0
 --- !u!114 &1677051063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1826,5 +1827,5 @@ SceneRoots:
   - {fileID: 1926138256}
   - {fileID: 1573076054}
   - {fileID: 964279242}
-  - {fileID: 412929474}
   - {fileID: 1173262802}
+  - {fileID: 412929474}
