@@ -22266,9 +22266,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 649196247}
+  - {fileID: 649196291}
   selectedCommands:
-  - {fileID: 649196279}
+  - {fileID: 649196328}
   variables:
   - {fileID: 649196208}
   - {fileID: 649196215}
@@ -22790,8 +22790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 130.43631
-    y: 92.53781
+    x: 128.01205
+    y: 102.23479
     width: 70.60605
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -24274,7 +24274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 558.90936
+    x: 556.48517
     y: 65.77637
     width: 83.93938
     height: 40
@@ -24343,7 +24343,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 547.57086
-    y: 135.10347
+    y: 136.3156
     width: 85.1515
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -24410,7 +24410,7 @@ MonoBehaviour:
   storyText: Okk..
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24438,7 +24438,7 @@ MonoBehaviour:
     memory through experience a part of that story.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24466,7 +24466,7 @@ MonoBehaviour:
     into the story. '
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24490,8 +24490,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 305.56268
-    y: 85.64217
+    x: 304.35052
+    y: 83.217964
     width: 116.666626
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -24550,7 +24550,7 @@ MonoBehaviour:
     XXXXXX and have a XXXXXX.....
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24577,7 +24577,7 @@ MonoBehaviour:
   storyText: "However, as time runs out, Malakar\u2019s power grows."
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24605,7 +24605,7 @@ MonoBehaviour:
     their bond, and they uncover Malakar\u2019s vulnerabilities."
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24633,7 +24633,7 @@ MonoBehaviour:
     on a quest to collect ancient artifacts that can defeat Malakar.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24661,7 +24661,7 @@ MonoBehaviour:
     him.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24688,7 +24688,7 @@ MonoBehaviour:
   storyText: Your kingdom of Argenvale is threatened by the dark sorcerer, Lord Malakar.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24716,7 +24716,7 @@ MonoBehaviour:
     the dark sorcerer, driven by justice and loyalty.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24743,7 +24743,7 @@ MonoBehaviour:
   storyText: Let me tell you the background of the story.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24770,7 +24770,7 @@ MonoBehaviour:
   storyText: Well, the MISSING PART is start from here...
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24797,7 +24797,7 @@ MonoBehaviour:
   storyText: I will try my best.
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24824,7 +24824,7 @@ MonoBehaviour:
   storyText: You right..... now is you turn to recover it.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24851,7 +24851,7 @@ MonoBehaviour:
   storyText: It seems the missing part is on the middle of that battle....
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24879,7 +24879,7 @@ MonoBehaviour:
     with wisdom, ensuring darkness never rises again.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24906,7 +24906,7 @@ MonoBehaviour:
   storyText: 'Eldrin''s XXXXX defeats Malakar, restoring peace to Argenvale. '
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24935,7 +24935,7 @@ MonoBehaviour:
     that breaks through Malakar's defenses.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25130,7 +25130,7 @@ MonoBehaviour:
     brother and heal the rift.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25157,7 +25157,7 @@ MonoBehaviour:
   storyText: Let me tell you the background of the story.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25184,7 +25184,7 @@ MonoBehaviour:
   storyText: I will try my best.
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25230,7 +25230,7 @@ MonoBehaviour:
   storyText: You right..... now is you turn to recover it.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25257,7 +25257,7 @@ MonoBehaviour:
   storyText: It seems the missing part is on the END of that battle....
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25284,7 +25284,7 @@ MonoBehaviour:
   storyText: Well, the MISSING PART is start from here...
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25312,7 +25312,7 @@ MonoBehaviour:
     powers to defeat the Void Bringer.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25340,7 +25340,7 @@ MonoBehaviour:
     the Void Bringer, a dark force that feeds on discord.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25368,7 +25368,7 @@ MonoBehaviour:
     secrets, and battles their own insecurities. '
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25395,7 +25395,7 @@ MonoBehaviour:
   storyText: Aelinor discovers an ancient artifact that may mend the realms.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25423,7 +25423,7 @@ MonoBehaviour:
     young heroes to restore harmony."
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25451,7 +25451,7 @@ MonoBehaviour:
     it divided the land into five realms: Earth, Water, Fire, Air, and dark.'
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -26035,7 +26035,7 @@ MonoBehaviour:
   storyText: OMG I can't believe that you really bring back the fragment of memory.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -26366,7 +26366,7 @@ MonoBehaviour:
   storyText: OMG I can't believe that you really bring back the fragment of memory.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27415,7 +27415,7 @@ MonoBehaviour:
   storyText: It's my pleasure Windy. I'm glad that I can help you.
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27442,7 +27442,7 @@ MonoBehaviour:
   storyText: Welcome backkkkkk !!!!! Adventurer Luna and thank you very much!!
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27469,7 +27469,7 @@ MonoBehaviour:
   storyText: Welcome backkkkkk !!!!! Adventurer Luna and thank you very much!!
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27496,7 +27496,7 @@ MonoBehaviour:
   storyText: Okiee!! I will. ^^
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27524,7 +27524,7 @@ MonoBehaviour:
     free to talk with me, I'll wait you here.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27551,7 +27551,7 @@ MonoBehaviour:
   storyText: yeah, He is a hero!!
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27578,7 +27578,7 @@ MonoBehaviour:
   storyText: I see... He is a people that deserve my respect. He save the World!!
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27605,7 +27605,7 @@ MonoBehaviour:
   storyText: Reinforcing the theme of unity and the strength found in diversity.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27633,7 +27633,7 @@ MonoBehaviour:
     sets out on a journey of healing and new beginnings.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27661,7 +27661,7 @@ MonoBehaviour:
     Rift, the group combines their elemental powers to defeat the Void Bringer.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27689,7 +27689,7 @@ MonoBehaviour:
     Bringer.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27716,7 +27716,7 @@ MonoBehaviour:
   storyText: 'When they learn that the true threat comes from the Void Bringer. '
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27743,7 +27743,7 @@ MonoBehaviour:
   storyText: let's read it together!!
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27770,7 +27770,7 @@ MonoBehaviour:
   storyText: Me toooo!!!
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27797,7 +27797,7 @@ MonoBehaviour:
   storyText: hehe ^^ I can't wait to know about the missing part of the story.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27824,7 +27824,7 @@ MonoBehaviour:
   storyText: It's my pleasure Windy. I'm glad that I can help you.
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27851,7 +27851,7 @@ MonoBehaviour:
   storyText: Okiee!! I will. ^^
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27879,7 +27879,7 @@ MonoBehaviour:
     free to talk with me, I'll wait you here.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27906,7 +27906,7 @@ MonoBehaviour:
   storyText: yeah, He is a hero!!
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27933,7 +27933,7 @@ MonoBehaviour:
   storyText: I see... He is a people that deserve my respect. He save the World!!
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27961,7 +27961,7 @@ MonoBehaviour:
     with wisdom, ensuring darkness never rises again.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -27988,7 +27988,7 @@ MonoBehaviour:
   storyText: Eldrin's strike defeats Malakar, restoring peace to Argenvale.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -28016,7 +28016,7 @@ MonoBehaviour:
     powerful attack that breaks through Malakar's defenses.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -28044,7 +28044,7 @@ MonoBehaviour:
     near, Malakar threatens to engulf them in shadows. '
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -28072,7 +28072,7 @@ MonoBehaviour:
     They arrived Malakar\u2019s dark fortress and have a a fierce battle with him."
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -28099,7 +28099,7 @@ MonoBehaviour:
   storyText: let's read it together!!
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -28126,7 +28126,7 @@ MonoBehaviour:
   storyText: Me toooo!!!
   description: 
   character: {fileID: 1136104308}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -28153,7 +28153,7 @@ MonoBehaviour:
   storyText: hehe ^^ I can't wait to know about the missing part of the story.
   description: 
   character: {fileID: 1550158491}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
