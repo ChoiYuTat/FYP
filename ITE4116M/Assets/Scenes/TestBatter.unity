@@ -944,7 +944,7 @@ GameObject:
   - component: {fileID: 1023347280}
   - component: {fileID: 1023347279}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: Canva
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1440,6 +1440,7 @@ MonoBehaviour:
   MaxPowerCount: 0
   curPowerCount: 0
   DefenseCount: 0
+  isfirst: 0
 --- !u!114 &1677051063
 MonoBehaviour:
   m_ObjectHideFlags: 0
