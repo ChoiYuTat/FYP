@@ -15,6 +15,9 @@ public class Fight_Win : FightUnit
 
     public override void Init()
     {
+
+
+        FightManager.Instance.isfirst = true;
         FightUIManager.Instance.ShowTip("Victory!!!", Color.green, delegate ()
         {
             FightManager.Instance.StopAllCoroutines();

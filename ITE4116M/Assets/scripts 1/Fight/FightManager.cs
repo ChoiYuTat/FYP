@@ -23,15 +23,18 @@ public class FightManager : MonoBehaviour
     public int MaxPowerCount;
     public int curPowerCount;
     public int DefenseCount;
+    public bool isfirst = true;
 
     public void Init()
     {
-        MaxHp = 20;
-        curHp = MaxHp;
-        MaxPowerCount = 5;
-        curPowerCount = MaxPowerCount;
-        DefenseCount = 10; 
-
+        if (isfirst)
+        {
+            MaxHp = 20;
+            curHp = MaxHp;
+            MaxPowerCount = 3;
+            curPowerCount = MaxPowerCount;
+            DefenseCount = 20;
+        }
     }
     private void Awake()
     {
