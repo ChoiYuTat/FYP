@@ -13669,6 +13669,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 411905511}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &412483246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 412483248}
+  - component: {fileID: 412483247}
+  m_Layer: 0
+  m_Name: exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &412483247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412483246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cfe84aadcf73ca4ea764a09239ac1e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitGameObject: {fileID: 0}
+--- !u!4 &412483248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412483246}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -69.355194, y: -2133.753, z: 959.2528}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 490735018}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &414571441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16577,6 +16622,7 @@ Transform:
   - {fileID: 2072686161}
   - {fileID: 728100844}
   - {fileID: 1660065089}
+  - {fileID: 412483248}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &490735019
@@ -22181,6 +22227,10 @@ GameObject:
   - component: {fileID: 649196356}
   - component: {fileID: 649196359}
   - component: {fileID: 649196360}
+  - component: {fileID: 649196361}
+  - component: {fileID: 649196362}
+  - component: {fileID: 649196363}
+  - component: {fileID: 649196364}
   m_Layer: 0
   m_Name: Flowchart(windy)
   m_TagString: Untagged
@@ -22288,9 +22338,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 649196245}
+  - {fileID: 649196343}
   selectedCommands:
-  - {fileID: 649196360}
+  - {fileID: 649196353}
   variables:
   - {fileID: 649196208}
   - {fileID: 649196215}
@@ -24305,6 +24355,7 @@ MonoBehaviour:
   - {fileID: 649196264}
   - {fileID: 649196263}
   - {fileID: 649196270}
+  - {fileID: 649196361}
   - {fileID: 649196360}
   suppressAllAutoSelections: 0
 --- !u!114 &649196246
@@ -24370,6 +24421,7 @@ MonoBehaviour:
   - {fileID: 649196275}
   - {fileID: 649196273}
   - {fileID: 649196284}
+  - {fileID: 649196362}
   - {fileID: 649196359}
   suppressAllAutoSelections: 0
 --- !u!114 &649196248
@@ -27937,7 +27989,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 84.10222
-    y: -126.157074
+    y: -126.91465
     width: 103.78787
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -27948,6 +28000,8 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 649196347}
+  - {fileID: 649196363}
+  - {fileID: 649196364}
   - {fileID: 649196355}
   - {fileID: 649196354}
   - {fileID: 649196353}
@@ -28467,7 +28521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 159
   indentLevel: 2
-  text: What?
+  text: What happend?
   description: 
   targetBlock: {fileID: 649196343}
   hideIfVisited: 0
@@ -28492,7 +28546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 158
   indentLevel: 2
-  storyText: It's seem you are lose
+  storyText: Are you okay?
   description: 
   character: {fileID: 1550158491}
   portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
@@ -28905,7 +28959,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &649196360
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -28920,6 +28974,95 @@ MonoBehaviour:
   targetObject: {fileID: 490735016}
   methodName: GoBattle
   delay: 0
+--- !u!114 &649196361
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649196181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 170
+  indentLevel: 0
+  targetObject: {fileID: 412483246}
+  methodName: destory
+  delay: 0
+--- !u!114 &649196362
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649196181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 171
+  indentLevel: 0
+  targetObject: {fileID: 412483246}
+  methodName: destory
+  delay: 0
+--- !u!114 &649196363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649196181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 172
+  indentLevel: 0
+  storyText: Don't worry, my ability will protect your reality body didn't affect
+    by the damage from my ability's domain.
+  description: 
+  character: {fileID: 1550158491}
+  portrait: {fileID: 21300000, guid: 85c99be514987f342b28888307f9e77c, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &649196364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649196181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 173
+  indentLevel: 0
+  storyText: O...Okay.
+  description: 
+  character: {fileID: 1136104308}
+  portrait: {fileID: 21300000, guid: 90dd4c55ceccb604bbee4d24ee16b08d, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &649376576
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,7 +12,10 @@ public class exit : MonoBehaviour
 
     public void destory()
     {
-        Destroy(exitGameObject);
+        if (exitGameObject != null)
+        {
+            Destroy(exitGameObject);
+        }
     }
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,6 @@ public class exit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        exitGameObject = GameObject.Find("DungeonManager");
     }
 }
