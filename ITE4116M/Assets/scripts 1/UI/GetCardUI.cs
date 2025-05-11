@@ -11,6 +11,7 @@ using UnityEngine.SceneManagement;
 public class GetCardUI : FightUIBase
 {
     public Button[] btn;
+    public Button back;
 
     public Text[] text;
     int cardIndex;
@@ -22,6 +23,7 @@ public class GetCardUI : FightUIBase
         btn[0] = transform.Find("bg/content/grid/HP").GetComponent<Button>();
         btn[1] = transform.Find("bg/content/grid/ADD").GetComponent<Button>();
         btn[2] = transform.Find("bg/content/grid/DEL").GetComponent<Button>();
+        back = transform.Find("bg/content/back").GetComponent<Button>();
         text[0] = transform.Find("bg/content/grid/HP/Text").GetComponent<Text>();
         text[1] = transform.Find("bg/content/grid/ADD/Text").GetComponent<Text>();
         text[2] = transform.Find("bg/content/grid/DEL/Text").GetComponent<Text>();
@@ -79,6 +81,11 @@ public class GetCardUI : FightUIBase
     void Start()
     {
         setCard();
+        back.onClick.AddListener(() =>
+        {
+            FightUIManager.Instance.CloseAllUI("GetCardUI");
+            SceneManager.LoadScene("TestBattle");
+        });
     }
 
     void Update()
