@@ -15,9 +15,6 @@ public class Fight_Win : FightUnit
 
     public override void Init()
     {
-
-
-        FightManager.Instance.isfirst = true;
         FightUIManager.Instance.ShowTip("Victory!!!", Color.green, delegate ()
         {
             FightManager.Instance.StopAllCoroutines();
@@ -25,10 +22,11 @@ public class Fight_Win : FightUnit
             UnityEngine.SceneManagement.Scene scene = SceneManager.GetActiveScene();
             if (scene.name == "Boss")
             {
+                FightManager.Instance.isfirst = true;
                 //Flowchart flowchart = GameObject.Find("Flowchart(windy)").GetComponent<Flowchart>();
                 //flowchart.SetVariable<BooleanVariable>("GameEnd", true);
 
-                
+
                 //gameRoot.currentGameState = GameRoot.GameState.Story1End;
 
                 SceneManager.LoadScene("HD_2D_Day");

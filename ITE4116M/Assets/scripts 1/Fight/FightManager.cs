@@ -23,7 +23,7 @@ public class FightManager : MonoBehaviour
     public int MaxPowerCount;
     public int curPowerCount;
     public int DefenseCount;
-    public bool isfirst = true;
+    public bool isfirst;
 
     public void Init()
     {
@@ -34,10 +34,12 @@ public class FightManager : MonoBehaviour
             MaxPowerCount = 3;
             curPowerCount = MaxPowerCount;
             DefenseCount = 20;
+            isfirst = false;
         }
     }
     private void Awake()
     {
+        isfirst = true;
         Instance = this;
     }
 
