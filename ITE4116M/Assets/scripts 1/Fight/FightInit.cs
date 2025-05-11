@@ -7,6 +7,7 @@ public class FightInit : FightUnit
 {
     public override void Init()
     {
+        FightManager.Instance.Init();
         int index = Random.Range(10001, 10004);
         UnityEngine.SceneManagement.Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "Boss") 
